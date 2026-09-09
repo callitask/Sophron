@@ -1,0 +1,22 @@
+﻿{
+  "insight_id": "chatbot_quantitative_validation_constraint",
+  "temporal_anchor": {
+    "timestamp": "2026-09-09T19:57:00+05:30",
+    "task_context": "Refining LLM prompt fields for ATS Chatbots regarding experience years."
+  },
+  "psychological_state": {
+    "user_mood_and_tone": "Methodical, correcting an AI assumption with practical domain knowledge.",
+    "cognitive_phase": "Refinement (tuning chatbot interaction safety).",
+    "behavioral_observations": "User possesses deep practical knowledge of ATS systems (they know chatbots use strict data-type validation for numbers) and corrected the AI's attempt to be 'too conversational'."
+  },
+  "interaction_pairing": {
+    "ai_stimulus": "AI injected the string '9.8 (nearly a decade)' into the config to make the LLM sound smarter.",
+    "user_reaction": "User pointed out that chatbots usually ask for integer/float values, and a string with text will fail form validation."
+  },
+  "cognitive_evolution": {
+    "previous_paradigm": "Make LLM strings highly conversational to sound human.",
+    "new_paradigm": "For quantitative fields (like years of experience or salary), the ground-truth string MUST remain purely numeric (e.g., '9.8') so that if the LLM pastes it directly into a strict ATS input field, it doesn't trigger a validation error.",
+    "reason_for_shift": "Practical UI/UX limitations of external ATS chatbot parsers."
+  },
+  "long_term_application": "Never inject conversational text (like 'nearly a decade') into config fields that are fundamentally quantitative. Keep numbers clean for safe HTML form filling."
+}
