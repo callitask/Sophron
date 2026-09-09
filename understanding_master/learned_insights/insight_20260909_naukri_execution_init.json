@@ -1,0 +1,22 @@
+{
+  "insight_id": "insight_20260909_naukri_execution_init",
+  "temporal_anchor": {
+    "timestamp": "2026-09-09T22:34:30+05:30",
+    "task_context": "Executing continuous career agent for Naukri under profile udaysagar_kandpal"
+  },
+  "psychological_state": {
+    "user_mood_and_tone": "Direct, Goal-Oriented, Efficiency-Focused",
+    "cognitive_phase": "Execution and Monitoring",
+    "behavioral_observations": "User wants minimal token usage, no verbose chatter, direct terminal monitoring, strict directory boundaries, and no hardcoded script changes."
+  },
+  "interaction_pairing": {
+    "ai_stimulus": "Loaded user cognitive OS rules and candidate configuration.",
+    "user_reaction": "User instructed: stay within F:\\JOB AI AGENT, execute continuous_career_agent.py, target India/Bangalore, role matched to profile/ATS, exclude Cognizant/Infosys, and avoid token wastage."
+  },
+  "cognitive_evolution": {
+    "previous_paradigm": "Verbose step-by-step reporting in chat.",
+    "new_paradigm": "Silent execution mode with minimal chat output, reporting only critical blockers/issues while user monitors live terminal.",
+    "reason_for_shift": "Token preservation and preference for observing raw execution logs directly."
+  },
+  "long_term_application": "When user indicates they are monitoring the terminal directly, suppress intermediate verbose commentary and only report start, errors, and final status."
+}
