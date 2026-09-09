@@ -1,0 +1,22 @@
+﻿{
+  "insight_id": "llm_conversational_parameter_feeding",
+  "temporal_anchor": {
+    "timestamp": "2026-09-09T19:45:00+05:30",
+    "task_context": "Updating Uday's candidate profile for accurate Chatbot Agent response."
+  },
+  "psychological_state": {
+    "user_mood_and_tone": "Precise, demanding high accuracy and 'smart' behavior from the chatbot.",
+    "cognitive_phase": "Refinement (tuning existing systems to act more human-like).",
+    "behavioral_observations": "The user distinguishes between 'search parameters' (which can use a margin, e.g., 10 years) and 'conversational parameters' (which must be precise and humanized, e.g., '9.8 or nearly a decade')."
+  },
+  "interaction_pairing": {
+    "ai_stimulus": "The AI previously updated Uday's profile to 10.2 years or 10 years.",
+    "user_reaction": "The user corrected the AI, pointing out the actual experience is 9.8. They clarified that while the search margin can be 10, the chatbot answers must be injected with '9.8 or nearly a decade smartly'."
+  },
+  "cognitive_evolution": {
+    "previous_paradigm": "Updating a profile involved setting a single integer/float for both search filtering and chatbot answering.",
+    "new_paradigm": "There is a strict bifurcation: search fields (	arget_jobs.experience_years) can be rounded integers for platform margins, while conversational fields (uto_learned_truths, ts_answers) must be injected with nuanced, human-readable strings.",
+    "reason_for_shift": "To ensure the LLM chatbot negotiating with recruiters sounds intelligent, precise, and human, rather than robotic."
+  },
+  "long_term_application": "When configuring profiles, always check if a numerical value needs to be rounded for the search algorithm vs. humanized for the LLM prompt. Inject nuanced phrases into uto_learned_truths so the LLM has superior conversational context."
+}
