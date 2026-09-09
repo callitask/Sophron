@@ -1,0 +1,21 @@
+{
+  "id": "insight_20260909_c_cpp_negative_exclusion",
+  "timestamp": "2026-09-09T22:54:02+05:30",
+  "category": "candidate_hard_skills_boundary",
+  "observation": "User explicitly stated: I do not have any C++ experience and C experience add these as negative keywords.",
+  "ground_truth": {
+    "c_experience": 0,
+    "cpp_experience": 0,
+    "negative_keywords_added": [
+      "C++",
+      "C/C++",
+      "Embedded C",
+      "Embedded C++",
+      "C language",
+      "C developer",
+      "C++ developer"
+    ]
+  },
+  "impact": "All jobs requiring C or C++ development must be filtered out immediately and never queued for application.",
+  "confidence": 1.0
+}

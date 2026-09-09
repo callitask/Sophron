@@ -6,3 +6,5 @@
 - [2026-09-09 22:00 IST] [insight_20260909_location_restriction_noida_gurugram]: User explicitly restricted Anshika Garg's job search to Noida + Gurugram only; Mumbai/Pune scope removed; travel-to-non-target-city chatbot questions always answered 'No'.
 - [2026-09-09 22:34 IST] [insight_20260909_naukri_execution_init]: User initiated automated run for Udaysagar Kandpal with Bangalore priority, negative exclusion for Cognizant/Infosys, and token-saving minimal chat reporting mode.
 - [2026-09-09 22:39 IST] [insight_20260909_salary_threshold_update]: Set target salary floor to 25.0 LPA+ for disclosed salaries, while permitting applications for undisclosed salary listings.
+
+- 2026-09-09: Explicit zero C/C++ experience confirmed; C and C++ added to candidate negative keywords to suppress low-match embedded/systems roles.
