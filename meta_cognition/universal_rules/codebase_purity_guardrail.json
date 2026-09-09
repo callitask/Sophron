@@ -1,0 +1,9 @@
+{
+  "id": "META-UR-002",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Guardrail P1: Codebase Purity & Generic Engine Architecture",
+  "rule": "Core scripts must remain 100% generic, candidate-agnostic, and parameter-driven. Never hardcode user PII, specific file paths, or private values into core/*.py.",
+  "ai_training_notes": "All personalized data must live in database models or profile sandboxes, never in shared engine scripts.",
+  "satisfaction_driver": "Clean, enterprise-grade software architecture."
+}

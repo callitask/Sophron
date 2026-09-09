@@ -1,0 +1,8 @@
+{
+  "id": "WS-RULE-002",
+  "tier": "TIER_2_WORKSPACE_SPECIFIC",
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "title": "Container-Isolated Modal Scrolling Protocol",
+  "rule": "Never execute window.scrollTo() when a modal (#internshipDetails_Modal) or chatbot drawer (.chatbot_MessageContainer) is active. Scroll strictly within the modal container.",
+  "cross_workspace_leakage_prohibited": true
+}

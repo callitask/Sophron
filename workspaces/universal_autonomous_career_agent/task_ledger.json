@@ -1,0 +1,25 @@
+{
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "completed_milestones": [
+    {
+      "milestone": "Dynamic Startup & Guardrail P1 Codebase Purity Enforcer",
+      "status": "VERIFIED"
+    },
+    {
+      "milestone": "Naukri Profile Experience & Skills Surgical Sync",
+      "status": "VERIFIED"
+    },
+    {
+      "milestone": "SRP Reverse Engineering, Read More Un-clamping, 4-Criteria Match Score",
+      "status": "VERIFIED"
+    },
+    {
+      "milestone": "Naukri Campus Detection, Job/Internship Toggle & Duplicate Prevention",
+      "status": "VERIFIED"
+    },
+    {
+      "milestone": "Candidate Onboarding Templates & default_user Blueprint",
+      "status": "VERIFIED"
+    }
+  ]
+}

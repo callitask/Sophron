@@ -1,0 +1,11 @@
+{
+  "id": "DP-002",
+  "category": "debugging_protocols",
+  "title": "Event & Scroll Leak Remediation Workflow",
+  "procedure": [
+    "1. Identify active modal/drawer container (#internshipDetails_Modal, .chatbot_DrawerContent).",
+    "2. Determine if clicks or scrolls are bleeding into the underlying body/backdrop.",
+    "3. Apply modal-scoped scroll: modal_locator.evaluate('(el) => el.scrollTop += 300').",
+    "4. Use click(force=True) to ensure clicks register directly on target buttons despite sticky header overlays or backdrop interference."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DP-003",
+  "category": "debugging_protocols",
+  "title": "Multi-Attribute Duplicate Prevention Protocol",
+  "procedure": [
+    "1. Normalize company name: strip legal entities, lowercase, remove punctuation.",
+    "2. Normalize designation: stem core role keywords.",
+    "3. Extract start_year and end_year using extract_years_from_tenure().",
+    "4. Evaluate 3-way match: match_company AND match_designation AND match_years.",
+    "5. If Company and Designation match but Years differ, flag as SEPARATE_STINT and allow insertion."
+  ]
+}

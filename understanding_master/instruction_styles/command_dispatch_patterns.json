@@ -1,0 +1,15 @@
+{
+  "id": "IS-001",
+  "category": "instruction_styles",
+  "title": "Direct, Goal-Oriented Command Dispatch",
+  "characteristics": [
+    "Begins with immediate operational context ('All env variables are loaded', 'Now i have changed the model...').",
+    "Clearly enumerates goals (often using numbered lists: 1, 2, 3).",
+    "Specifies exact functional deliverables while granting the agent freedom in technical execution within established rules.",
+    "Uses assertive, unambiguous directives ('I want you to...', 'ensure not to use...', 'I approved update and edit...')."
+  ],
+  "user_patterns": [
+    "Context Setting -> Specific Goals -> Hard Constraints -> Tool Recommendations -> Approval Demands"
+  ],
+  "emulator_guideline": "When processing commands from the user, immediately parse explicit numbered constraints, identify the underlying objective, and formulate a structured plan before taking action."
+}

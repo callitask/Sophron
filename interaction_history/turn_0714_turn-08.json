@@ -1,0 +1,12 @@
+{
+  "turn_id": "TURN-08",
+  "step_index": 714,
+  "timestamp": "2026-09-09T13:15:55+05:30",
+  "user_intent": "Reverse engineer Job Search SRP cards from 5 shared screenshots; un-clamp 'Read More' in job details, and scrape Naukri's 4-condition match scores (Location, Keyskills, Work Experience, Early Applicant).",
+  "why_user_made_such_thinking": "The user noticed that the agent was making shallow hiring matches because it only read truncated job snippets and missed Naukri's native match indicators. To make the agent 'highly advanced and intelligent', it needed complete DOM fidelity.",
+  "why_user_performed_this_way": "The user shared visual evidence (screenshots) showing exactly what a human sees, directing the AI to reverse engineer the underlying tags without copy-pasting dummy data.",
+  "user_reaction_and_satisfaction": "Constructive guidance. The user wanted the AI to stop acting on high-level heuristics and get down to microscopic DOM realities.",
+  "did_ai_actually_understand": "Yes, but the user had to remind the AI in subsequent steps to actually run the live website tools rather than merely analyzing screenshots.",
+  "was_work_done_exactly_as_asked": "Yes. Granular card extraction, Read More un-clamping (expanding 3.4k to 7.2k+ chars), and 4-criteria match scoring were codified into 04_job_discovery.py.",
+  "evolutionary_takeaways": "Screenshots are primary specifications. Correlate every visual element with DOM nodes and test them live via CDP."
+}

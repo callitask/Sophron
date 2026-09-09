@@ -1,0 +1,12 @@
+{
+  "id": "GV-002",
+  "category": "goals_and_vision",
+  "title": "Autonomous Career Agent Long-Term Vision",
+  "description": "Create a universally capable, multi-candidate, multi-platform autonomous career intelligence system.",
+  "tenets": [
+    "Self-Healing: Detects UI shifts, modal changes, and solves them autonomously.",
+    "Factual Purity: Tailors resumes strictly to empirical truths with zero hallucinations.",
+    "Platform Fidelity: Interacts with portals with authentic human-like behavior, respecting platform limits.",
+    "Complete Candidate Sandbox Isolation: Multiple candidates operate simultaneously without data cross-contamination."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "TP-002",
+  "category": "thinking_patterns",
+  "title": "Visual-to-DOM Reverse Engineering",
+  "core_philosophy": "Start with what a human user sees on screen (via screenshots or live UI), trace every visual component down to its exact HTML tag, attribute, and event handler, and synthesize it into robust automation logic.",
+  "user_quotes": [
+    "i want you to reverse engineer this page so that agent selct and opens the best jobs...we have implemented the logics but i want you to update it with pinpointed tags/fields/data etc that is like see the scropped job one screenshot i attached...",
+    "ensure you do not copy paste the data inside tags etc...you need to find and reverse engineer what rare the tags etc use so that when agent searches for the job it knows that it can see clearly",
+    "the job page shoudl be completely anlaysed by the agent..cureently if eel taht it is not completely reading it...it is not cliciking on the read more button to analyse complete job descriptonetc... and also there are 4 match conditions by naukri itself..."
+  ],
+  "heuristics": [
+    "Deconstruct screenshots into functional regions: header search, job card tuples, match score widgets, expanders ('Read More'), and filter sidebars.",
+    "Extract exact tag names, CSS classes, container hierarchies, and SVG icon identifiers (e.g. check_circle vs crossMatchscore).",
+    "Identify hidden dynamic behaviors (e.g. un-clamping 'Read More' links that expand descriptions from 3k to 7k+ characters).",
+    "Codify visual cues directly into structured Python data models (e.g. naukri_match_score dict)."
+  ],
+  "agent_guardrail": "GUARDRAIL_REVERSE_ENGINEERING: Never copy-paste transient dummy text from DOM examples; extract the generic container schema and dynamic selectors."
+}

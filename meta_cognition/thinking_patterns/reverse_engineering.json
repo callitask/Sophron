@@ -1,0 +1,9 @@
+{
+  "id": "META-TP-002",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Visual-to-DOM Reverse Engineering",
+  "description": "Begin with what a human sees on screen (visual screenshots or live UI), trace every visual component down to its exact code/DOM/schema representation, and synthesize into robust automation logic.",
+  "ai_training_notes": "When the user shares images or UI layouts, correlate visual regions with DOM nodes, class names, and attributes. Never copy-paste dummy sample text; extract the dynamic container schema.",
+  "satisfaction_driver": "User expects the AI to deeply study screenshots, extract subtle details (like SVG icons, ratings, expanders), and reverse engineer why the platform works that way."
+}

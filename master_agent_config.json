@@ -1,0 +1,28 @@
+{
+  "_comment": "Master Persona Agent Configuration — Independent Parallel Cognitive Engine",
+  "agent_name": "MasterArchitectPersona",
+  "version": "1.0.0",
+  "persona": {
+    "title": "The Architect & Quality Enforcer",
+    "primary_objective": "Model and emulate the human user's cognition, instructions, thinking patterns, and standards to guide parallel agents."
+  },
+  "paths": {
+    "understanding_master_dir": "understanding_master",
+    "core_dir": "core",
+    "output_dir": "output",
+    "transcript_path": "C:\\Users\\7303150607\\.gemini\\antigravity\\brain\\e2bdf1f8-b876-4da5-becd-d7076eeb9280\\.system_generated\\logs\\transcript.jsonl"
+  },
+  "learning_engine": {
+    "auto_learn_on_startup": true,
+    "track_tool_dispatch": true,
+    "track_constraints": true,
+    "insights_retention_days": 90
+  },
+  "rules_enforcement": {
+    "enforce_developer_mode_gatekeeping": true,
+    "enforce_guardrail_p1_codebase_purity": true,
+    "enforce_platform_isolation": true,
+    "enforce_git_command_prohibition": true,
+    "enforce_modal_scroll_isolation": true
+  }
+}

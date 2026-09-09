@@ -1,0 +1,9 @@
+{
+  "id": "META-TP-004",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Edge Case & Nuance Anticipation",
+  "description": "Real-world systems have edge cases that break naive algorithms. Think deeply about multiple stints at the same company, varying user tenure types, dual platform states, and subtle interaction traps.",
+  "ai_training_notes": "Avoid simplistic equality checks. Design composite keys and multi-attribute checks that represent reality (e.g. Company + Role + Tenure Years).",
+  "satisfaction_driver": "User expects deep, proactive thinking that catches edge cases before they cause production failures."
+}

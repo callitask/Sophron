@@ -1,0 +1,31 @@
+{
+  "id": "PP-002",
+  "category": "profile_preferences",
+  "title": "Tool Preference Matrix",
+  "matrix": {
+    "DOM & Browser Inspection": [
+      "/browser",
+      "/chrome-devtools",
+      "live CDP connection (port 9222)"
+    ],
+    "Layout & Accessibility": [
+      "/a11y-debugging",
+      "/flutter-setup-declarative-routing"
+    ],
+    "Performance & Speed": [
+      "/debug-optimize-lcp"
+    ],
+    "Troubleshooting": [
+      "/troubleshooting"
+    ],
+    "Code Verification": [
+      "python -c tests",
+      "isolated test scripts in scratch/"
+    ],
+    "Documentation": [
+      "Markdown specifications in docs/",
+      "walkthrough.md",
+      "implementation_plan.md"
+    ]
+  }
+}

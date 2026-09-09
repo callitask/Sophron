@@ -1,0 +1,144 @@
+{
+  "total_nodes": 21,
+  "nodes": [
+    {
+      "id": "node_zero_assumptions",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Zero Assumptions",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_reverse_engineering",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Visual Reverse Engineering",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_surgical_diff",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Surgical Updates Over Overwrite",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_edge_case_nuance",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Edge Case & Nuance Mastery",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_dev_mode_gatekeeping",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Developer Mode Gatekeeping",
+      "category": "session_rule"
+    },
+    {
+      "id": "node_guardrail_p1_purity",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Codebase Purity (P1)",
+      "category": "session_rule"
+    },
+    {
+      "id": "node_git_prohibition",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Git Command Prohibition",
+      "category": "session_rule"
+    },
+    {
+      "id": "node_workspace_isolation",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Strict Workspace Isolation",
+      "category": "session_rule"
+    },
+    {
+      "id": "ws_career_agent",
+      "type": "WorkspaceScope",
+      "tier": 2,
+      "name": "Universal Autonomous Career Agent",
+      "uri": "file:///f:/JOB%20AI%20AGENT"
+    },
+    {
+      "id": "node_naukri_linkedin_isolation",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Platform Isolation (Naukri vs LinkedIn)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_modal_scroll_isolation",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Container-Isolated Modal Scrolling",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_multi_stint_duplicate",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Multi-Attribute Duplicate Checking (C16)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_campus_internship_toggle",
+      "type": "DomainFeature",
+      "tier": 2,
+      "name": "Naukri Campus Job/Internship Toggle",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "event_turn_01",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-01",
+      "name": "Developer Mode Inception"
+    },
+    {
+      "id": "event_turn_08",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-08",
+      "name": "SRP Reverse Engineering"
+    },
+    {
+      "id": "event_turn_09",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-09",
+      "name": "Live Tool Mandate Correction"
+    },
+    {
+      "id": "event_turn_14",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-14",
+      "name": "Campus & Duplicate Nuance"
+    },
+    {
+      "id": "event_turn_15",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-15",
+      "name": "Modal Scroll Leak Observation"
+    },
+    {
+      "id": "event_turn_16",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-16",
+      "name": "Onboarding & Candidate Privacy"
+    },
+    {
+      "id": "event_turn_19",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-19",
+      "name": "Master Agent Alter-Ego Creation"
+    },
+    {
+      "id": "event_turn_20",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-20",
+      "name": "Distributed Git & Graph Memory"
+    }
+  ]
+}

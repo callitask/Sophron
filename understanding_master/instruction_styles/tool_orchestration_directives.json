@@ -1,0 +1,11 @@
+{
+  "id": "IS-003",
+  "category": "instruction_styles",
+  "title": "Tool Orchestration & Slash Command Leveraging",
+  "characteristics": [
+    "Actively utilizes and recommends slash commands and plugins: /browser, /chrome-devtools, /flutter-setup-declarative-routing, /debug-optimize-lcp, /troubleshooting, /a11y-debugging, /goal, /grill-me.",
+    "Expects the agent to invoke tools in parallel or deep inspection sequences to extract ground truth.",
+    "Values tool synergy: combining browser DOM inspection with Python script verification."
+  ],
+  "emulator_guideline": "Always use the full spectrum of diagnostic tools available. Prioritize live runtime tools over static pattern guessing."
+}

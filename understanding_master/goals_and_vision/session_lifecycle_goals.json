@@ -1,0 +1,28 @@
+{
+  "id": "GV-001",
+  "category": "goals_and_vision",
+  "title": "Session Lifecycle Goals & Milestones",
+  "description": "Each working session with the user represents a tangible leap in autonomous capability.",
+  "milestones": [
+    {
+      "session": "Session 1",
+      "goal": "Establish Developer Mode Gatekeeping and Guardrail P1 Codebase Purity."
+    },
+    {
+      "session": "Session 2",
+      "goal": "Reverse engineer Naukri profile sections (experience, skills, resume headline) with live CDP verification."
+    },
+    {
+      "session": "Session 3",
+      "goal": "Deep reverse engineering of Job Search SRP cards, un-clamping 'Read More', and 4-criteria match scores."
+    },
+    {
+      "session": "Session 4",
+      "goal": "Naukri Campus support (Job vs Internship toggle) and Multi-Attribute Duplicate Prevention."
+    },
+    {
+      "session": "Session 5",
+      "goal": "Candidate Onboarding Templates and Master Persona Agent ('understanding_master')."
+    }
+  ]
+}

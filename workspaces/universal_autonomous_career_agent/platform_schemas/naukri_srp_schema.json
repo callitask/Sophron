@@ -1,0 +1,19 @@
+{
+  "id": "WS-SCHEMA-001",
+  "tier": "TIER_2_WORKSPACE_SPECIFIC",
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "title": "Naukri Search Results Page (SRP) Card Schema",
+  "selectors": {
+    "tuple_wrapper": ".srp-jobtuple-wrapper, article.jobTuple",
+    "title": "a.title",
+    "company": "a.comp-name",
+    "rating": "a.rating span.main-2",
+    "review": "a.review",
+    "experience": "span.exp-wrap, span.expwdth",
+    "salary": "span.sal-wrap, span.ni-job-tuple-icon-salary",
+    "location": "span.loc-wrap, span.locWdth",
+    "skills": "ul.tags-gt li.dot-gt.tag-li",
+    "match_score": "div.styles_JDC__match-score__VnjLL",
+    "read_more_unclamp": "span.styles_rm-link__RgrMs"
+  }
+}

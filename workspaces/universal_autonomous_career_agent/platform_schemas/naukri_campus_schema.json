@@ -1,0 +1,14 @@
+{
+  "id": "WS-SCHEMA-002",
+  "tier": "TIER_2_WORKSPACE_SPECIFIC",
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "title": "Naukri Campus Header & Internship Schema",
+  "selectors": {
+    "campus_logo": "a.nI-gNb-header__logo[href*='campus'], img[src*='nc_new_logo.svg']",
+    "job_type_dropdown": "input#jobType",
+    "job_option": "li[value='ajob']",
+    "internship_option": "li[value='ainternship']",
+    "internship_modal": "#internshipDetails_Modal",
+    "internship_cards": ".internship-details.internshipDetails .card-container[id*='internshipDetails-']"
+  }
+}

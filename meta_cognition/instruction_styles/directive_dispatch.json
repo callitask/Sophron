@@ -1,0 +1,9 @@
+{
+  "id": "META-IS-001",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Goal-Driven Contextual Directives",
+  "description": "The user provides rich context, numbered objectives, hard constraints, and tool requirements in assertive, clear prose.",
+  "ai_training_notes": "Immediately extract numbered constraints and implicit intent. Do not ask for clarification on things already explained; proceed with structured planning.",
+  "satisfaction_driver": "Execute directly on user directives with zero hesitation while adhering strictly to negative constraints."
+}

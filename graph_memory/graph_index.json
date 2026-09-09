@@ -1,0 +1,360 @@
+{
+  "total_indexed_nodes": 21,
+  "adjacency": {
+    "node_zero_assumptions": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "node_dev_mode_gatekeeping",
+          "relation": "MANDATES"
+        },
+        {
+          "target": "event_turn_09",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "data": {
+        "id": "node_zero_assumptions",
+        "type": "MetaPrinciple",
+        "tier": 1,
+        "name": "Zero Assumptions",
+        "category": "thinking_pattern"
+      }
+    },
+    "node_reverse_engineering": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "event_turn_08",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "data": {
+        "id": "node_reverse_engineering",
+        "type": "MetaPrinciple",
+        "tier": 1,
+        "name": "Visual Reverse Engineering",
+        "category": "thinking_pattern"
+      }
+    },
+    "node_surgical_diff": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "event_turn_01",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "data": {
+        "id": "node_surgical_diff",
+        "type": "MetaPrinciple",
+        "tier": 1,
+        "name": "Surgical Updates Over Overwrite",
+        "category": "thinking_pattern"
+      }
+    },
+    "node_edge_case_nuance": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "node_multi_stint_duplicate",
+          "relation": "INSTANTIATES"
+        },
+        {
+          "target": "event_turn_14",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "data": {
+        "id": "node_edge_case_nuance",
+        "type": "MetaPrinciple",
+        "tier": 1,
+        "name": "Edge Case & Nuance Mastery",
+        "category": "thinking_pattern"
+      }
+    },
+    "node_dev_mode_gatekeeping": {
+      "incoming": [
+        {
+          "source": "node_zero_assumptions",
+          "relation": "MANDATES"
+        }
+      ],
+      "outgoing": [
+        {
+          "target": "node_workspace_isolation",
+          "relation": "COUPLED_WITH"
+        }
+      ],
+      "data": {
+        "id": "node_dev_mode_gatekeeping",
+        "type": "UniversalRule",
+        "tier": 1,
+        "name": "Developer Mode Gatekeeping",
+        "category": "session_rule"
+      }
+    },
+    "node_guardrail_p1_purity": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "node_workspace_isolation",
+          "relation": "ENFORCES_INDEPENDENCE"
+        }
+      ],
+      "data": {
+        "id": "node_guardrail_p1_purity",
+        "type": "UniversalRule",
+        "tier": 1,
+        "name": "Codebase Purity (P1)",
+        "category": "session_rule"
+      }
+    },
+    "node_git_prohibition": {
+      "incoming": [],
+      "outgoing": [],
+      "data": {
+        "id": "node_git_prohibition",
+        "type": "UniversalRule",
+        "tier": 1,
+        "name": "Git Command Prohibition",
+        "category": "session_rule"
+      }
+    },
+    "node_workspace_isolation": {
+      "incoming": [
+        {
+          "source": "node_dev_mode_gatekeeping",
+          "relation": "COUPLED_WITH"
+        },
+        {
+          "source": "node_guardrail_p1_purity",
+          "relation": "ENFORCES_INDEPENDENCE"
+        },
+        {
+          "source": "event_turn_20",
+          "relation": "FORMALIZES_POLICY"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "node_workspace_isolation",
+        "type": "UniversalRule",
+        "tier": 1,
+        "name": "Strict Workspace Isolation",
+        "category": "session_rule"
+      }
+    },
+    "ws_career_agent": {
+      "incoming": [
+        {
+          "source": "node_naukri_linkedin_isolation",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_modal_scroll_isolation",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_multi_stint_duplicate",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_campus_internship_toggle",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "ws_career_agent",
+        "type": "WorkspaceScope",
+        "tier": 2,
+        "name": "Universal Autonomous Career Agent",
+        "uri": "file:///f:/JOB%20AI%20AGENT"
+      }
+    },
+    "node_naukri_linkedin_isolation": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "data": {
+        "id": "node_naukri_linkedin_isolation",
+        "type": "DomainRule",
+        "tier": 2,
+        "name": "Platform Isolation (Naukri vs LinkedIn)",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+      }
+    },
+    "node_modal_scroll_isolation": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "event_turn_15",
+          "relation": "RESOLVES_ISSUE_IN"
+        },
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "data": {
+        "id": "node_modal_scroll_isolation",
+        "type": "DomainRule",
+        "tier": 2,
+        "name": "Container-Isolated Modal Scrolling",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+      }
+    },
+    "node_multi_stint_duplicate": {
+      "incoming": [
+        {
+          "source": "node_edge_case_nuance",
+          "relation": "INSTANTIATES"
+        }
+      ],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "data": {
+        "id": "node_multi_stint_duplicate",
+        "type": "DomainRule",
+        "tier": 2,
+        "name": "Multi-Attribute Duplicate Checking (C16)",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+      }
+    },
+    "node_campus_internship_toggle": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "data": {
+        "id": "node_campus_internship_toggle",
+        "type": "DomainFeature",
+        "tier": 2,
+        "name": "Naukri Campus Job/Internship Toggle",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+      }
+    },
+    "event_turn_01": {
+      "incoming": [
+        {
+          "source": "node_surgical_diff",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_01",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-01",
+        "name": "Developer Mode Inception"
+      }
+    },
+    "event_turn_08": {
+      "incoming": [
+        {
+          "source": "node_reverse_engineering",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_08",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-08",
+        "name": "SRP Reverse Engineering"
+      }
+    },
+    "event_turn_09": {
+      "incoming": [
+        {
+          "source": "node_zero_assumptions",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_09",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-09",
+        "name": "Live Tool Mandate Correction"
+      }
+    },
+    "event_turn_14": {
+      "incoming": [
+        {
+          "source": "node_edge_case_nuance",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_14",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-14",
+        "name": "Campus & Duplicate Nuance"
+      }
+    },
+    "event_turn_15": {
+      "incoming": [
+        {
+          "source": "node_modal_scroll_isolation",
+          "relation": "RESOLVES_ISSUE_IN"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_15",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-15",
+        "name": "Modal Scroll Leak Observation"
+      }
+    },
+    "event_turn_16": {
+      "incoming": [],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_16",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-16",
+        "name": "Onboarding & Candidate Privacy"
+      }
+    },
+    "event_turn_19": {
+      "incoming": [],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_19",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-19",
+        "name": "Master Agent Alter-Ego Creation"
+      }
+    },
+    "event_turn_20": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "node_workspace_isolation",
+          "relation": "FORMALIZES_POLICY"
+        }
+      ],
+      "data": {
+        "id": "event_turn_20",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-20",
+        "name": "Distributed Git & Graph Memory"
+      }
+    }
+  }
+}

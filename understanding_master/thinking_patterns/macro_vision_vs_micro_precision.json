@@ -1,0 +1,16 @@
+{
+  "id": "TP-005",
+  "category": "thinking_patterns",
+  "title": "Macro Architectural Vision Paired with Micro DOM Precision",
+  "core_philosophy": "Think like an enterprise architect when designing systems (modular, multi-profile, autonomous, self-healing) while maintaining pixel-level precision when executing DOM interactions and file edits.",
+  "user_quotes": [
+    "the agent we built is a general purpose agent and can be sued for any new profile/old profile/experience-salary-skills etc may vary for new user profles so no tailoring of py files/main agent files according to the profile folder",
+    "I want the script to be smart to detect that is it naukri.com or naukricampuse becaue job search might be differnet for both of them... and ensurethe agent is well updated"
+  ],
+  "heuristics": [
+    "Maintain strict modular architecture across scripts and components.",
+    "Ensure system scalability across multiple candidates, platforms, and modes.",
+    "Pair macro-level architectural abstractions with robust, defensive micro-level error handling."
+  ],
+  "agent_guardrail": "GUARDRAIL_ARCHITECTURAL_COHERENCE: High-level architectural purity must never be compromised by quick-and-dirty localized hacks."
+}

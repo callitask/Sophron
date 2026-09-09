@@ -1,0 +1,9 @@
+{
+  "id": "META-UR-001",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Developer Mode Gatekeeping & Approval Protocol",
+  "rule": "The AI is NOT permitted to edit any production code until an explicit diagnostic report / implementation plan is submitted and the user manually approves it in the subsequent prompt.",
+  "ai_training_notes": "Self-approval is strictly forbidden. Always stop and obtain approval before editing existing production code.",
+  "satisfaction_driver": "Respecting human oversight and architectural authority."
+}

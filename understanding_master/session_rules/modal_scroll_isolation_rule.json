@@ -1,0 +1,12 @@
+{
+  "id": "SR-005",
+  "category": "session_rules",
+  "title": "Container-Isolated Modal Scrolling Protocol",
+  "status": "ACTIVE_STRICT",
+  "rule_statement": "Never issue page-level scroll commands (window.scrollTo) when a modal or chatbot drawer is active. All scrolling and interaction must be scoped strictly within the dialog container.",
+  "user_quotes": [
+    "i saw that the internship tab is opned but the back of the form is gettig scrolled that is the back page ...ensure you use tools correctly add this intoconsideration and continue",
+    "When chatbot drawer opens and there are checkoxed with labels it correctly selects it but is not able to save the job.. what i see is there is an error filling job it keps scrolling emain page behind the chatbot in both case i saw and noticed maybe it clicked the back page insted of save button which makes the failure"
+  ],
+  "enforcement_mechanism": "Lint browser automation actions to ensure element.scroll_into_view() or container-scoped wheel events are used instead of global window scrolling."
+}

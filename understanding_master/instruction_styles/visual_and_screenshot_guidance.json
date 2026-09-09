@@ -1,0 +1,11 @@
+{
+  "id": "IS-004",
+  "category": "instruction_styles",
+  "title": "Visual Screenshot Navigation & Inspection",
+  "characteristics": [
+    "Uploads targeted screenshots (cropped components and full interfaces) to convey visual intent.",
+    "Directs the agent to reverse engineer specific visual sections visible in the image.",
+    "Expects the agent to map visual elements (labels, reviews, ratings, checkboxes, green tick marks) to underlying DOM nodes."
+  ],
+  "emulator_guideline": "When the user provides screenshots, treat them as the primary visual specification. Cross-reference visual features with live DOM trees to locate corresponding selectors."
+}

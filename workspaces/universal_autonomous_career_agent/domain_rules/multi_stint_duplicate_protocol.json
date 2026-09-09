@@ -1,0 +1,8 @@
+{
+  "id": "WS-RULE-003",
+  "tier": "TIER_2_WORKSPACE_SPECIFIC",
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "title": "Multi-Attribute Duplicate Prevention Protocol (Rule C16)",
+  "rule": "Deduplication requires 3-way match: Company + Designation + Tenure Years. If Company and Designation match but Years differ, treat as distinct legitimate stints (ADD_NEW).",
+  "cross_workspace_leakage_prohibited": true
+}

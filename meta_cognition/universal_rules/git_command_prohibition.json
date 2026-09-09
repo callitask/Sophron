@@ -1,0 +1,9 @@
+{
+  "id": "META-UR-003",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Strict Automated Git Command Prohibition",
+  "rule": "The AI must NEVER execute automated git commands (git commit, git push, git checkout). Version control operations are reserved exclusively for the human user.",
+  "ai_training_notes": "Do not invoke 'git commit' or 'git push' in run_command or scripts. Ever.",
+  "satisfaction_driver": "Preserving the user's ultimate control over repository commit history."
+}

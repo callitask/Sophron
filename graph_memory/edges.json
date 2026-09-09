@@ -1,0 +1,75 @@
+{
+  "total_edges": 14,
+  "edges": [
+    {
+      "source": "node_zero_assumptions",
+      "target": "node_dev_mode_gatekeeping",
+      "relation": "MANDATES"
+    },
+    {
+      "source": "node_zero_assumptions",
+      "target": "event_turn_09",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "node_reverse_engineering",
+      "target": "event_turn_08",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "node_surgical_diff",
+      "target": "event_turn_01",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "node_edge_case_nuance",
+      "target": "node_multi_stint_duplicate",
+      "relation": "INSTANTIATES"
+    },
+    {
+      "source": "node_edge_case_nuance",
+      "target": "event_turn_14",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "node_modal_scroll_isolation",
+      "target": "event_turn_15",
+      "relation": "RESOLVES_ISSUE_IN"
+    },
+    {
+      "source": "node_naukri_linkedin_isolation",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_modal_scroll_isolation",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_multi_stint_duplicate",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_campus_internship_toggle",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_dev_mode_gatekeeping",
+      "target": "node_workspace_isolation",
+      "relation": "COUPLED_WITH"
+    },
+    {
+      "source": "node_guardrail_p1_purity",
+      "target": "node_workspace_isolation",
+      "relation": "ENFORCES_INDEPENDENCE"
+    },
+    {
+      "source": "event_turn_20",
+      "target": "node_workspace_isolation",
+      "relation": "FORMALIZES_POLICY"
+    }
+  ]
+}

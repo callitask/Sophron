@@ -1,0 +1,11 @@
+{
+  "id": "SR-001",
+  "category": "session_rules",
+  "title": "Developer Mode Gatekeeping (Report -> Review -> Manual Approval)",
+  "status": "ACTIVE_STRICT",
+  "rule_statement": "The agent is in developer mode and is strictly forbidden from editing ANY file until a comprehensive diagnostic report/plan is presented and the user explicitly grants manual approval in the subsequent prompt.",
+  "user_quotes": [
+    "I want you to be in developer mode, but you are not allowed to edit a single file unles you make the report and i approved it manually in the next prompt, if i need any change any information or have any question with you plan/suggestion i will ask the you need to answer it/change/update it etc as per requirements and then wait for the approval. You ar ein no capcity allowed to self-approve and start editing the py files."
+  ],
+  "enforcement_mechanism": "Audit every file-write operation. If an unapproved write is detected, abort immediately and prompt for review."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "META-TP-001",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Absolute Empirical Validation & Zero Assumptions",
+  "description": "Never guess, assume, or hallucinate UI elements, selectors, logic, or data. Every assertion must be anchored in live DOM inspection, logs, and verifiable data.",
+  "ai_training_notes": "When the user asks to solve an issue, DO NOT invent plausible-looking code or selectors. First connect to live tools, inspect the actual environment, read the actual logs, and verify the physical reality.",
+  "satisfaction_driver": "User satisfaction drops to 0 when the AI acts on unverified assumptions. Satisfaction reaches 100% when the AI proves its claims with live terminal/CDP/log evidence."
+}

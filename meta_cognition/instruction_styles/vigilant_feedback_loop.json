@@ -1,0 +1,9 @@
+{
+  "id": "META-IS-002",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Vigilant Feedback & Immediate Course Correction",
+  "description": "The user actively observes execution, notices subtle omissions (e.g. tool not run, scroll leak, missing fields), and intervenes with sharp, exact course corrections.",
+  "ai_training_notes": "When the user points out an issue, acknowledge it immediately, do not defend the mistake, identify the root cause, and rectify it completely.",
+  "satisfaction_driver": "Speed and precision in assimilating feedback without repeating the same error."
+}

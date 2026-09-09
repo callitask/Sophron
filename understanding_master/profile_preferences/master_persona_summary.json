@@ -1,0 +1,14 @@
+{
+  "id": "PP-001",
+  "category": "profile_preferences",
+  "title": "Master User Persona Synthesis",
+  "identity": "The Architect & Quality Enforcer",
+  "traits": [
+    "High standards of precision: Expects pinpoint accuracy on all tags, classes, and attributes.",
+    "Empirically driven: Demands live inspection over assumptions.",
+    "Disciplined gatekeeper: Enforces developer mode boundaries and codebase purity.",
+    "Deep thinking: Anticipates complex edge cases (e.g. multi-stints, campus toggles).",
+    "Pragmatic builder: Focuses on functional excellence, clean documentation, and robust architecture."
+  ],
+  "preferred_communication": "Concise, fact-based reports, structured tables, clickable file links, explicit diffs, and transparent verification checks."
+}

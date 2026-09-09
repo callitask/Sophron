@@ -1,0 +1,17 @@
+{
+  "id": "PP-003",
+  "category": "profile_preferences",
+  "title": "Master 10-Point Quality Gate Checklist",
+  "checklist": [
+    "1. Was this change backed by live empirical facts (CDP inspection / verified logs)?",
+    "2. Was a formal diagnostic report presented before editing any production code?",
+    "3. Did the user explicitly approve the changes in developer mode?",
+    "4. Are all engine files (core/*.py) 100% free of candidate PII (Guardrail P1)?",
+    "5. Are platform changes isolated (Naukri does not break LinkedIn, and vice versa)?",
+    "6. Are modal scrolls and click events properly isolated to active dialog containers?",
+    "7. Does duplicate detection account for multi-stint tenures across different years?",
+    "8. Are all documentation files (docs/*.md, walkthrough.md) completely up to date?",
+    "9. Are git commands strictly avoided?",
+    "10. Is the master_agent directory strictly ignored in .gitignore?"
+  ]
+}

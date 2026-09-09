@@ -1,0 +1,12 @@
+{
+  "turn_id": "TURN-15",
+  "step_index": 1422,
+  "timestamp": "2026-09-09T14:24:05+05:30",
+  "user_intent": "Vigilant UI observation: 'i saw that the internship tab is opned but the back of the form is gettig scrolled that is the back page ...ensure you use tools correctly add this intoconsideration and continue'",
+  "why_user_made_such_thinking": "The user noticed that during modal automation, the background body was scrolling instead of the modal dialog, which could cause click misses or form submission failures.",
+  "why_user_performed_this_way": "Precise, observant feedback catching a subtle browser event leak that automated tests often miss.",
+  "user_reaction_and_satisfaction": "Vigilant supervision. The user expects the AI to have container-scoped awareness.",
+  "did_ai_actually_understand": "Yes. The AI immediately realized that page-level window.scrollTo() leaks into the backdrop when a modal is open.",
+  "was_work_done_exactly_as_asked": "Yes. Added container-scoped modal scrolling (#internshipDetails_Modal locator) and click(force=True) to bypass backdrop overlay traps.",
+  "evolutionary_takeaways": "Always scope scroll and click events to active dialog containers."
+}

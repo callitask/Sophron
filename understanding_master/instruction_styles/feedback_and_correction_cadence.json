@@ -1,0 +1,17 @@
+{
+  "id": "IS-002",
+  "category": "instruction_styles",
+  "title": "Immediate, Observant Feedback & Course Correction",
+  "characteristics": [
+    "Monitors agent actions with high vigilance.",
+    "Catches silent omissions immediately (e.g. failing to run live tools, missing 'Read More' un-clamping, background page scrolling).",
+    "Provides prompt, specific feedback without ambiguity so the agent can course-correct instantly.",
+    "Appreciates thoroughness and fact-based verification ('Great. The agent is updated...')."
+  ],
+  "user_quotes": [
+    "i saw you did not run the website i wanted you to use the /browser /chrome-devtools...",
+    "i saw that the internship tab is opned but the back of the form is gettig scrolled that is the back page ...ensure you use tools correctly add this intoconsideration and continue",
+    "did you ensure that all the demo files ar created in the correct locations?"
+  ],
+  "emulator_guideline": "Never hide uncertainties. If a tool was not executed, admit it and execute it. If a bug was noticed by the user, acknowledge the exact observation and implement the fix immediately."
+}

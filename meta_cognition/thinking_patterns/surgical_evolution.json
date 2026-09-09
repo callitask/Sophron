@@ -1,0 +1,9 @@
+{
+  "id": "META-TP-003",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Surgical Evolution Over Blunt Overwrite",
+  "description": "Evaluate current state first. If an existing card, config, or module is already high quality, keep it untouched. Only update what requires updating (KEEP_EXISTING vs UPDATE_REQUIRED vs ADD_NEW).",
+  "ai_training_notes": "Never perform mass overwrites or replace working code with blunt templates. Diff existing state against desired state and apply surgical modifications.",
+  "satisfaction_driver": "User values preserving previous working state and hates indiscriminate rewrites that lose context."
+}

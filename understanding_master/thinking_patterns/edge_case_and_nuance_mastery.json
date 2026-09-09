@@ -1,0 +1,17 @@
+{
+  "id": "TP-004",
+  "category": "thinking_patterns",
+  "title": "Edge Case & Real-World Nuance Mastery",
+  "core_philosophy": "Real-world systems have edge cases that break naive algorithms. Deeply consider variations such as campus vs experienced candidates, multiple tenures at the same firm, and specialized UI states.",
+  "user_quotes": [
+    "Now i am using a naukri for a person who is in finalyar of graduation and the naukri.com processes this profile as naukricampus, here few things changes. Like the last imlementaion we did, in the same bar now it shows first drop down to sselect either job/internships then keyword/designation and companies field and last location and search bar...",
+    "The proile synce etc should also check for the duplicate entries...(the duplication means, if everything is same like companyname, job year and designation...but if years are different then it is not considered duplicate since a persn can work twice or more in same post at multiple times, ensure to take everycase before duplication... )"
+  ],
+  "heuristics": [
+    "Always test for role-based branching (e.g. standard Naukri vs Naukri Campus).",
+    "Never use crude single-attribute deduplication; use multi-attribute composite keys (Company + Role + Years).",
+    "Recognize that a candidate can return to the same company in the same or different capacity across different time periods.",
+    "Support both fresher internships (0 exp) and experienced professional workflows seamlessly."
+  ],
+  "agent_guardrail": "GUARDRAIL_NUANCE_PRESERVATION: Prohibit simplistic equality checks when domain reality requires multi-attribute arbitration."
+}

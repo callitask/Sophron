@@ -1,0 +1,12 @@
+{
+  "id": "GV-003",
+  "category": "goals_and_vision",
+  "title": "Master Agent Continuous Learning & Self-Fix Loop",
+  "description": "The Master Agent serves as a parallel cognitive observer. It parses user interactions, extracts emerging rules and preferences, and acts as an advisor to help the main agent self-fix.",
+  "loop_architecture": [
+    "Transcript Ingestion: Read transcript.jsonl after each turn.",
+    "Pattern Extraction: Extract user commands, corrections, and tool instructions.",
+    "Card Generation / Update: Store updated insights in understanding_master/.",
+    "Advisory Callback: When Job Agent encounters a dilemma, query Master Agent for 'What would the User do?'"
+  ]
+}

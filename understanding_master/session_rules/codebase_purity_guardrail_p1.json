@@ -1,0 +1,12 @@
+{
+  "id": "SR-002",
+  "category": "session_rules",
+  "title": "Guardrail P1: Zero Hardcoding & Codebase Purity",
+  "status": "ACTIVE_STRICT",
+  "rule_statement": "No candidate PII (name, email, phone, location, salary, candidate directory path) may ever be hardcoded into core/*.py or master_agent/core/*.py. The engine must remain 100% generic and candidate-agnostic.",
+  "user_quotes": [
+    "IN developer mode you are not allowed to change or personalised the py scripts to a particualr profile at any cost, and this should be a strict restriction always either when you are in developer mode or the agent is running in real time, the agent is not allowed to edit or ahrdocde any value from the profile fodler to any py script...",
+    "The AG brain should understand difference betweeen the py script which is the AI AGent we made and the profile files(profiles which are databased and userspecific and should never hardcode tem in py files)"
+  ],
+  "enforcement_mechanism": "Runtime AST scan and text scan across all engine files via verify_codebase_purity()."
+}

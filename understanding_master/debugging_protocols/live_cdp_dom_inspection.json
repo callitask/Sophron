@@ -1,0 +1,13 @@
+{
+  "id": "DP-001",
+  "category": "debugging_protocols",
+  "title": "Live CDP DOM Inspection & Hydration Protocol",
+  "procedure": [
+    "1. Connect to Chrome over CDP on port 9222.",
+    "2. Locate target page tab without hijacking user tabs.",
+    "3. Check for lazy-loaded containers: scroll container into viewport and wait 1500ms for DOM hydration.",
+    "4. Query child elements using pinpointed selectors.",
+    "5. Dump exact classes, attributes, text contents, and SVG icon statuses into a temporary audit artifact.",
+    "6. Verify against user screenshots before codifying into production logic."
+  ]
+}

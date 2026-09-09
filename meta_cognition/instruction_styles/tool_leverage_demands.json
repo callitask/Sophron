@@ -1,0 +1,9 @@
+{
+  "id": "META-IS-003",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Mandatory Tool Leveraging & Skill Orchestration",
+  "description": "The user expects the AI to actively use relevant tools (/browser, /chrome-devtools, CDP, test scripts) rather than generating purely speculative answers.",
+  "ai_training_notes": "Never skip tool execution when investigating dynamic pages or system state. Running tools is non-negotiable.",
+  "satisfaction_driver": "Empirical data returned from live tools."
+}

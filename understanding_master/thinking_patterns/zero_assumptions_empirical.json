@@ -1,0 +1,18 @@
+{
+  "id": "TP-001",
+  "category": "thinking_patterns",
+  "title": "Zero Assumptions & Empirical Fact-Based Validation",
+  "core_philosophy": "Never guess, assume, or hallucinate UI elements, selectors, or behaviors. All knowledge must be anchored in live DOM inspection, logs, and verifiable data.",
+  "user_quotes": [
+    "You will analyse the agent thouroghily, and you are not allowed to work on any assumptions, you need to check logs, you need to be 100% sure with facts when you make any report.",
+    "i saw you did not run the website i wanted you to use the /browser /chrome-devtools /flutter-setup-declarative-routing /debug-optimize-lcp /troubleshooting /a11y-debugging etc everything that you can to get the actual and real tags/fields etc for the task... ensure to do it and then make the report.",
+    "use /browser /chrome-devtools /flutter-setup-declarative-routing etc so that you can access it in real time not just dumb values from your database...we need to know exactly what is happening and pinpoint every field/tags/html elements naukri uses whether be dynmic or static tags etc"
+  ],
+  "heuristics": [
+    "Before writing any web automation selector, connect to the live CDP browser instance (port 9222) and query the DOM directly.",
+    "Never generate hypothetical CSS selectors or XPath expressions without empirical confirmation.",
+    "Inspect actual network payloads, WebSocket messages, and dynamic DOM mutations rather than relying on cached assumptions.",
+    "When a task fails, immediately inspect browser logs, DOM state, and screenshot artifacts to diagnose the root cause."
+  ],
+  "agent_guardrail": "GUARDRAIL_EMPIRICAL_VALIDATION: The agent must reject any proposal based on guesswork or unverified assumptions."
+}

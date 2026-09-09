@@ -1,0 +1,8 @@
+{
+  "id": "WS-RULE-001",
+  "tier": "TIER_2_WORKSPACE_SPECIFIC",
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "title": "Platform Isolation Contract: Naukri vs LinkedIn",
+  "rule": "Naukri automation scripts and LinkedIn automation scripts must remain strictly decoupled. Changes to Naukri DOM scrapers or solvers must never touch, break, or mutate LinkedIn handlers, and vice versa.",
+  "cross_workspace_leakage_prohibited": true
+}

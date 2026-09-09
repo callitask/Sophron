@@ -1,0 +1,12 @@
+{
+  "turn_id": "TURN-14",
+  "step_index": 1346,
+  "timestamp": "2026-09-09T14:19:59+05:30",
+  "user_intent": "Support Naukri Campus profiles (Job vs Internship toggle in 3-field search bar) and implement multi-attribute duplicate prevention (Company + Role + Years).",
+  "why_user_made_such_thinking": "The user realized that a graduating student profile is treated differently by Naukri (Naukri Campus). Furthermore, naive duplicate checkers erroneously flag multiple stints at the same company as duplicates. The user wanted real-world nuance codified.",
+  "why_user_performed_this_way": "The user provided a concrete real-world case: 'a person can work twice or more in same post at multiple times... ensure to take everycase before duplication'.",
+  "user_reaction_and_satisfaction": "Deep architectural thinking. Pushing the agent towards human-level judgment.",
+  "did_ai_actually_understand": "Yes. The AI realized that deduplication is not a simple string comparison, but an episodic tenure analysis.",
+  "was_work_done_exactly_as_asked": "Yes. Added is_naukri_campus(), adaptive header search with Job/Internship toggle, and is_duplicate_employment_or_internship() with 100% test pass rate.",
+  "evolutionary_takeaways": "Nuanced business rules must reflect human career patterns (e.g. internships turning into full-time roles, or returning to a prior company)."
+}

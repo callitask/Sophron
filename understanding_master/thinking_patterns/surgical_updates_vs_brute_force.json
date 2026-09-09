@@ -1,0 +1,17 @@
+{
+  "id": "TP-003",
+  "category": "thinking_patterns",
+  "title": "Surgical Updates Over Brute-Force Overwrites",
+  "core_philosophy": "Evaluate current state first. If an existing profile card, job description, or code section is already high quality, keep it untouched. Only update what requires updating.",
+  "user_quotes": [
+    "Currently, If that script is run, It everytime completely updates and copy pastes the data from config file, rather what i want is Step A- It analyses the profile first... Step B- It goes through the naukri profile and see what exactly is mentionned in the profile sometimes it is possible that the profile already has better description so the Agent brain should analyse what is in the profile what s in the config file and accordingly make new json card...",
+    "if it thinks any particular job alredy has the best description then it should not be updated but if it feel 2 job roles should be updated with the upadted adata then it should write new description for them... this ensures that agent only updates what is required not everythig"
+  ],
+  "heuristics": [
+    "Implement tri-state evaluation: KEEP_EXISTING, UPDATE_REQUIRED, ADD_NEW.",
+    "Never blindly overwrite working configuration or profile cards with generic data.",
+    "Perform differential analysis before executing any write or mutation operation.",
+    "Retain user custom edits and only apply targeted, surgical modifications."
+  ],
+  "agent_guardrail": "GUARDRAIL_SURGICAL_MUTATION: Reject mass-overwrite patterns in favor of granular, diff-driven updates."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "SR-003",
+  "category": "session_rules",
+  "title": "Platform Isolation Contract (Naukri vs LinkedIn)",
+  "status": "ACTIVE_STRICT",
+  "rule_statement": "Changes, fixes, or enhancements targeting Naukri must never touch, break, or mutate LinkedIn automation files, and vice versa. Each platform maintains isolated handlers, scrapers, and data models.",
+  "user_quotes": [
+    "The agent currently works for 2 websites naukr and linkedin, whenever user asks/demands to change/edit/upgrade any py script you have to ensure that the change for naukri should not affect the functioning of linkedin since scraping/answering of questions/form tags/htm tags/structure etx all the immp things of website are diff, and vis versa...."
+  ],
+  "enforcement_mechanism": "Strict file boundary checks separating Naukri scripts (02_*, naukri_*) from LinkedIn scripts (03_*, linkedin_*)."
+}

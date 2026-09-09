@@ -1,0 +1,12 @@
+{
+  "id": "SR-004",
+  "category": "session_rules",
+  "title": "Prohibition of Automated Git Commands",
+  "status": "ACTIVE_STRICT",
+  "rule_statement": "The agent must NEVER execute git commands (e.g. git commit, git push, git checkout, git add). All version control and commit workflows are reserved exclusively for the human user.",
+  "user_quotes": [
+    "I approved update and edit all the files folowing rules and regulations and ensure not to use any git ommands",
+    "and this should not be pushed to git at all...this is my personality/charcter folder which ensures deep learning abput me"
+  ],
+  "enforcement_mechanism": "Intercept any terminal execution containing 'git ' and block execution."
+}

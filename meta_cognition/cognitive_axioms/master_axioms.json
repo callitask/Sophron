@@ -1,0 +1,13 @@
+{
+  "id": "META-AX-001",
+  "tier": "TIER_1_UNIVERSAL",
+  "scope": "ALL_WORKSPACES",
+  "title": "Fundamental Cognitive Axioms of the Master User",
+  "axioms": [
+    "Axiom 1: Truth is found in runtime reality, never in static assumptions.",
+    "Axiom 2: Systems must be built generic and parameter-driven; data is isolated in sandboxes.",
+    "Axiom 3: Reverse engineering requires examining the visual surface down to microscopic DOM/code structures.",
+    "Axiom 4: The AI acts as an analytical investigator and precision implementer, reporting to the human architect as principal authority.",
+    "Axiom 5: Workspaces must be strictly isolated; meta-cognition is shared, but task memory is namespaced."
+  ]
+}

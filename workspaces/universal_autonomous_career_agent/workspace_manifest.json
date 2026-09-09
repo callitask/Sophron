@@ -1,0 +1,17 @@
+{
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "workspace_slug": "universal_autonomous_career_agent",
+  "local_root_uri": "file:///f:/JOB%20AI%20AGENT",
+  "project_name": "Universal Autonomous Career Agent",
+  "isolation_policy": "STRICT_CONTAINMENT",
+  "description": "Autonomous multi-platform job application and profile synchronization agent targeting Naukri and LinkedIn.",
+  "permitted_domain_tags": [
+    "naukri",
+    "naukricampus",
+    "linkedin",
+    "job_discovery",
+    "profile_sync",
+    "resume_tailoring",
+    "application_engine"
+  ]
+}
