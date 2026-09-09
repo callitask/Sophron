@@ -1,0 +1,8 @@
+﻿{
+  "insight_id": "architectural_active_learning_shift",
+  "timestamp": "2026-09-09T17:45:00+05:30",
+  "trigger": "User identified that background Python scripts parsing transcripts are fundamentally flawed ('dumb') because they lack context and nuance.",
+  "user_intent": "The user demands 'the best system' where the active AI (which holds the deep conversation context) takes responsibility for writing its own learnings to the brain, rather than relying on regex.",
+  "learned_rule": "Do not rely on background scripts to learn. The active AI must proactively use run_command to generate highly detailed JSON insight cards in Sophron/understanding_master/learned_insights/ whenever a new rule or pattern is identified.",
+  "future_application": "Every future AI in this environment must independently judge when a valuable lesson has occurred and autonomously write a new JSON card before finishing the task, ensuring continuous, high-fidelity cognitive evolution."
+}
