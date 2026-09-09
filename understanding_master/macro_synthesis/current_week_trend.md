@@ -10,3 +10,4 @@
 
 - 2026-09-09: Explicit zero C/C++ experience confirmed; C and C++ added to candidate negative keywords to suppress low-match embedded/systems roles.
 - [2026-09-09 23:49 IST] [insight_20260909_anshika_naukri_finance_audit_run]: User requested silent execution of career agent for anshika_garg (Naukri, finance/audit only, no CA/CS/Executive) with terminal-direct monitoring and token conservation.
+- [2026-09-10 01:11 IST] [insight_20260910_anshika_finance_anti_hallucination_real_roles]: Purged search memory; restricted search matrix to real Naukri portal roles for B.Com (Hons) + US CPA (Financial Analyst, Audit Associate, FP&A Analyst, Valuation Analyst, Research Analyst, Due Diligence Analyst) with absolute exclusion of BPO/voice/sales/CA articleship; synced Sophron cognitive OS.
