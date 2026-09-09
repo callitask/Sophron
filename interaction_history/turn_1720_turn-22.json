@@ -1,0 +1,12 @@
+{
+  "turn_id": "TURN-22",
+  "step_index": 1720,
+  "timestamp": "2026-09-09T21:27:00+05:30",
+  "user_intent": "1. Disqualify Chartered Accountant (CA) roles: candidate is B.Com scholar pursuing US CPA (AICPA), not ICAI CA. 2. Fix chatbot Save button bug: when all questions are answered and 'Thank you for response' appears, click Save to commit instead of refreshing/closing drawer. 3. Credit internship tenure (0.5 yrs) in screening questions. 4. Maintain clean search cycles (Audit, Finance Ops, Financial Analyst) without 'Fresher' suffix. 5. Initialize and parallelize Sophron cognitive reflection cards and learning apparatus.",
+  "why_user_made_such_thinking": "The user was live-monitoring CDP/terminal and observed the agent applying to Chartered Accountant vacancies (ineligible) and filling chatbot forms completely but dropping them on completion because the final Save button was not clicked, causing Naukri to refresh/close without registering the commit. Also noticed Sophron cognitive memory cards were not tracking recent turns.",
+  "why_user_performed_this_way": "Highly vigilant real-time quality enforcement. Pinpointed the exact mechanical failure points: CA title mismatch, chatbot completion Save trigger omission, and cognitive OS synchronization gap.",
+  "user_reaction_and_satisfaction": "Firm and demanding precision. Expects immediate root-cause fixes in candidate config, application engine, and cognitive memory persistence.",
+  "did_ai_actually_understand": "Yes. Implemented 5-layer remediation: (1) Added CA/Chartered Accountant to negative keywords and incompatible verticals; (2) Injected explicit Save/Submit button clicker upon completion cues in 05_apply_jobs.py; (3) Added page-level applied indicator verification; (4) Populated auto-learned truths with internship experience; (5) Synchronized Sophron transcript learner and reflection cards.",
+  "was_work_done_exactly_as_asked": "Fully executed across codebase and candidate config.",
+  "evolutionary_takeaways": "Naukri chatbot requires an explicit Save click after completion questions, otherwise the drawer unmounts without committing. CA roles must be hard-blacklisted for non-ICAI candidates."
+}

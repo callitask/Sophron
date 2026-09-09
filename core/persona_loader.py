@@ -33,7 +33,7 @@ class PersonaLoader:
 
         for json_file in self.cards_dir.rglob("*.json"):
             try:
-                with open(json_file, "r", encoding="utf-8") as f:
+                with open(json_file, "r", encoding="utf-8-sig") as f:
                     card_data = json.load(f)
                     card_id = card_data.get("id") or json_file.stem
                     cat = card_data.get("category") or json_file.parent.name

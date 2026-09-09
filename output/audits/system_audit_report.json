@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-09-09T15:43:10.854575",
+  "timestamp": "2026-09-09T21:32:00.403751",
   "tests_run": 9,
   "tests_passed": 9,
   "details": [
     {
       "test_name": "test_01_persona_loader_card_counts",
       "passed": true,
-      "notes": "Loaded 25 cards across 7 categories"
+      "notes": "Loaded 30 cards across 8 categories"
     },
     {
       "test_name": "test_02_transcript_learning_engine",
       "passed": true,
-      "notes": "Parsed 20 turns and saved session_test_verification.json"
+      "notes": "Parsed 10 turns and saved session_test_verification.json"
     },
     {
       "test_name": "test_03_decision_emulator_rejections",

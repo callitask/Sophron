@@ -20,10 +20,17 @@ MASTER_DIR = TEST_DIR.parent
 PROJECT_ROOT = MASTER_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from master_agent.core.persona_loader import PersonaLoader
-from master_agent.core.transcript_learner import TranscriptLearner
-from master_agent.core.decision_emulator import DecisionEmulator
-from master_agent.core.self_healing_advisor import SelfHealingAdvisor
+try:
+    from Sophron.core.persona_loader import PersonaLoader
+    from Sophron.core.transcript_learner import TranscriptLearner
+    from Sophron.core.decision_emulator import DecisionEmulator
+    from Sophron.core.self_healing_advisor import SelfHealingAdvisor
+except ImportError:
+    from persona_loader import PersonaLoader
+    from transcript_learner import TranscriptLearner
+    from decision_emulator import DecisionEmulator
+    from self_healing_advisor import SelfHealingAdvisor
+
 
 
 class TestMasterPersonaAgent(unittest.TestCase):
@@ -168,7 +175,10 @@ class TestMasterPersonaAgent(unittest.TestCase):
 
     def test_07_workspace_guard_isolation(self):
         """Verify WorkspaceGuard strictly blocks cross-workspace memory bleeding."""
-        from master_agent.core.workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
+        try:
+            from Sophron.core.workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
+        except ImportError:
+            from workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
         guard = WorkspaceGuard(current_workspace_uri="file:///f:/JOB%20AI%20AGENT")
 
         # Tier 1 global memory: Allowed
@@ -188,7 +198,10 @@ class TestMasterPersonaAgent(unittest.TestCase):
 
     def test_08_semantic_graph_memory(self):
         """Verify Semantic Graph Memory traversal and node relations."""
-        from master_agent.core.graph_memory_engine import GraphMemoryEngine
+        try:
+            from Sophron.core.graph_memory_engine import GraphMemoryEngine
+        except ImportError:
+            from graph_memory_engine import GraphMemoryEngine
         engine = GraphMemoryEngine()
         self.assertGreaterEqual(len(engine.nodes), 15)
         self.assertGreaterEqual(len(engine.edges), 10)
@@ -203,7 +216,10 @@ class TestMasterPersonaAgent(unittest.TestCase):
 
     def test_09_context_bridge_prompt_export(self):
         """Verify AntigravityContextBridge generates token-dense system prompt."""
-        from master_agent.core.antigravity_context_bridge import AntigravityContextBridge
+        try:
+            from Sophron.core.antigravity_context_bridge import AntigravityContextBridge
+        except ImportError:
+            from antigravity_context_bridge import AntigravityContextBridge
         bridge = AntigravityContextBridge(current_workspace_uri="file:///f:/JOB%20AI%20AGENT")
         prompt = bridge.compile_system_prompt_injection()
         self.assertIn("USER COGNITIVE OPERATING SYSTEM", prompt)

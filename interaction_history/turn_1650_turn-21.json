@@ -1,0 +1,12 @@
+{
+  "turn_id": "TURN-21",
+  "step_index": 1650,
+  "timestamp": "2026-09-09T21:10:00+05:30",
+  "user_intent": "Clarify that 0 years minimum experience means fresher / entry-level qualification; ensure jobs with 0-2 years criteria are recognized as primary match targets and not disqualified or misclassified.",
+  "why_user_made_such_thinking": "The user saw JLL Analyst - General Accounting (0-2 Yrs) saved to external apply and wanted to ensure the agent understands that '0 years' is the baseline requirement that the candidate already meets.",
+  "why_user_performed_this_way": "Direct feedback calibrating qualification logic: entry-level roles starting at 0 years are ideal matches and must be treated as fully eligible.",
+  "user_reaction_and_satisfaction": "Observant and corrective, ensuring the agent does not set artificial barriers on entry-level roles.",
+  "did_ai_actually_understand": "Yes. Confirmed that 0-2 years explicitly accommodates candidate's 0.5-year internship background.",
+  "was_work_done_exactly_as_asked": "External apply saved per pipeline design; eligibility matching confirmed for 0-year criteria.",
+  "evolutionary_takeaways": "0-year minimum criteria represents genuine entry-level roles; never gate out a role on experience if min_exp <= candidate experience."
+}

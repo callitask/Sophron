@@ -23,13 +23,23 @@ PROJECT_ROOT = MASTER_AGENT_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from master_agent.core.persona_loader import PersonaLoader
-from master_agent.core.transcript_learner import TranscriptLearner
-from master_agent.core.decision_emulator import DecisionEmulator
-from master_agent.core.self_healing_advisor import SelfHealingAdvisor
-from master_agent.core.graph_memory_engine import GraphMemoryEngine
-from master_agent.core.workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
-from master_agent.core.antigravity_context_bridge import AntigravityContextBridge
+try:
+    from Sophron.core.persona_loader import PersonaLoader
+    from Sophron.core.transcript_learner import TranscriptLearner
+    from Sophron.core.decision_emulator import DecisionEmulator
+    from Sophron.core.self_healing_advisor import SelfHealingAdvisor
+    from Sophron.core.graph_memory_engine import GraphMemoryEngine
+    from Sophron.core.workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
+    from Sophron.core.antigravity_context_bridge import AntigravityContextBridge
+except ImportError:
+    from persona_loader import PersonaLoader
+    from transcript_learner import TranscriptLearner
+    from decision_emulator import DecisionEmulator
+    from self_healing_advisor import SelfHealingAdvisor
+    from graph_memory_engine import GraphMemoryEngine
+    from workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
+    from antigravity_context_bridge import AntigravityContextBridge
+
 
 
 def main():

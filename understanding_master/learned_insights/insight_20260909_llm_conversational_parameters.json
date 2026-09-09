@@ -1,4 +1,4 @@
-﻿{
+{
   "insight_id": "llm_conversational_parameter_feeding",
   "temporal_anchor": {
     "timestamp": "2026-09-09T19:45:00+05:30",
@@ -15,8 +15,8 @@
   },
   "cognitive_evolution": {
     "previous_paradigm": "Updating a profile involved setting a single integer/float for both search filtering and chatbot answering.",
-    "new_paradigm": "There is a strict bifurcation: search fields (	arget_jobs.experience_years) can be rounded integers for platform margins, while conversational fields (uto_learned_truths, ts_answers) must be injected with nuanced, human-readable strings.",
+    "new_paradigm": "There is a strict bifurcation: search fields (target_jobs.experience_years) can be rounded integers for platform margins, while conversational fields (auto_learned_truths, ats_answers) must be injected with nuanced, human-readable strings.",
     "reason_for_shift": "To ensure the LLM chatbot negotiating with recruiters sounds intelligent, precise, and human, rather than robotic."
   },
-  "long_term_application": "When configuring profiles, always check if a numerical value needs to be rounded for the search algorithm vs. humanized for the LLM prompt. Inject nuanced phrases into uto_learned_truths so the LLM has superior conversational context."
+  "long_term_application": "When configuring profiles, always check if a numerical value needs to be rounded for the search algorithm vs. humanized for the LLM prompt. Inject nuanced phrases into auto_learned_truths so the LLM has superior conversational context."
 }
