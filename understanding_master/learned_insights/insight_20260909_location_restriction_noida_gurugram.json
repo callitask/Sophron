@@ -1,0 +1,22 @@
+﻿{
+  "insight_id": "location_restriction_noida_gurugram_only",
+  "temporal_anchor": {
+    "timestamp": "2026-09-09T22:00:00+05:30",
+    "task_context": "Autonomous Job Application Agent - mid-session live sweep, user restricts geography"
+  },
+  "psychological_state": {
+    "user_mood_and_tone": "Direct, Efficiency-focused, Geographically decisive",
+    "cognitive_phase": "Progressive (tightening system parameters for higher quality matches)",
+    "behavioral_observations": "User made a clean, no-debate decision to restrict to Noida and Gurugram. High confidence in geographic targeting, desire to reduce noise from Mumbai/Pune results."
+  },
+  "interaction_pairing": {
+    "ai_stimulus": "Agent was scanning Mumbai/multi-city results. Candidate Anshika Garg is Delhi-based.",
+    "user_reaction": "Direct: 'Look for job roles in Noida/Gurugram only and ensure you update the config file.'"
+  },
+  "cognitive_evolution": {
+    "previous_paradigm": "locations: ['Delhi', 'Gurugram', 'Noida', 'Mumbai', 'Pune', 'Bangalore'] - broad national sweep.",
+    "new_paradigm": "locations: ['Noida', 'Gurugram'] only. Applies immediately and permanently until user explicitly re-broadens.",
+    "reason_for_shift": "Mumbai/Pune jobs add irrelevant noise, require Mumbai-travel chatbot questions (answered 'No'), don't align with Anshika's commutable geography from Delhi."
+  },
+  "long_term_application": "Default scope for Anshika Garg = Noida + Gurugram. When chatbot asks 'willing to travel to [non-target city]?' always answer 'No' when city is outside active location list. Record any future re-broadening as a new insight card."
+}

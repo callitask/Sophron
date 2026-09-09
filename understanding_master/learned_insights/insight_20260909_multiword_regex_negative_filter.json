@@ -1,0 +1,22 @@
+﻿{
+  "insight_id": "multiword_regex_negative_filter_failure",
+  "temporal_anchor": {
+    "timestamp": "2026-09-09T22:06:00+05:30",
+    "task_context": "Autonomous Job Application Agent - live discovery sweep, detecting CA role false approvals"
+  },
+  "psychological_state": {
+    "user_mood_and_tone": "Directive, Systems-oriented, Frustrated at repeat false approvals",
+    "cognitive_phase": "Regressive (hunting old bugs - multi-word regex slipping through title filter)",
+    "behavioral_observations": "User noticed 'Chartered Accountant' roles being applied to despite being in negative_keywords list. High system-awareness, low tolerance for logical inconsistency."
+  },
+  "interaction_pairing": {
+    "ai_stimulus": "Agent applied to 'Chartered Accountant @ Acaipl Investment', 'Audit Associate @ Bansi S Mehta (CA firm)' - roles in negative_keywords that slipped through the title filter.",
+    "user_reaction": "User flagged CA roles being applied to in prior messages, pattern recurred requiring a code-level fix."
+  },
+  "cognitive_evolution": {
+    "previous_paradigm": "Title filter used re.search(rf'\\b{re.escape(neg_clean)}\\b', title_lower) for ALL negative keywords including multi-word phrases like 'Chartered Accountant'.",
+    "new_paradigm": "Multi-word negative keywords (containing a space) must use plain substring match (neg_clean in title_lower) instead of word-boundary regex. \\b anchors fail for phrases. Single-word keywords still use \\b for precision.",
+    "reason_for_shift": "Root cause: re.search(rf'\\bchartered accountant\\b'...) - trailing \\b after a space is invalid. Python silently runs but boundary matching is unreliable for multi-word phrases."
+  },
+  "long_term_application": "In ALL filter functions that iterate negative_keywords: bifurcate by ' ' in neg_clean - use 'in' substring check for phrases, \\b...\\b regex only for single tokens. Apply to both 04_job_discovery.py::is_title_allowed() AND ai_client.py::arbitrate_card_fit()."
+}
