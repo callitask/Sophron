@@ -5,3 +5,4 @@
 - [2026-09-09 22:06 IST] [insight_20260909_multiword_regex_negative_filter]: Multi-word negative keywords (e.g. 'Chartered Accountant') require substring match not word-boundary regex — \b fails for phrases with spaces; fixed in both is_title_allowed() and arbitrate_card_fit().
 - [2026-09-09 22:00 IST] [insight_20260909_location_restriction_noida_gurugram]: User explicitly restricted Anshika Garg's job search to Noida + Gurugram only; Mumbai/Pune scope removed; travel-to-non-target-city chatbot questions always answered 'No'.
 - [2026-09-09 22:34 IST] [insight_20260909_naukri_execution_init]: User initiated automated run for Udaysagar Kandpal with Bangalore priority, negative exclusion for Cognizant/Infosys, and token-saving minimal chat reporting mode.
+- [2026-09-09 22:39 IST] [insight_20260909_salary_threshold_update]: Set target salary floor to 25.0 LPA+ for disclosed salaries, while permitting applications for undisclosed salary listings.

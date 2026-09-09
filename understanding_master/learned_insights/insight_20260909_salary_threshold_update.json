@@ -1,0 +1,22 @@
+{
+  "insight_id": "insight_20260909_salary_threshold_update",
+  "temporal_anchor": {
+    "timestamp": "2026-09-09T22:39:10+05:30",
+    "task_context": "Configuring salary filter criteria for Udaysagar Kandpal"
+  },
+  "psychological_state": {
+    "user_mood_and_tone": "Direct, Decisive, Precise",
+    "cognitive_phase": "Parameter Calibration",
+    "behavioral_observations": "User refined qualification threshold: minimum 25 LPA+ for disclosed salaries, while allowing undisclosed salary jobs."
+  },
+  "interaction_pairing": {
+    "ai_stimulus": "Agent running continuous discovery and applications.",
+    "user_reaction": "User instruction: 'Search for the job roles 25LPA+ for this profile and if salary is not disclosed then you can apply'"
+  },
+  "cognitive_evolution": {
+    "previous_paradigm": "Target salary min was 29.0 LPA in candidate_config.",
+    "new_paradigm": "Target salary floor calibrated to 25.0 LPA; undisclosed salary listings are permitted to apply.",
+    "reason_for_shift": "Widen qualified high-value pipeline to include 25-28 LPA bracket while preserving candidate premium."
+  },
+  "long_term_application": "Ensure candidate_config.json target_salary_min_lpa is set to 25.0 and any undisclosed salary postings continue to be evaluated on skills/fit."
+}
