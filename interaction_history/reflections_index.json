@@ -1,5 +1,5 @@
 {
-  "total_reflections": 11,
+  "total_reflections": 12,
   "analyzed_turns": [
     "TURN-01",
     "TURN-08",
@@ -11,7 +11,8 @@
     "TURN-20",
     "TURN-21",
     "TURN-22",
-    "TURN-23"
+    "TURN-23",
+    "TURN-24"
   ],
   "reflection_schema": [
     "user_intent",

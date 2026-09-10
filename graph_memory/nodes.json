@@ -1,5 +1,5 @@
 {
-  "total_nodes": 27,
+  "total_nodes": 29,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -191,6 +191,27 @@
       "applications": ["PwC - Internal Audit Associate (CHATBOT)", "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"],
       "corrections": ["anti-loop mandate", "token conservation", "Sophron auto-update breach remediation", "profile domain filter finalization"],
       "timestamp": "2026-09-10T12:19:00+05:30"
+    },
+    {
+      "id": "node_parallel_agent_isolation",
+      "type": "SystemArchitecturePrinciple",
+      "tier": 2,
+      "name": "Parallel Multi-Agent Chrome Isolation",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Two agents can run simultaneously for two profiles without crossover. Isolation requires: (1) unique --user-data-dir per Chrome instance, (2) unique --remote-debugging-port, (3) unique cdp_url in candidate_config.json. Port registry: 9222=anshika_garg, 9223=udaysagar_kandpal. Each profile's IPC file is namespaced to profiles/<name>/output/pending_question.json.",
+      "port_registry": {
+        "9222": "anshika_garg",
+        "9223": "udaysagar_kandpal"
+      }
+    },
+    {
+      "id": "event_turn_24",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-24",
+      "name": "Parallel Agent Architecture — User Thought Process Captured",
+      "insight": "User reasoned like a systems architect: isolate at OS/browser boundary first, then config, then code. Recognized port/user-data-dir duality before asking implementation.",
+      "config_change": "udaysagar_kandpal cdp_url updated to http://127.0.0.1:9223",
+      "timestamp": "2026-09-10T13:32:00+05:30"
     }
   ]
 }

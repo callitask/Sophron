@@ -1,5 +1,5 @@
 {
-  "total_edges": 22,
+  "total_edges": 24,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -110,6 +110,16 @@
       "source": "node_ipc_architecture",
       "target": "event_turn_23",
       "relation": "EXERCISED_IN"
+    },
+    {
+      "source": "node_parallel_agent_isolation",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "event_turn_24",
+      "target": "node_parallel_agent_isolation",
+      "relation": "FORMALIZES_POLICY"
     }
   ]
 }
