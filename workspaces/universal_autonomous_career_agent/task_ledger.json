@@ -51,6 +51,19 @@
       "blocked_domains": ["CA Articleship", "Customer Service", "Warehouse", "Retail Banking", "Legal"],
       "last_run_status": "AGENT_STOPPED",
       "last_ipc_resolution": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "profile": "udaysagar_kandpal",
+      "salary_target_lpa": 38.0,
+      "salary_bracket": "25to60",
+      "city": ["Bangalore, Karnataka"],
+      "allowed_domains": ["Java Architecture", "Technical Leadership", "Microservices", "High-Performance Distributed Systems", "Enterprise Integration"],
+      "blocked_domains": ["Python-only", "C++", "Frontend/UI", "Fresher", "Sales", "BPO"],
+      "blocked_companies": ["Cognizant", "Infosys", "TCS", "EdgeVerve"],
+      "cdp_port": 9223,
+      "user_data_dir": "C:\\chrome-dev-session-2",
+      "last_run_status": "STARTING_DAEMON",
+      "last_ipc_resolution": "2026-09-10T23:25:00+05:30"
     }
   ]
 }
