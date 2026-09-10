@@ -1,0 +1,105 @@
+{
+  "turn_id": "TURN-23",
+  "session_id": "44b9020f-199f-43bf-ae64-f76fc9652b1b",
+  "timestamp": "2026-09-10T12:18:00+05:30",
+  "profile": "anshika_garg",
+  "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+
+  "session_summary": {
+    "total_ipc_rounds_resolved": 25,
+    "applications_committed": [
+      {
+        "company": "PwC",
+        "role": "Internal Audit Associate",
+        "method": "APPLIED_CHATBOT",
+        "status": "COMMITTED"
+      },
+      {
+        "company": "Merit Data And Technology",
+        "role": "Research Analyst (UK Shift)",
+        "method": "APPLIED_1CLICK",
+        "status": "COMMITTED"
+      }
+    ],
+    "ipc_tasks_handled": [
+      "STARVATION_EXPANSION",
+      "RESUME_TAILORING"
+    ]
+  },
+
+  "user_intent": "Run the continuous career agent for profile anshika_garg targeting finance/audit roles at 8 LPA. Resolve IPC starvation prompts rapidly without token waste. Maintain Sophron cognitive memory in sync with all agent interactions.",
+
+  "why_user_made_such_thinking": "The user understands the IPC-driven architecture deeply and knows that the agent stalls if STARVATION_EXPANSION is not resolved within the 75-second window. They pushed for precision: only ATS-visible designations that Naukri actually surfaces, not hallucinated or generic titles. User is budget-conscious (salary: 8 LPA) and profile-conscious (B.Com Hons, US CPA pursuing, no CA articleship).",
+
+  "why_user_performed_this_way": "User showed frustration at repeated loop behavior (engine spinning on exhausted designations). Directed anti-loop mandate: if a designation yields zero results, move immediately to the next. Also frustrated that Sophron cognitive memory was NOT being auto-updated across sessions — this is the core failure this session corrects.",
+
+  "user_reaction_and_satisfaction": "Mixed. Applications did commit (PwC, Merit Data). IPC cycles were resolved with targeted designations. However, user was explicitly dissatisfied that Sophron memory had zero updates despite multiple sessions of interaction. User manually triggered this update in request #10.",
+
+  "did_ai_actually_understand": "Partially. The IPC architecture and starvation resolution were handled correctly. The Sophron auto-update failure was NOT handled proactively — the agent reacted only when user explicitly complained. This is a gap: per the cognitive OS, Sophron must be updated after every significant interaction, not just when user reminds.",
+
+  "was_work_done_exactly_as_asked": "IPC: Yes. Applications: Yes (2 committed). Config edits: Yes (30+ designations injected). Sophron update: NO — this turn is the correction.",
+
+  "evolutionary_takeaways": [
+    "Anti-loop mandate: When a Naukri search keyword returns 0 results in 2+ consecutive cycles, it must be retired from active search and logged to processed_ledger. Never loop on exhausted terms.",
+    "Token conservation: Only output when IPC prompt appears, critical error occurs, or user explicitly asks. Suppress all step-by-step logging from chat.",
+    "Sophron must be written after every session automatically — not when user reminds. The OS mandates this.",
+    "Profile filter for anshika_garg: NEVER suggest CA articleship, customer service, warehouse, retail banking, legal domain, or executive-level roles. Strictly Finance/Audit/Assurance/Valuation/Research/Due Diligence.",
+    "8 LPA salary bracket is non-negotiable for this profile run.",
+    "Starvation expansion keywords that yielded results: Analyst Valuation Services, Analyst Financial Due Diligence, Associate US Assurance, Audit SASS Associate, Equity Research Associate, Finance Operations Analyst, Deals Advisory Analyst.",
+    "Starvation keywords that were exhausted with zero yield: RR Legal Partners domain, ANB Legal domain, CA articleship firms (Ravi Bindra, Arora Prem), AU Small Finance Bank branch roles, Yashjyoti Debtconsultancy warehouse."
+  ],
+
+  "user_corrections_this_session": [
+    "Do not loop on exhausted designations — move to next immediately",
+    "Do not output every step — minimal token usage",
+    "Do not look for CA articleship or customer service or executive jobs for this profile",
+    "Sophron was not auto-updating — manually triggering this correction",
+    "Salary target: 8 LPA",
+    "Profile: Finance, Audit, Assurance, Valuation, Deals, BFSI Research only"
+  ],
+
+  "ipc_resolution_designations_injected": [
+    "Analyst, Valuation Services",
+    "Analyst - Financial Due Diligence",
+    "Associate - US Assurance",
+    "Audit - SASS - Associate",
+    "Controls Internal Audit BP Associate",
+    "IT Audit- Associate",
+    "Associate - Global Assurance",
+    "Audit Analyst",
+    "Financial Accounting Advisory Associate",
+    "Associate - Forensic Audit",
+    "Business Risk Analyst",
+    "Financial Reporting Analyst",
+    "Analyst - Accounting Advisory",
+    "Valuations Analyst",
+    "Associate - Valuation Advisory",
+    "Global Delivery Associate - Audit",
+    "Statutory Audit Associate",
+    "Associate - Statutory Audit",
+    "Analyst - Financial Research",
+    "Analyst - Credit & Risk",
+    "Research Analyst - BFSI",
+    "Equity Research Associate",
+    "Finance Operations Analyst",
+    "Associate - Financial Planning",
+    "Treasury Operations Associate",
+    "Deals Advisory Analyst",
+    "Risk & Quantitative Analyst",
+    "Junior Deals Analyst",
+    "Valuation & Analytics Associate",
+    "Junior Investment Banking Analyst"
+  ],
+
+  "firms_filtered_out": [
+    "RR Legal Partners",
+    "ANB Legal",
+    "Ravi Bindra & Associates",
+    "Arora Prem & Associates",
+    "Next Business Services India",
+    "AU Small Finance Bank",
+    "Yashjyoti Debtconsultancy",
+    "HBR (KYC/AML ops only)",
+    "Deloitte US-India (B.Tech+MBA gate)"
+  ]
+}

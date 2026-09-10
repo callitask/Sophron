@@ -1,5 +1,6 @@
 {
   "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+  "last_updated": "2026-09-10T12:20:00+05:30",
   "completed_milestones": [
     {
       "milestone": "Dynamic Startup & Guardrail P1 Codebase Purity Enforcer",
@@ -20,6 +21,36 @@
     {
       "milestone": "Candidate Onboarding Templates & default_user Blueprint",
       "status": "VERIFIED"
+    },
+    {
+      "milestone": "IPC Cognitive Architecture (pending_question.json) — STARVATION_EXPANSION & RESUME_TAILORING Flows",
+      "status": "VERIFIED",
+      "notes": "25+ IPC rounds resolved this session. 75s timeout, 10s heartbeat pattern understood and operational."
+    },
+    {
+      "milestone": "Anshika Garg Profile Run — Finance/Audit/Assurance 8LPA Target",
+      "status": "IN_PROGRESS",
+      "applications_committed": [
+        "PwC - Internal Audit Associate (APPLIED_CHATBOT)",
+        "Merit Data And Technology - Research Analyst UK Shift (APPLIED_1CLICK)"
+      ],
+      "session": "2026-09-10"
+    },
+    {
+      "milestone": "Sophron Cognitive Memory Sync — TURN-23 Backfill",
+      "status": "VERIFIED",
+      "notes": "Session-23 memory written to turn_0001_turn-23.json. nodes.json +6 nodes, edges.json +8 edges, reflections_index.json updated to 11 turns."
+    }
+  ],
+  "active_candidate_sessions": [
+    {
+      "profile": "anshika_garg",
+      "salary_target_lpa": 8,
+      "city": ["Bengaluru, Karnataka", "Delhi NCR"],
+      "allowed_domains": ["Finance", "Audit", "Assurance", "Valuation", "Deals", "Due Diligence", "BFSI Research"],
+      "blocked_domains": ["CA Articleship", "Customer Service", "Warehouse", "Retail Banking", "Legal"],
+      "last_run_status": "AGENT_STOPPED",
+      "last_ipc_resolution": "2026-09-10T12:00:00+05:30"
     }
   ]
 }

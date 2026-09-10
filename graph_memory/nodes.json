@@ -1,5 +1,5 @@
 {
-  "total_nodes": 21,
+  "total_nodes": 27,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -58,6 +58,14 @@
       "category": "session_rule"
     },
     {
+      "id": "node_sophron_auto_update",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Sophron Auto-Update After Every Session",
+      "category": "session_rule",
+      "description": "Sophron memory MUST be written at the end of every significant agent session, not only when user reminds. Failure to auto-update is a critical OS breach."
+    },
+    {
       "id": "ws_career_agent",
       "type": "WorkspaceScope",
       "tier": 2,
@@ -91,6 +99,41 @@
       "tier": 2,
       "name": "Naukri Campus Job/Internship Toggle",
       "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_anti_loop_mandate",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Anti-Loop Designation Exhaustion Rule",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "If a Naukri search designation returns 0 results across 2+ consecutive cycles, retire it from active search, log it to processed_ledger, and advance to the next designation immediately. Never repeat a dead keyword."
+    },
+    {
+      "id": "node_token_conservation",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Token Conservation — Silent Execution",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Only output to chat when: IPC prompt appears, critical error occurs, or user explicitly requests output. Suppress all intermediate step logs."
+    },
+    {
+      "id": "node_profile_filter_anshika",
+      "type": "CandidateRule",
+      "tier": 2,
+      "name": "Anshika Garg Profile Filters",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "allowed_domains": ["Finance", "Audit", "Assurance", "Valuation", "Deals", "Due Diligence", "BFSI Research", "Financial Advisory"],
+      "blocked_domains": ["CA Articleship", "Customer Service", "Warehouse", "Retail Banking", "Legal", "Executive Level"],
+      "salary_target_lpa": 8,
+      "city_preference": ["Bengaluru, Karnataka", "Delhi NCR"]
+    },
+    {
+      "id": "node_ipc_architecture",
+      "type": "SystemKnowledge",
+      "tier": 2,
+      "name": "IPC Cognitive Architecture (pending_question.json)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Two IPC task types: STARVATION_EXPANSION (expects JSON array of 6-10 designations), RESUME_TAILORING (expects tailored_summary + prioritized_skills JSON). 75-second timeout, 10-second heartbeat. Responses must land within window."
     },
     {
       "id": "event_turn_01",
@@ -139,6 +182,15 @@
       "type": "CognitiveReflection",
       "turn_id": "TURN-20",
       "name": "Distributed Git & Graph Memory"
+    },
+    {
+      "id": "event_turn_23",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-23",
+      "name": "Session-23 IPC Cycles, Applications, Sophron Sync Correction",
+      "applications": ["PwC - Internal Audit Associate (CHATBOT)", "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"],
+      "corrections": ["anti-loop mandate", "token conservation", "Sophron auto-update breach remediation", "profile domain filter finalization"],
+      "timestamp": "2026-09-10T12:19:00+05:30"
     }
   ]
 }

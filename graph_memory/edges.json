@@ -1,5 +1,5 @@
 {
-  "total_edges": 14,
+  "total_edges": 22,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -70,6 +70,46 @@
       "source": "event_turn_20",
       "target": "node_workspace_isolation",
       "relation": "FORMALIZES_POLICY"
+    },
+    {
+      "source": "node_sophron_auto_update",
+      "target": "event_turn_23",
+      "relation": "VIOLATION_CORRECTED_IN"
+    },
+    {
+      "source": "node_anti_loop_mandate",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_anti_loop_mandate",
+      "target": "event_turn_23",
+      "relation": "MANDATED_IN"
+    },
+    {
+      "source": "node_token_conservation",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_profile_filter_anshika",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_ipc_architecture",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "event_turn_23",
+      "target": "node_profile_filter_anshika",
+      "relation": "ENFORCES"
+    },
+    {
+      "source": "node_ipc_architecture",
+      "target": "event_turn_23",
+      "relation": "EXERCISED_IN"
     }
   ]
 }
