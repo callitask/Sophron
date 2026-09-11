@@ -2,26 +2,22 @@
   "id": "INSIGHT-test_verification",
   "category": "learned_insights",
   "title": "Learned Insights from Session test_verification",
-  "generated_at": "2026-09-09T21:32:00.422163",
+  "generated_at": "2026-09-11T19:36:46.609746",
   "analysis": {
-    "total_user_prompts": 10,
-    "tool_dispatch_frequency": {
-      "/browser": 2,
-      "/chrome-devtools": 2,
-      "/a11y-debugging": 2,
-      "/debug-optimize-lcp": 2,
-      "/troubleshooting": 2
-    },
+    "total_user_prompts": 6,
+    "tool_dispatch_frequency": {},
     "sample_constraints": [
-      "[Step 0] Keyword 'rule': <USER_REQUEST> All rules and env is loaded:\r Ensure you do not not edit any script on your own, \r you can't read or write outside directory: F:\\JOB AI...",
-      "[Step 203] Keyword 'rule': <USER_REQUEST>  [CARD] Associate Product Manager @ jobaaj [Exp: 0-1 Yrs | Loc: Gurugram, Bengaluru, Pune | Sal: 3-6 Lacs PA | Posted: 6 days ago]   We...",
-      "[Step 726] Keyword 'rule': <USER_REQUEST> continue searching for jobs, ensure you search good designations, audit jobs, financeoperations jobs, finance analyst, audit analyst, a..."
+      "[Step 0] Keyword 'rule': <USER_REQUEST> 1. Access `F:\\JOB AI AGENT\\.agents\\rules\\00_user_cognitive_os.md`. Read it fully, set up cognitive environment, maintain Sophron logs/l...",
+      "[Step 218] Keyword 'ensure not to': <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.m...",
+      "[Step 218] Keyword 'rule': <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.m...",
+      "[Step 277] Keyword 'rule': <USER_REQUEST> I want you to access the F:\\JOB AI AGENT\\.agents\\rules, there are instructions related to Sophron, I saw you did not implement it, It w..."
     ],
     "sample_corrections": [
-      "[Step 30] <USER_REQUEST> Search for designation related to my experience and profile update the candidate config file accordingly and then look for matches...  2. in sear...",
-      "[Step 203] <USER_REQUEST>  [CARD] Associate Product Manager @ jobaaj [Exp: 0-1 Yrs | Loc: Gurugram, Bengaluru, Pune | Sal: 3-6 Lacs PA | Posted: 6 days ago]   We planned t...",
-      "[Step 726] <USER_REQUEST> continue searching for jobs, ensure you search good designations, audit jobs, financeoperations jobs, finance analyst, audit analyst, audit assoc..."
+      "[Step 0] <USER_REQUEST> 1. Access `F:\\JOB AI AGENT\\.agents\\rules\\00_user_cognitive_os.md`. Read it fully, set up cognitive environment, maintain Sophron logs/ledgers thr...",
+      "[Step 66] <USER_REQUEST> what is the best way that i can convert it to pdf? I use this agent to auto tailor resume and it only converts the md to pdf before uplaoding to ...",
+      "[Step 218] <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.md files fo...",
+      "[Step 277] <USER_REQUEST> I want you to access the F:\\JOB AI AGENT\\.agents\\rules, there are instructions related to Sophron, I saw you did not implement it, It was suppose..."
     ],
-    "analysis_timestamp": "2026-09-09T21:32:00.422142"
+    "analysis_timestamp": "2026-09-11T19:36:46.609726"
   }
 }

@@ -2,33 +2,22 @@
   "id": "INSIGHT-current_session",
   "category": "learned_insights",
   "title": "Learned Insights from Session current_session",
-  "generated_at": "2026-09-09T15:47:24.076701",
+  "generated_at": "2026-09-11T19:35:53.488113",
   "analysis": {
-    "total_user_prompts": 21,
-    "tool_dispatch_frequency": {
-      "/browser": 14,
-      "/chrome-devtools": 12,
-      "/flutter-setup-declarative-routing": 8,
-      "/debug-optimize-lcp": 4,
-      "/troubleshooting": 4,
-      "/a11y-debugging": 2,
-      "/goal": 3,
-      "/grill-me": 2
-    },
+    "total_user_prompts": 6,
+    "tool_dispatch_frequency": {},
     "sample_constraints": [
-      "[Step 0] Keyword 'not allowed': <USER_REQUEST> All env variables are loaded. \r I want you to be in developer mode, but you are not allowed to edit a single file unles you make the re...",
-      "[Step 0] Keyword 'developer mode': <USER_REQUEST> All env variables are loaded. \r I want you to be in developer mode, but you are not allowed to edit a single file unles you make the re...",
-      "[Step 0] Keyword 'restriction': <USER_REQUEST> All env variables are loaded. \r I want you to be in developer mode, but you are not allowed to edit a single file unles you make the re...",
-      "[Step 283] Keyword 'purity': <USER_REQUEST> 1. Dynamic Startup & Guardrail P1 (Codebase Purity Enforcer):\r \r Implemented \r verify_codebase_purity()\r  in \r ProfileContext\r , which ...",
-      "[Step 539] Keyword 'ensure not to': <USER_REQUEST> I approved update and edit all the files folowing rules and regulations and ensure not to use any git ommands </USER_REQUEST> <ADDITION..."
+      "[Step 0] Keyword 'rule': <USER_REQUEST> 1. Access `F:\\JOB AI AGENT\\.agents\\rules\\00_user_cognitive_os.md`. Read it fully, set up cognitive environment, maintain Sophron logs/l...",
+      "[Step 218] Keyword 'ensure not to': <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.m...",
+      "[Step 218] Keyword 'rule': <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.m...",
+      "[Step 277] Keyword 'rule': <USER_REQUEST> I want you to access the F:\\JOB AI AGENT\\.agents\\rules, there are instructions related to Sophron, I saw you did not implement it, It w..."
     ],
     "sample_corrections": [
-      "[Step 283] <USER_REQUEST> 1. Dynamic Startup & Guardrail P1 (Codebase Purity Enforcer):\r \r Implemented \r verify_codebase_purity()\r  in \r ProfileContext\r , which automatica...",
-      "[Step 479] <USER_REQUEST> I want you to fix all taht but also i want you to use all the tool again to find anything which can be usefull like filters/open the edit form fo...",
-      "[Step 876] <USER_REQUEST> i saw you did not run the website i wanted you to use the /browser /chrome-devtools /flutter-setup-declarative-routing /debug-optimize-lcp /troub...",
-      "[Step 1422] <USER_REQUEST> i saw that the internship tab is opned but the back of the form is gettig scrolled that is the back page ...ensure you use tools correctly add th...",
-      "[Step 1607] <USER_REQUEST> Great. The agent is updated, but you now know how you started, the prompts i gave you from the begining and the instructions i gave you, the inst..."
+      "[Step 0] <USER_REQUEST> 1. Access `F:\\JOB AI AGENT\\.agents\\rules\\00_user_cognitive_os.md`. Read it fully, set up cognitive environment, maintain Sophron logs/ledgers thr...",
+      "[Step 66] <USER_REQUEST> what is the best way that i can convert it to pdf? I use this agent to auto tailor resume and it only converts the md to pdf before uplaoding to ...",
+      "[Step 218] <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.md files fo...",
+      "[Step 277] <USER_REQUEST> I want you to access the F:\\JOB AI AGENT\\.agents\\rules, there are instructions related to Sophron, I saw you did not implement it, It was suppose..."
     ],
-    "analysis_timestamp": "2026-09-09T15:47:24.076633"
+    "analysis_timestamp": "2026-09-11T19:35:53.488066"
   }
 }
