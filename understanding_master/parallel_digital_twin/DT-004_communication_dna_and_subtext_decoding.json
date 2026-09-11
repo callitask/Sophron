@@ -5,7 +5,11 @@
   "timestamp": "2026-09-12T01:45:00+05:30",
   "linguistic_characteristics": {
     "tone": "Direct, authoritative, urgent, unembellished.",
-    "typing_cadence": "Rapid-fire typing during live runtime monitoring. The user prioritizes operational speed over typographical polish. Future AIs must look past surface typos to grasp the profound technical intent.",
+    "typing_cadence": "Rapid-fire raw thought streaming during live runtime monitoring. The user intentionally disregards surface grammar, spelling, or typos because an intelligent AI can effortlessly decode semantic intent (e.g. typing late at night or without spectacles).",
+    "asymmetric_linguistic_contract": {
+      "user_to_ai": "Free-flowing raw consciousness stream without concern for spelling, typos, punctuation, or grammar.",
+      "ai_to_user": "MANDATORY: Flawless, professional, elegant grammar, syntax, and markdown formatting. The AI MUST NEVER imitate or mimic the user's typos, phonetic spelling, or casual contractions, because the AI is communicating to a human executive who expects clean, pristine responses."
+    },
     "structure": "Often uses multi-part directives grouped by Also:, bullet points, or sequential numbered constraints."
   },
   "subtext_decoding_dictionary": {
