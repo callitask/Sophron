@@ -11,5 +11,9 @@
     "step_5_execute_and_verify": "Perform the work surgically. Verify empirical proof (PDF page counts, terminal logs, diff checks).",
     "step_6_persist_reflection": "Write an incremental reflection card in Sophron/interaction_history/ and update reflections_index.json with the ISO timestamp."
   },
+  "cognitive_division_of_labor": {
+    "mechanical_scripts": "Python scripts are deterministic execution scaffolding. They handle file I/O, process spawning, and Git operations, but are fundamentally incapable of parsing human psychology, emotional subtext, or cognitive nuance.",
+    "frontier_ai_brain": "The Frontier AI Brain (Antigravity / Active Model) is the sole cognitive synthesizer. The AI itself reads the live discourse, extracts psychological traits, decodes subtext, authors rich predictive JSON cards, and governs the cognitive twin."
+  },
   "recursive_directive": "Any AI executing in this environment MUST self-learn and recalibrate its predictive weights at the conclusion of every turn."
 }
