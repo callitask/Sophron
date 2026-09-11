@@ -2,22 +2,14 @@
   "id": "INSIGHT-current_session",
   "category": "learned_insights",
   "title": "Learned Insights from Session current_session",
-  "generated_at": "2026-09-11T19:35:53.488113",
+  "generated_at": "2026-09-11T20:17:36.105740",
   "analysis": {
-    "total_user_prompts": 6,
+    "total_user_prompts": 1,
     "tool_dispatch_frequency": {},
     "sample_constraints": [
-      "[Step 0] Keyword 'rule': <USER_REQUEST> 1. Access `F:\\JOB AI AGENT\\.agents\\rules\\00_user_cognitive_os.md`. Read it fully, set up cognitive environment, maintain Sophron logs/l...",
-      "[Step 218] Keyword 'ensure not to': <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.m...",
-      "[Step 218] Keyword 'rule': <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.m...",
-      "[Step 277] Keyword 'rule': <USER_REQUEST> I want you to access the F:\\JOB AI AGENT\\.agents\\rules, there are instructions related to Sophron, I saw you did not implement it, It w..."
+      "[Step 0] Keyword 'rule': <USER_REQUEST> 1. Access the F:\\JOB AI AGENT\\.agents\\rules  and access the file 00_user_cognitive_os.md. This file mentions how you have tounderstand ..."
     ],
-    "sample_corrections": [
-      "[Step 0] <USER_REQUEST> 1. Access `F:\\JOB AI AGENT\\.agents\\rules\\00_user_cognitive_os.md`. Read it fully, set up cognitive environment, maintain Sophron logs/ledgers thr...",
-      "[Step 66] <USER_REQUEST> what is the best way that i can convert it to pdf? I use this agent to auto tailor resume and it only converts the md to pdf before uplaoding to ...",
-      "[Step 218] <USER_REQUEST> I just want to fix the way how md to pdf happens as analysed by the agent. additonally we will goingforward always use the new resume.md files fo...",
-      "[Step 277] <USER_REQUEST> I want you to access the F:\\JOB AI AGENT\\.agents\\rules, there are instructions related to Sophron, I saw you did not implement it, It was suppose..."
-    ],
-    "analysis_timestamp": "2026-09-11T19:35:53.488066"
+    "sample_corrections": [],
+    "analysis_timestamp": "2026-09-11T20:17:36.105450"
   }
 }

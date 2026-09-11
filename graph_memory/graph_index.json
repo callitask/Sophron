@@ -1,624 +1,177 @@
 {
-  "total_indexed_nodes": 31,
+  "total_indexed_nodes": 33,
+  "total_indexed_edges": 29,
   "adjacency": {
-    "node_zero_assumptions": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "node_dev_mode_gatekeeping",
-          "relation": "MANDATES"
-        },
-        {
-          "target": "event_turn_09",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "data": {
-        "id": "node_zero_assumptions",
-        "type": "MetaPrinciple",
-        "tier": 1,
-        "name": "Zero Assumptions",
-        "category": "thinking_pattern"
+    "node_zero_assumptions": [
+      {
+        "target": "node_dev_mode_gatekeeping",
+        "relation": "MANDATES"
+      },
+      {
+        "target": "event_turn_09",
+        "relation": "EVIDENCED_BY"
       }
-    },
-    "node_reverse_engineering": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "event_turn_08",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "data": {
-        "id": "node_reverse_engineering",
-        "type": "MetaPrinciple",
-        "tier": 1,
-        "name": "Visual Reverse Engineering",
-        "category": "thinking_pattern"
+    ],
+    "node_reverse_engineering": [
+      {
+        "target": "event_turn_08",
+        "relation": "EVIDENCED_BY"
       }
-    },
-    "node_surgical_diff": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "event_turn_01",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "data": {
-        "id": "node_surgical_diff",
-        "type": "MetaPrinciple",
-        "tier": 1,
-        "name": "Surgical Updates Over Overwrite",
-        "category": "thinking_pattern"
+    ],
+    "node_surgical_diff": [
+      {
+        "target": "event_turn_01",
+        "relation": "EVIDENCED_BY"
       }
-    },
-    "node_edge_case_nuance": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "node_multi_stint_duplicate",
-          "relation": "INSTANTIATES"
-        },
-        {
-          "target": "event_turn_14",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "data": {
-        "id": "node_edge_case_nuance",
-        "type": "MetaPrinciple",
-        "tier": 1,
-        "name": "Edge Case & Nuance Mastery",
-        "category": "thinking_pattern"
+    ],
+    "node_edge_case_nuance": [
+      {
+        "target": "node_multi_stint_duplicate",
+        "relation": "INSTANTIATES"
+      },
+      {
+        "target": "event_turn_14",
+        "relation": "EVIDENCED_BY"
       }
-    },
-    "node_dev_mode_gatekeeping": {
-      "incoming": [
-        {
-          "source": "node_zero_assumptions",
-          "relation": "MANDATES"
-        }
-      ],
-      "outgoing": [
-        {
-          "target": "node_workspace_isolation",
-          "relation": "COUPLED_WITH"
-        }
-      ],
-      "data": {
-        "id": "node_dev_mode_gatekeeping",
-        "type": "UniversalRule",
-        "tier": 1,
-        "name": "Developer Mode Gatekeeping",
-        "category": "session_rule"
+    ],
+    "node_dev_mode_gatekeeping": [
+      {
+        "target": "node_workspace_isolation",
+        "relation": "COUPLED_WITH"
       }
-    },
-    "node_guardrail_p1_purity": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "node_workspace_isolation",
-          "relation": "ENFORCES_INDEPENDENCE"
-        }
-      ],
-      "data": {
-        "id": "node_guardrail_p1_purity",
-        "type": "UniversalRule",
-        "tier": 1,
-        "name": "Codebase Purity (P1)",
-        "category": "session_rule"
+    ],
+    "node_guardrail_p1_purity": [
+      {
+        "target": "node_workspace_isolation",
+        "relation": "ENFORCES_INDEPENDENCE"
       }
-    },
-    "node_git_prohibition": {
-      "incoming": [],
-      "outgoing": [],
-      "data": {
-        "id": "node_git_prohibition",
-        "type": "UniversalRule",
-        "tier": 1,
-        "name": "Git Command Prohibition",
-        "category": "session_rule"
+    ],
+    "node_git_prohibition": [],
+    "node_workspace_isolation": [],
+    "node_sophron_auto_update": [
+      {
+        "target": "event_turn_23",
+        "relation": "VIOLATION_CORRECTED_IN"
       }
-    },
-    "node_workspace_isolation": {
-      "incoming": [
-        {
-          "source": "node_dev_mode_gatekeeping",
-          "relation": "COUPLED_WITH"
-        },
-        {
-          "source": "node_guardrail_p1_purity",
-          "relation": "ENFORCES_INDEPENDENCE"
-        },
-        {
-          "source": "event_turn_20",
-          "relation": "FORMALIZES_POLICY"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "node_workspace_isolation",
-        "type": "UniversalRule",
-        "tier": 1,
-        "name": "Strict Workspace Isolation",
-        "category": "session_rule"
+    ],
+    "ws_career_agent": [],
+    "node_naukri_linkedin_isolation": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
       }
-    },
-    "node_sophron_auto_update": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "event_turn_23",
-          "relation": "VIOLATION_CORRECTED_IN"
-        }
-      ],
-      "data": {
-        "id": "node_sophron_auto_update",
-        "type": "UniversalRule",
-        "tier": 1,
-        "name": "Sophron Auto-Update After Every Session",
-        "category": "session_rule",
-        "description": "Sophron memory MUST be written at the end of every significant agent session, not only when user reminds. Failure to auto-update is a critical OS breach."
+    ],
+    "node_modal_scroll_isolation": [
+      {
+        "target": "event_turn_15",
+        "relation": "RESOLVES_ISSUE_IN"
+      },
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
       }
-    },
-    "ws_career_agent": {
-      "incoming": [
-        {
-          "source": "node_naukri_linkedin_isolation",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_modal_scroll_isolation",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_multi_stint_duplicate",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_campus_internship_toggle",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_anti_loop_mandate",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_token_conservation",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_profile_filter_anshika",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_ipc_architecture",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_parallel_agent_isolation",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "source": "node_ats_single_column_invariant",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "ws_career_agent",
-        "type": "WorkspaceScope",
-        "tier": 2,
-        "name": "Universal Autonomous Career Agent",
-        "uri": "file:///f:/JOB%20AI%20AGENT"
+    ],
+    "node_multi_stint_duplicate": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
       }
-    },
-    "node_naukri_linkedin_isolation": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "data": {
-        "id": "node_naukri_linkedin_isolation",
-        "type": "DomainRule",
-        "tier": 2,
-        "name": "Platform Isolation (Naukri vs LinkedIn)",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    ],
+    "node_campus_internship_toggle": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
       }
-    },
-    "node_modal_scroll_isolation": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "event_turn_15",
-          "relation": "RESOLVES_ISSUE_IN"
-        },
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "data": {
-        "id": "node_modal_scroll_isolation",
-        "type": "DomainRule",
-        "tier": 2,
-        "name": "Container-Isolated Modal Scrolling",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    ],
+    "node_anti_loop_mandate": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
+      },
+      {
+        "target": "event_turn_23",
+        "relation": "MANDATED_IN"
       }
-    },
-    "node_multi_stint_duplicate": {
-      "incoming": [
-        {
-          "source": "node_edge_case_nuance",
-          "relation": "INSTANTIATES"
-        }
-      ],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "data": {
-        "id": "node_multi_stint_duplicate",
-        "type": "DomainRule",
-        "tier": 2,
-        "name": "Multi-Attribute Duplicate Checking (C16)",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    ],
+    "node_token_conservation": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
       }
-    },
-    "node_campus_internship_toggle": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "data": {
-        "id": "node_campus_internship_toggle",
-        "type": "DomainFeature",
-        "tier": 2,
-        "name": "Naukri Campus Job/Internship Toggle",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    ],
+    "node_profile_filter_anshika": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
       }
-    },
-    "node_anti_loop_mandate": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "target": "event_turn_23",
-          "relation": "MANDATED_IN"
-        }
-      ],
-      "data": {
-        "id": "node_anti_loop_mandate",
-        "type": "DomainRule",
-        "tier": 2,
-        "name": "Anti-Loop Designation Exhaustion Rule",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-        "description": "If a Naukri search designation returns 0 results across 2+ consecutive cycles, retire it from active search, log it to processed_ledger, and advance to the next designation immediately. Never repeat a dead keyword."
+    ],
+    "node_ipc_architecture": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
+      },
+      {
+        "target": "event_turn_23",
+        "relation": "EXERCISED_IN"
       }
-    },
-    "node_token_conservation": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "data": {
-        "id": "node_token_conservation",
-        "type": "DomainRule",
-        "tier": 2,
-        "name": "Token Conservation \u2014 Silent Execution",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-        "description": "Only output to chat when: IPC prompt appears, critical error occurs, or user explicitly requests output. Suppress all intermediate step logs."
+    ],
+    "event_turn_01": [],
+    "event_turn_08": [],
+    "event_turn_09": [],
+    "event_turn_14": [],
+    "event_turn_15": [],
+    "event_turn_16": [],
+    "event_turn_19": [],
+    "event_turn_20": [
+      {
+        "target": "node_workspace_isolation",
+        "relation": "FORMALIZES_POLICY"
       }
-    },
-    "node_profile_filter_anshika": {
-      "incoming": [
-        {
-          "source": "event_turn_23",
-          "relation": "ENFORCES"
-        }
-      ],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "data": {
-        "id": "node_profile_filter_anshika",
-        "type": "CandidateRule",
-        "tier": 2,
-        "name": "Anshika Garg Profile Filters",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-        "allowed_domains": [
-          "Finance",
-          "Audit",
-          "Assurance",
-          "Valuation",
-          "Deals",
-          "Due Diligence",
-          "BFSI Research",
-          "Financial Advisory"
-        ],
-        "blocked_domains": [
-          "CA Articleship",
-          "Customer Service",
-          "Warehouse",
-          "Retail Banking",
-          "Legal",
-          "Executive Level"
-        ],
-        "salary_target_lpa": 8,
-        "city_preference": [
-          "Bengaluru, Karnataka",
-          "Delhi NCR"
-        ]
+    ],
+    "event_turn_23": [
+      {
+        "target": "node_profile_filter_anshika",
+        "relation": "ENFORCES"
       }
-    },
-    "node_ipc_architecture": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "target": "event_turn_23",
-          "relation": "EXERCISED_IN"
-        }
-      ],
-      "data": {
-        "id": "node_ipc_architecture",
-        "type": "SystemKnowledge",
-        "tier": 2,
-        "name": "IPC Cognitive Architecture (pending_question.json)",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-        "description": "Two IPC task types: STARVATION_EXPANSION (expects JSON array of 6-10 designations), RESUME_TAILORING (expects tailored_summary + prioritized_skills JSON). 75-second timeout, 10-second heartbeat. Responses must land within window."
+    ],
+    "node_parallel_agent_isolation": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
       }
-    },
-    "event_turn_01": {
-      "incoming": [
-        {
-          "source": "node_surgical_diff",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_01",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-01",
-        "name": "Developer Mode Inception"
+    ],
+    "event_turn_24": [
+      {
+        "target": "node_parallel_agent_isolation",
+        "relation": "FORMALIZES_POLICY"
       }
-    },
-    "event_turn_08": {
-      "incoming": [
-        {
-          "source": "node_reverse_engineering",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_08",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-08",
-        "name": "SRP Reverse Engineering"
+    ],
+    "node_ats_single_column_invariant": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
+      },
+      {
+        "target": "event_turn_25",
+        "relation": "EVIDENCED_BY"
       }
-    },
-    "event_turn_09": {
-      "incoming": [
-        {
-          "source": "node_zero_assumptions",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_09",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-09",
-        "name": "Live Tool Mandate Correction"
+    ],
+    "event_turn_25": [],
+    "node_sophron_session_init_protocol": [
+      {
+        "target": "node_zero_assumptions",
+        "relation": "APPLIES_PRINCIPLE"
+      },
+      {
+        "target": "event_turn_26",
+        "relation": "EVIDENCED_BY"
       }
-    },
-    "event_turn_14": {
-      "incoming": [
-        {
-          "source": "node_edge_case_nuance",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_14",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-14",
-        "name": "Campus & Duplicate Nuance"
+    ],
+    "event_turn_26": [
+      {
+        "target": "event_turn_25",
+        "relation": "CO_OCCURS_WITH"
       }
-    },
-    "event_turn_15": {
-      "incoming": [
-        {
-          "source": "node_modal_scroll_isolation",
-          "relation": "RESOLVES_ISSUE_IN"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_15",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-15",
-        "name": "Modal Scroll Leak Observation"
-      }
-    },
-    "event_turn_16": {
-      "incoming": [],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_16",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-16",
-        "name": "Onboarding & Candidate Privacy"
-      }
-    },
-    "event_turn_19": {
-      "incoming": [],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_19",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-19",
-        "name": "Master Agent Alter-Ego Creation"
-      }
-    },
-    "event_turn_20": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "node_workspace_isolation",
-          "relation": "FORMALIZES_POLICY"
-        }
-      ],
-      "data": {
-        "id": "event_turn_20",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-20",
-        "name": "Distributed Git & Graph Memory"
-      }
-    },
-    "event_turn_23": {
-      "incoming": [
-        {
-          "source": "node_sophron_auto_update",
-          "relation": "VIOLATION_CORRECTED_IN"
-        },
-        {
-          "source": "node_anti_loop_mandate",
-          "relation": "MANDATED_IN"
-        },
-        {
-          "source": "node_ipc_architecture",
-          "relation": "EXERCISED_IN"
-        }
-      ],
-      "outgoing": [
-        {
-          "target": "node_profile_filter_anshika",
-          "relation": "ENFORCES"
-        }
-      ],
-      "data": {
-        "id": "event_turn_23",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-23",
-        "name": "Session-23 IPC Cycles, Applications, Sophron Sync Correction",
-        "applications": [
-          "PwC - Internal Audit Associate (CHATBOT)",
-          "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"
-        ],
-        "corrections": [
-          "anti-loop mandate",
-          "token conservation",
-          "Sophron auto-update breach remediation",
-          "profile domain filter finalization"
-        ],
-        "timestamp": "2026-09-10T12:19:00+05:30"
-      }
-    },
-    "node_parallel_agent_isolation": {
-      "incoming": [
-        {
-          "source": "event_turn_24",
-          "relation": "FORMALIZES_POLICY"
-        }
-      ],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        }
-      ],
-      "data": {
-        "id": "node_parallel_agent_isolation",
-        "type": "SystemArchitecturePrinciple",
-        "tier": 2,
-        "name": "Parallel Multi-Agent Chrome Isolation",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-        "description": "Two agents can run simultaneously for two profiles without crossover. Isolation requires: (1) unique --user-data-dir per Chrome instance, (2) unique --remote-debugging-port, (3) unique cdp_url in candidate_config.json. Port registry: 9222=anshika_garg, 9223=udaysagar_kandpal. Each profile's IPC file is namespaced to profiles/<name>/output/pending_question.json.",
-        "port_registry": {
-          "9222": "anshika_garg",
-          "9223": "udaysagar_kandpal"
-        }
-      }
-    },
-    "event_turn_24": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "node_parallel_agent_isolation",
-          "relation": "FORMALIZES_POLICY"
-        }
-      ],
-      "data": {
-        "id": "event_turn_24",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-24",
-        "name": "Parallel Agent Architecture \u2014 User Thought Process Captured",
-        "insight": "User reasoned like a systems architect: isolate at OS/browser boundary first, then config, then code. Recognized port/user-data-dir duality before asking implementation.",
-        "config_change": "udaysagar_kandpal cdp_url updated to http://127.0.0.1:9223",
-        "timestamp": "2026-09-10T13:32:00+05:30"
-      }
-    },
-    "node_ats_single_column_invariant": {
-      "incoming": [],
-      "outgoing": [
-        {
-          "target": "ws_career_agent",
-          "relation": "SCOPED_TO_WORKSPACE"
-        },
-        {
-          "target": "event_turn_25",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "data": {
-        "id": "node_ats_single_column_invariant",
-        "type": "SystemArchitecturePrinciple",
-        "tier": 2,
-        "name": "ATS Single-Column & Zero-Table Invariant (Option B)",
-        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-        "description": "Tables in markdown convert to PDF 2D grid cells, scrambling under horizontal ATS coordinate sweeps. All resumes must be single-column with bold labels (**Category:** Skill 1, Skill 2) and ASCII hyphens (-). Tailoring engine uses regex to prioritize JD skills without tables."
-      }
-    },
-    "event_turn_25": {
-      "incoming": [
-        {
-          "source": "node_ats_single_column_invariant",
-          "relation": "EVIDENCED_BY"
-        }
-      ],
-      "outgoing": [],
-      "data": {
-        "id": "event_turn_25",
-        "type": "CognitiveReflection",
-        "turn_id": "TURN-25",
-        "name": "ATS Parseability Audit & Option B Engine Upgrade",
-        "timestamp": "2026-09-11T20:05:00+05:30"
-      }
-    }
+    ]
   }
 }

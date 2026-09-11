@@ -1,5 +1,5 @@
 {
-  "total_edges": 26,
+  "total_edges": 29,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -130,6 +130,21 @@
       "source": "node_ats_single_column_invariant",
       "target": "event_turn_25",
       "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "node_sophron_session_init_protocol",
+      "target": "node_zero_assumptions",
+      "relation": "APPLIES_PRINCIPLE"
+    },
+    {
+      "source": "node_sophron_session_init_protocol",
+      "target": "event_turn_26",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "event_turn_26",
+      "target": "event_turn_25",
+      "relation": "CO_OCCURS_WITH"
     }
   ]
 }

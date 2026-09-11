@@ -1,5 +1,5 @@
 {
-  "total_nodes": 31,
+  "total_nodes": 33,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -254,6 +254,20 @@
       "turn_id": "TURN-25",
       "name": "ATS Parseability Audit & Option B Engine Upgrade",
       "timestamp": "2026-09-11T20:05:00+05:30"
+    },
+    {
+      "id": "node_sophron_session_init_protocol",
+      "type": "SystemArchitecturePrinciple",
+      "tier": 1,
+      "name": "Sophron Session Auto-Init Protocol (01_sophron_session_init.md)",
+      "description": "Mandatory 6-step session initialization enforced via auto-loaded rule file. Non-negotiable for every AG session."
+    },
+    {
+      "id": "event_turn_26",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-26",
+      "name": "Sophron Automation Diagnosis and Session Init Fix",
+      "timestamp": "2026-09-11T20:15:00+05:30"
     }
   ]
 }
