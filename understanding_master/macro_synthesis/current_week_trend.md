@@ -21,3 +21,4 @@
 - [2026-09-11 23:12 IST] [insight_20260911_certification_and_internship_curation]: Added NEC Technologies apprenticeship to resume.md; curated high-credibility certifications (Google Cloud, Cyber Security in SDLC, Privacy by Design, GenAI) and filtered out gamification badges.
 - [2026-09-11 23:16 IST] [TURN-30]: Synchronized candidate_config.json employment, recommended_titles, and cognitive_profile.json search_cycles; relaunching continuous career agent.
 - [2026-09-11 23:27 IST] [TURN-31]: Hardened negative keyword and title gating; generic words (engineer, developer) added to title stopwords; JD requirements/skills scanned for negative keywords (Python, etc.) dropping score to 0.
+- [2026-09-11 23:35 IST] [TURN-32]: Enforced mandatory primary technology anchor filter (Java/Spring/Microservices/Enterprise Arch/Backend); rejected cards with negative skills in card tags; eliminated non-Java tooling matches.

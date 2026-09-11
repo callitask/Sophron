@@ -1,0 +1,11 @@
+{
+  "turn_id": "TURN-32",
+  "timestamp": "2026-09-11T23:35:59.946196",
+  "user_intent": "Strictly ensure agent never selects any company or role requiring technologies not in candidate profile (e.g. non-Java tech, DocuSign, Salesforce, Python, etc.)",
+  "why_user_made_such_thinking": "Observed roles like DocuSign CLM Tech Lead passing because the title contained Tech Lead and Naukri experience matched, even though candidate does not have that technology stack",
+  "why_user_performed_this_way": "Clear, uncompromising quality threshold: only apply to companies/roles that directly center around candidate verified technology foundation",
+  "user_reaction_and_satisfaction": "Direct boundary instruction",
+  "did_ai_actually_understand": "Yes — added Stage 1.5 Mandatory Primary Technology Anchor requirement: every technical role must explicitly require Java, Spring, Microservices, Enterprise Architecture, API Management, or Backend in title or JD; also reject cards whose tags contain any negative keyword.",
+  "was_work_done_exactly_as_asked": "Yes — enforced both at card discovery level and evaluation level. Out-of-domain tech roles are now 100% rejected with 0 score.",
+  "evolutionary_takeaways": "A senior candidate must never be matched based on generic seniority or location alone; presence of primary core stack anchors (Java/Spring/Enterprise Architecture) is mandatory."
+}
