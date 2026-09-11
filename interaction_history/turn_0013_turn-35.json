@@ -1,0 +1,12 @@
+{
+  "turn_id": "TURN-35",
+  "step_index": 1328,
+  "timestamp": "2026-09-11T18:34:22+05:30",
+  "user_intent": "Never concatenate role and company in search bar; enter either designation, keyword, or company name as single entities and ensure search button is explicitly clicked.",
+  "why_user_made_such_thinking": "Live portal monitoring showed searches combining role and company (e.g. Java Architect EY) failing or yielding zero results due to platform parser constraints.",
+  "why_user_performed_this_way": "Empirical user testing on live Naukri UI: recognized portal search engine expects isolated entities rather than complex compound strings.",
+  "user_reaction_and_satisfaction": "Firm, precise architectural corrective instruction targeting search ergonomics.",
+  "did_ai_actually_understand": "Yes: restructured search task matrix into ROLE_ONLY and COMPANY_ONLY strategies, eliminating all combined ROLE_AND_COMPANY executions.",
+  "was_work_done_exactly_as_asked": "Refactored core/04_job_discovery.py to enforce single-entity search matrices and explicit click confirmations.",
+  "evolutionary_takeaways": "Compound search queries on Indian recruitment portals degrade search accuracy; pure single-entity queries are mandatory."
+}

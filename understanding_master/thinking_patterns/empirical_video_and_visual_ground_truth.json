@@ -1,0 +1,16 @@
+{
+  "id": "TP-006",
+  "category": "thinking_patterns",
+  "title": "Empirical Screen Recording & Visual Ground Truth Debugging",
+  "timestamp": "2026-09-12T01:36:00+05:30",
+  "core_philosophy": "When complex UI regressions or loop conditions emerge (such as portal reloads or silent drops), the user provides raw visual recordings (.mp4) and directs the AI to use multimodal inspection tools (/browser, /chrome-devtools, live DOM) rather than indulging in speculative guess-and-check coding.",
+  "user_quotes": [
+    "in the lcoation: F:\\Captures acees the video file Profile _ Mynaukri - Google Chrome 2026-09-12 00-09-21.mp4 which is the screen recording of the agent runnning that i recorded which will hep you to know what i am seeing andensure to use your tools like /browser /chrome-devtools... to actually in live run time inspect tags/html etc to know why is this happenig that when yo search job keyword it refreshes to the profile page or reloads... ensure that you do inspect and fix it"
+  ],
+  "heuristics": [
+    "Always ingest user video recordings and multimodal artifacts before proposing code fixes.",
+    "Never speculate on client-side router behavior; inspect the live DOM to see if forms, reloads, or synthetic event triggers intercept navigation.",
+    "Bypass brittle client-side page state by utilizing direct, immutable REST or SRP query URLs whenever possible."
+  ],
+  "agent_guardrail": "GUARDRAIL_VISUAL_EMPIRICISM: When the user provides a screen recording or live URL, the agent is strictly prohibited from guessing code alterations without first extracting and reviewing the visual evidence."
+}

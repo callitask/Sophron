@@ -1,0 +1,16 @@
+{
+  "id": "TP-007",
+  "category": "thinking_patterns",
+  "title": "Executive Aesthetic & Strict Page Budget Rigor",
+  "timestamp": "2026-09-12T01:36:00+05:30",
+  "core_philosophy": "A senior candidate resume (10+ years experience) must respect executive document standards: exactly 2 pages maximum. An orphan line or single sentence spilling over to Page 3 is considered a serious aesthetic and professional failure. The AI must proactively compile, count pages via PDF readers, and condense earlier/less relevant stints while maintaining 100% factual fidelity for core technical skills.",
+  "user_quotes": [
+    "Also you need to ensure that only 2pages is max for this person resume since he has 10 year of exp and i see that currently in third page only one line is etc so manage it update resume.md for this profile so that pdf does not surpass 2 pages for this resume..c.urrently pdf has 3 pages with 3rd page only 1 line in it rest everything is good"
+  ],
+  "heuristics": [
+    "Always verify compiled PDF page count with pypdf or PyMuPDF programmatically.",
+    "Never let a resume spill onto a new page with fewer than 10-15 lines of content; condense older roles (apprenticeships, early internships) into compact single lines.",
+    "Maintain all core domain achievements, recent lead architecture accomplishments, and tool proficiencies (e.g. GitHub Copilot) intact during condensation."
+  ],
+  "agent_guardrail": "GUARDRAIL_STRICT_PAGE_BUDGET: Resume artifacts for candidates under 15 years must strictly terminate within a 2-page boundary; compilation must be verified before deployment."
+}

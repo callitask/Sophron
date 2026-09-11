@@ -1,0 +1,39 @@
+{
+  "insight_id": "user_emotional_behavioral_cognitive_profile_20260912",
+  "temporal_anchor": {
+    "timestamp": "2026-09-12T01:36:30+05:30",
+    "session_id": "54423117-be3b-4d55-bfbc-c03d658eda4d",
+    "task_context": "Real-time Autonomous Job Application Daemon Execution, Resume Refinement, Git Governance, and Sophron Synchronization"
+  },
+  "emotional_state_analysis": {
+    "baseline_mood": "High-agency executive architect: vigilant, analytical, intensely practical, intolerant of sloppy edge cases or silent failures.",
+    "emotional_triggers_negative": [
+      "Agent guessing or theorizing when real-world tools/recordings exist.",
+      "Agent creating combined search queries that cause recruitment portal parsers to return 0 jobs or reload loops.",
+      "Document layout flaws, such as a trailing 1-line spillover onto Page 3 of an executive resume.",
+      "Agent applying to blacklisted firms (e.g. TCS / Tata Consultancy Services) or roles requiring unmentioned stacks (Python, Golang, DocuSign).",
+      "Excessive chat chatter that wastes LLM context and tokens when the system should be autonomously executing."
+    ],
+    "emotional_triggers_positive": [
+      "Empirical verification: live CDP verification, PDF reader page count confirmation, successful commit/push to Git.",
+      "Precision execution: agent spotting exact root causes (e.g. portal profile page reloading vs direct SRP query) and fixing them immediately.",
+      "Strict adherence to constraints: maintaining exact 2-page budgets and robust negative company filters without dropping core candidate skills."
+    ],
+    "communication_cadence": "Terse, highly concentrated prompts focused on immediate system outcomes. Spells out exact priorities rapidly, expecting the AI to parse intent and execute deeply."
+  },
+  "thinking_patterns_evaluation": {
+    "meta_cognition": "Decade-scale thinking: treats current AI session not as an isolated ephemeral sandbox, but as part of a permanent cognitive architecture (Sophron) that future models must inherit.",
+    "debugging_paradigm": "Multi-modal empirical ground truth: when the bot behaved erratically, the user did not just write a complaint\u2014they recorded an MP4 video of the Chrome session, placed it in F:\\Captures, and ordered live tool inspection.",
+    "quality_standards": "Zero-tolerance for document carelessness: an executive resume must look pristine, fit exactly within 2 pages, and highlight modern AI developer velocity tools (GitHub Copilot 2+ years).",
+    "isolation_and_safety": "Reversible and auditable: insisted on preserving pre-edit commit states so that any regression can be rolled back without data loss."
+  },
+  "cross_ai_portability_instructions": {
+    "guidance_for_any_future_ai": [
+      "1. DO NOT guess or hallucinate. Use file, browser, or CLI inspection tools to verify facts before writing code.",
+      "2. Keep candidate resumes strictly within 2 pages for 10-year professionals.",
+      "3. NEVER apply to TCS (Tata Consultancy Services) or roles demanding foreign stacks not listed in the candidate config.",
+      "4. Always keep Sophron updated at each milestone, formulating rich behavioral and cognitive reflection cards with exact ISO timestamps.",
+      "5. Be concise and authoritative in chat, prioritizing empirical execution over verbose conversational fluff."
+    ]
+  }
+}

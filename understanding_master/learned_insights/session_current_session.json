@@ -2,22 +2,26 @@
   "id": "INSIGHT-current_session",
   "category": "learned_insights",
   "title": "Learned Insights from Session current_session",
-  "generated_at": "2026-09-11T21:08:13.712097",
+  "generated_at": "2026-09-12T01:36:15.537428",
   "analysis": {
-    "total_user_prompts": 6,
+    "total_user_prompts": 23,
     "tool_dispatch_frequency": {
-      "/chrome-devtools": 2,
-      "/browser": 2,
-      "/flutter-setup-declarative-routing": 2,
+      "/chrome-devtools": 6,
+      "/browser": 7,
+      "/flutter-setup-declarative-routing": 6,
       "/debug-optimize-lcp": 2
     },
     "sample_constraints": [
-      "[Step 0] Keyword 'rule': <USER_REQUEST> 1. Access the F:\\JOB AI AGENT\\.agents\\rules  and access the file 00_user_cognitive_os.md. This file mentions how you have tounderstand ..."
+      "[Step 0] Keyword 'rule': <USER_REQUEST> 1. Access the F:\\JOB AI AGENT\\.agents\\rules  and access the file 00_user_cognitive_os.md. This file mentions how you have tounderstand ...",
+      "[Step 591] Keyword 'rule': <USER_REQUEST> now since it is working ensure to give minimal outut updates in caht to preserve tokens and do the main work and give output when neede...",
+      "[Step 591] Keyword 'duplicate': <USER_REQUEST> now since it is working ensure to give minimal outut updates in caht to preserve tokens and do the main work and give output when neede..."
     ],
     "sample_corrections": [
       "[Step 187] <USER_REQUEST> It is typing the job ad then simply it vanishes and then no result found page loads  ensure to use the /chrome-devtools /browser /flutter-setup-d...",
-      "[Step 484] <USER_REQUEST> This is the number: 9654258060 prefix:  prefix +91 for this profile  Ensure that no code is hardcoded in the py file and also check that the upda..."
+      "[Step 484] <USER_REQUEST> This is the number: 9654258060 prefix:  prefix +91 for this profile  Ensure that no code is hardcoded in the py file and also check that the upda...",
+      "[Step 1551] <USER_REQUEST> 2+ years in copilot    Also:  in the lcoation: F:\\Captures acees the video file Profile _ Mynaukri - Google Chrome 2026-09-12 00-09-21.mp4 which ...",
+      "[Step 1562] <USER_REQUEST> 2+ years in copilot \r \r \r Also:\r \r in the lcoation: F:\\Captures acees the video file Profile _ Mynaukri - Google Chrome 2026-09-12 00-09-21.mp4 w..."
     ],
-    "analysis_timestamp": "2026-09-11T21:08:13.712038"
+    "analysis_timestamp": "2026-09-12T01:36:15.537379"
   }
 }
