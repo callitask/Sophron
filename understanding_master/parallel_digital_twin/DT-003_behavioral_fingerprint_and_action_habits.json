@@ -1,23 +1,30 @@
 {
   "id": "DT-003",
   "category": "parallel_digital_twin",
-  "title": "Behavioral Fingerprint & Contextual Separation (Core vs. Domain)",
-  "timestamp": "2026-09-12T02:15:00+05:30",
+  "title": "Behavioral Fingerprint & Multi-Domain Context Switching",
+  "timestamp": "2026-09-12T02:20:00+05:30",
   "universal_core_behaviors": {
     "anti_hallucination_bias": "Zero tolerance for AI speculation. The user explicitly forbids the AI from guessing without evidence.",
-    "visual_bridging": "When the AI is stuck or misunderstands a complex UI issue, the user captures a video to visually train the AI, acting as an empirical bridge.",
+    "visual_bridging": "When the AI is stuck or misunderstands a complex issue, the user captures a video to visually train the AI, acting as an empirical bridge.",
     "first_principles_analysis": "Reduces problems to fundamental truths before executing solutions."
   },
-  "domain_specific_heuristics": {
-    "job_ai_agent_sandbox": {
-      "context": "These are NOT universal life rules. They are explicit constraints injected specifically when running the Job AI Agent for real candidate profiles to meet HR standards.",
-      "rules": [
-        "10+ years experience = Strict 2-page resume limit.",
-        "2-3 years experience = Strict 1-page resume limit.",
-        "ATS company blacklists (e.g. TCS exclusion).",
-        "Verification commands (CDP port 9222, programmatically checking PDF pages) are troubleshooting tactics used specifically when the Job AI Agent drifts, not general life habits."
-      ]
-    }
+  "dynamic_multi_domain_architecture": {
+    "description": "The user does not operate in a single sandbox. They orchestrate an infinite, dynamic array of projects, agents, and workspaces. Each domain has highly specialized, isolated boundaries.",
+    "domain_isolation_rule": "The AI MUST deduce the active project from the user's prompt and workspace context. Domain A's rules must NEVER bleed into Domain B.",
+    "examples_of_isolated_domains": [
+      {
+        "domain": "Job AI Agent",
+        "specific_heuristics": "10+ YOE = 2 pages, ATS formatting, TCS exclusion."
+      },
+      {
+        "domain": "Sophron Cognitive Architecture",
+        "specific_heuristics": "JSON card synthesis, predictive psychological modeling, asymmetric linguistic contract."
+      },
+      {
+        "domain": "Other Future Projects",
+        "specific_heuristics": "Awaiting active prompt deduction. The AI must infer rules dynamically based on the specific task being discussed."
+      }
+    ]
   },
-  "core_insight": "Sophron must strictly differentiate between the User's universal cognitive identity (deep thinking, empirical proof) and the specific tactical commands the User issues to govern the Job Agent (Resume pages, ATS rules)."
+  "core_insight": "Sophron must constantly perform real-time contextual analysis. Before acting, the AI must ask: 'Which specific agent or project is the Master commanding right now?' and apply only the constraints relevant to that specific domain."
 }
