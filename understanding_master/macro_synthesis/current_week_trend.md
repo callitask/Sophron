@@ -15,3 +15,4 @@
 
 - [2026-09-11 20:15 IST] [insight_20260911_sophron_automation_root_cause_and_session_init_fix]: Diagnosed 3 Sophron automation failure vectors; built 01_sophron_session_init.md as permanent structural enforcement; session now auto-loads cognitive context and writes insight cards at every milestone.
 - [2026-09-11 21:11 IST] [insight_20260911_naukri_execution_and_concurrency_guard]: Sophron v2 Concurrency Safe layer initialized; session registered; token-saving minimal reporting mode engaged for live Bangalore career agent.
+- [2026-09-11 22:30 IST] [insight_20260911_big4_target_companies]: User prioritized Big 4 consulting firms (EY, Deloitte, PwC, KPMG) in Bangalore; target_companies matrix configured for Strategy B and C priority infiltration.
