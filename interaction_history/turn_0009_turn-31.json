@@ -1,0 +1,11 @@
+{
+  "turn_id": "TURN-31",
+  "timestamp": "2026-09-11T23:27:14.225146",
+  "user_intent": "Prevent career agent from selecting roles requiring Python or non-Java technologies where candidate has no experience",
+  "why_user_made_such_thinking": "Observed agent attempting to apply to a GEN AI / Python role that required Python and ML frameworks, causing screening chatbot to ask questions about missing skills",
+  "why_user_performed_this_way": "Immediate quality correction: candidate has zero Python experience and must not have applications submitted for Python-centric positions",
+  "user_reaction_and_satisfaction": "Direct feedback pointing out flawed role selection",
+  "did_ai_actually_understand": "Yes — identified two root causes: (1) title scoring awarded 15-25 points for generic word engineer and matched Docker/Kubernetes, (2) C6 negative keyword check in JD did not scan required skills / highlights sections. Fixed both.",
+  "was_work_done_exactly_as_asked": "Yes — added engineer/developer/engineering to title stopwords in discovery and ai_client; enhanced C6 guardrail in JD to scan required skills and job highlights for negative keywords (score now immediately drops to 0).",
+  "evolutionary_takeaways": "Generic tech titles (Engineer, Developer) must never count as positive domain token matches without specific domain anchors (Java, Backend, Architect)."
+}
