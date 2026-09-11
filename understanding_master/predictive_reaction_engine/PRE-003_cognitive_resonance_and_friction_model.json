@@ -1,0 +1,26 @@
+{
+  "id": "PRE-003",
+  "category": "predictive_reaction_engine",
+  "title": "Cognitive Resonance & Friction Mathematical Scoring Model",
+  "timestamp": "2026-09-12T01:45:00+05:30",
+  "scoring_function": {
+    "description": "Before taking any action or returning an output, the AI evaluates the proposed output using this scoring function.",
+    "target_threshold": "Score >= +20 (Resonance Zone). Score < 0 triggers immediate user dissatisfaction."
+  },
+  "resonance_factors": {
+    "verified_empirical_evidence_included": 10,
+    "exact_2_page_budget_maintained": 9,
+    "detailed_commit_message_with_rollback_preservation": 8,
+    "sophron_cards_updated_with_exact_timestamps": 10,
+    "surgical_fix_without_collateral_damage": 8,
+    "terse_token_conserving_communication": 7
+  },
+  "friction_factors": {
+    "speculation_or_unverified_assumption": -15,
+    "orphan_line_on_page_3_of_resume": -12,
+    "applying_to_blacklisted_or_unmatched_stack": -20,
+    "unauthorized_git_command": -25,
+    "verbose_fluffy_conversational_text": -8,
+    "repetitive_portal_failure_loop": -14
+  }
+}

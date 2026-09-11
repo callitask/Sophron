@@ -1,5 +1,5 @@
 {
-  "total_nodes": 33,
+  "total_nodes": 39,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -268,6 +268,48 @@
       "turn_id": "TURN-26",
       "name": "Sophron Automation Diagnosis and Session Init Fix",
       "timestamp": "2026-09-11T20:15:00+05:30"
+    },
+    {
+      "id": "node_parallel_digital_twin",
+      "type": "DigitalTwinCore",
+      "tier": 1,
+      "name": "Parallel User Digital Twin",
+      "category": "parallel_digital_twin"
+    },
+    {
+      "id": "node_emotional_mood_dynamics",
+      "type": "CognitivePsychology",
+      "tier": 1,
+      "name": "Emotional & Mood Dynamics Model",
+      "category": "parallel_digital_twin"
+    },
+    {
+      "id": "node_predictive_reaction_engine",
+      "type": "AlgorithmicPredictor",
+      "tier": 1,
+      "name": "Neural Behavioral Prediction Matrix",
+      "category": "predictive_reaction_engine"
+    },
+    {
+      "id": "node_permutation_decision_engine",
+      "type": "DecisionOptimizer",
+      "tier": 1,
+      "name": "Permutation & Combination Decision Engine",
+      "category": "predictive_reaction_engine"
+    },
+    {
+      "id": "node_recursive_self_learning_loop",
+      "type": "MetaLearner",
+      "tier": 1,
+      "name": "Recursive Cognitive Self-Learning Loop",
+      "category": "self_learning_loop"
+    },
+    {
+      "id": "node_cross_ai_universal_handshake",
+      "type": "UniversalBridge",
+      "tier": 1,
+      "name": "Cross-AI Universal Handshake Protocol",
+      "category": "self_learning_loop"
     }
   ]
 }

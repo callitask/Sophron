@@ -1,5 +1,5 @@
 {
-  "total_edges": 29,
+  "total_edges": 34,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -145,6 +145,31 @@
       "source": "event_turn_26",
       "target": "event_turn_25",
       "relation": "CO_OCCURS_WITH"
+    },
+    {
+      "source": "node_parallel_digital_twin",
+      "relation": "MODELS_EMOTIONS_OF",
+      "target": "node_emotional_mood_dynamics"
+    },
+    {
+      "source": "node_parallel_digital_twin",
+      "relation": "FEEDS_PREDICTIVE_ENGINE",
+      "target": "node_predictive_reaction_engine"
+    },
+    {
+      "source": "node_predictive_reaction_engine",
+      "relation": "EVALUATES_VIA",
+      "target": "node_permutation_decision_engine"
+    },
+    {
+      "source": "node_recursive_self_learning_loop",
+      "relation": "UPDATES_CONTINUOUSLY",
+      "target": "node_parallel_digital_twin"
+    },
+    {
+      "source": "node_cross_ai_universal_handshake",
+      "relation": "ASSIMILATES_MODEL_FROM",
+      "target": "node_parallel_digital_twin"
     }
   ]
 }

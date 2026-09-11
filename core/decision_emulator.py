@@ -130,3 +130,63 @@ class DecisionEmulator:
                 "action": "PRESERVE",
                 "user_voice": "Independent records."
             }
+
+    def predict_user_response(self, stimulus_text: str) -> Dict[str, Any]:
+        """
+        Uses the Neural Behavioral Prediction Matrix (PRE-001 & PRE-003) to forecast
+        how the user's brain will react emotionally, cognitively, and behaviorally.
+        """
+        text_lower = stimulus_text.lower()
+        
+        # Check PRE-001 pairs
+        matrix_card = self.loader.get_card("PRE-001")
+        pairs = matrix_card.get("stimulus_response_pairs", []) if matrix_card else []
+
+        best_score = 0
+        matched_prediction = None
+        for pair in pairs:
+            action_desc = pair.get("ai_action", "").lower()
+            keywords = [w for w in action_desc.split() if len(w) > 3 and w not in ["with", "without", "that", "from", "into"]]
+            match_count = sum(1 for k in keywords if k in text_lower)
+            if match_count > best_score:
+                best_score = match_count
+                matched_prediction = pair
+
+        if not matched_prediction:
+            # Default prediction based on sentiment/action
+            if any(w in text_lower for w in ["guess", "assume", "speculate", "without running", "3 pages", "orphan", "tcs", "git commit"]):
+                matched_prediction = {
+                    "predicted_cognitive_state": "Cognitive friction; violation of established quality or safety axioms.",
+                    "predicted_emotional_response": "Sharp irritation, loss of trust, demanding immediate correction.",
+                    "predicted_user_behavior": "Immediate corrective directive or reprimand.",
+                    "mitigation_protocol": "Adhere strictly to empirical verification, 2-page document limits, and gatekeeping rules."
+                }
+            else:
+                matched_prediction = {
+                    "predicted_cognitive_state": "Cognitive resonance; actions match architectural standards.",
+                    "predicted_emotional_response": "Satisfaction, calm confidence in system throughput.",
+                    "predicted_user_behavior": "Green-lights progress or issues next strategic goal.",
+                    "mitigation_protocol": "Maintain verified empirical rigor."
+                }
+
+        # Calculate resonance vs friction score from PRE-003
+        score = 0
+        if "verified" in text_lower or "empirical" in text_lower: score += 10
+        if "2 page" in text_lower or "two page" in text_lower: score += 9
+        if "commit" in text_lower and ("authorized" in text_lower or "checkpoint" in text_lower): score += 8
+        if "sophron" in text_lower: score += 10
+        
+        if "guess" in text_lower or "assume" in text_lower: score -= 15
+        if "3 page" in text_lower or "orphan" in text_lower: score -= 12
+        if "tcs" in text_lower or "blacklisted" in text_lower: score -= 20
+        if "unauthorized git" in text_lower: score -= 25
+
+        return {
+            "stimulus": stimulus_text,
+            "predicted_cognitive_state": matched_prediction.get("predicted_cognitive_state"),
+            "predicted_emotional_response": matched_prediction.get("predicted_emotional_response"),
+            "predicted_user_behavior": matched_prediction.get("predicted_user_behavior"),
+            "mitigation_protocol": matched_prediction.get("mitigation_protocol"),
+            "resonance_score": score,
+            "resonance_zone": "RESONANCE" if score >= 0 else "FRICTION"
+        }

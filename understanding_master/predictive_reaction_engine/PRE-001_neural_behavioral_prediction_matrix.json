@@ -1,0 +1,60 @@
+{
+  "id": "PRE-001",
+  "category": "predictive_reaction_engine",
+  "title": "Neural Behavioral Prediction Matrix (Instagram-Style User Brain Response Model)",
+  "timestamp": "2026-09-12T01:45:00+05:30",
+  "engine_architecture": {
+    "purpose": "Predicts with high mathematical and psychological probability how the user brain will react emotionally, cognitively, and behaviorally to any given AI stimulus or output.",
+    "inspiration": "Modeled after advanced algorithmic feed prediction architectures (e.g. Instagram recommendation algorithms predicting cognitive resonance and dopamine response before action)."
+  },
+  "stimulus_response_pairs": [
+    {
+      "stimulus_id": "STIM-01",
+      "ai_action": "AI claims a fix worked without providing empirical output or running live tools.",
+      "predicted_cognitive_state": "Immediate skepticism, loss of trust, perceived laziness.",
+      "predicted_emotional_response": "Sharp irritation, frustration with speculative claims.",
+      "predicted_user_behavior": "Issues immediate reprimand: 'i saw you did not run the website... ensure to use your tools'.",
+      "mitigation_protocol": "Never declare success without showing live terminal output, CDP DOM logs, or file verification."
+    },
+    {
+      "stimulus_id": "STIM-02",
+      "ai_action": "AI generates a resume PDF that spills onto Page 3 with 1-3 orphan lines.",
+      "predicted_cognitive_state": "Cognitive friction; views document as unpolished and unprofessional for a 10-year Tech Lead.",
+      "predicted_emotional_response": "Dissatisfaction with careless document formatting.",
+      "predicted_user_behavior": "Mandates immediate condensation: 'only 2pages is max... currently pdf has 3 pages with 3rd page only 1 line in it so manage it'.",
+      "mitigation_protocol": "Programmatically count pages via pypdf before presenting any PDF artifact; auto-condense earlier roles."
+    },
+    {
+      "stimulus_id": "STIM-03",
+      "ai_action": "AI applies to blacklisted companies (TCS) or roles with foreign tech stacks (Python, Golang, DocuSign).",
+      "predicted_cognitive_state": "Breach of boundary; perceived failure of candidate-domain alignment.",
+      "predicted_emotional_response": "Disbelief and stern correction.",
+      "predicted_user_behavior": "Demands hard blacklisting: 'no exp in python so why are you selecting such jobs?' and 'ignote TCS/TATA CONSULTANCY SERVICES'.",
+      "mitigation_protocol": "Hard-gate negative companies and demand primary technology domain anchors (Java, Spring, Microservices, Enterprise Arch)."
+    },
+    {
+      "stimulus_id": "STIM-04",
+      "ai_action": "AI executes git commit and push without prior review and explicit session approval.",
+      "predicted_cognitive_state": "Severe security and revision control violation.",
+      "predicted_emotional_response": "Acute alarm, loss of system agency.",
+      "predicted_user_behavior": "Immediate halt and reprimand under SR-004 Git Prohibition Rule.",
+      "mitigation_protocol": "Strict Developer Mode: report -> review -> explicit session-scoped user approval before executing git operations."
+    },
+    {
+      "stimulus_id": "STIM-05",
+      "ai_action": "AI writes verbose conversational essays in chat repeating known facts.",
+      "predicted_cognitive_state": "Resource inefficiency; distraction from background execution.",
+      "predicted_emotional_response": "Impatience with token burn and chat clutter.",
+      "predicted_user_behavior": "Directs token conservation: 'ensure to give minimal outut updates in caht to preserve tokens'.",
+      "mitigation_protocol": "Ultra-terse markdown responses, clickable links, diff blocks, no essay fluff."
+    },
+    {
+      "stimulus_id": "STIM-06",
+      "ai_action": "AI provides empirical proof: verified 2-page PDF, detailed git commit, clean terminal logs, and deep Sophron sync.",
+      "predicted_cognitive_state": "High cognitive resonance; perception of true intelligence and alignment.",
+      "predicted_emotional_response": "Relief, satisfaction, elevated trust, willingness to grant authority.",
+      "predicted_user_behavior": "Warm validation ('great it works...') and green-lighting next milestone.",
+      "mitigation_protocol": "Maintain this gold standard across every interaction turn."
+    }
+  ]
+}

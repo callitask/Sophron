@@ -80,6 +80,13 @@ def main():
     guard_parser = subparsers.add_parser("guard-check", help="Verify workspace isolation boundary")
     guard_parser.add_argument("--workspace", type=str, required=True, help="Target workspace ID or URI to test")
 
+    # Digital Twin Command
+    subparsers.add_parser("digital-twin", help="Display synthesized parallel user digital twin model")
+
+    # Predict Command
+    predict_parser = subparsers.add_parser("predict", help="Predict user cognitive, emotional, and behavioral response to a stimulus")
+    predict_parser.add_argument("--stimulus", type=str, required=True, help="Proposed AI action or system event")
+
     args = parser.parse_args()
 
     loader = PersonaLoader()
@@ -234,6 +241,46 @@ def main():
         except CrossWorkspaceContaminationError:
             print("  - Foreign Workspace Memory Access: BLOCKED (Strict cross-workspace isolation verified!)")
 
+    elif args.command == "digital-twin":
+        dt_cards = loader.get_cards_by_category("parallel_digital_twin")
+        print("\n=======================================================")
+        print("        PARALLEL USER DIGITAL TWIN SYNTHESIS           ")
+        print("=======================================================")
+        for c in dt_cards:
+            print(f"\n[{c.get('id')}] {c.get('title')}:")
+            for k, v in c.items():
+                if k.startswith("_") or k in ["id", "category", "title", "timestamp"]:
+                    continue
+                print(f"  * {k.upper().replace('_', ' ')}:")
+                if isinstance(v, dict):
+                    for subk, subv in list(v.items())[:4]:
+                        val_str = str(subv)
+                        if len(val_str) > 120: val_str = val_str[:117] + "..."
+                        print(f"      - {subk}: {val_str}")
+                elif isinstance(v, list):
+                    for item in v[:4]:
+                        print(f"      - {item}")
+        print("\n=======================================================\n")
+
+    elif args.command == "predict":
+        emulator = DecisionEmulator(loader=loader)
+        prediction = emulator.predict_user_response(args.stimulus)
+        print("\n=======================================================")
+        print("     NEURAL BEHAVIORAL PREDICTION ENGINE OUTPUT        ")
+        print("=======================================================")
+        print(f"Stimulus Evaluated       : \"{prediction['stimulus']}\"")
+        print(f"Resonance Score          : {prediction['resonance_score']} [{prediction['resonance_zone']}]")
+        print(f"\nPredicted Cognitive State:")
+        print(f"  {prediction['predicted_cognitive_state']}")
+        print(f"\nPredicted Emotional Mood :")
+        print(f"  {prediction['predicted_emotional_response']}")
+        print(f"\nPredicted User Behavior  :")
+        print(f"  {prediction['predicted_user_behavior']}")
+        print(f"\nMitigation / Alignment   :")
+        print(f"  {prediction['mitigation_protocol']}")
+        print("=======================================================\n")
+
 
 if __name__ == "__main__":
     main()
+

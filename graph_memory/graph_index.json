@@ -2,176 +2,480 @@
   "total_indexed_nodes": 33,
   "total_indexed_edges": 29,
   "adjacency": {
-    "node_zero_assumptions": [
-      {
-        "target": "node_dev_mode_gatekeeping",
-        "relation": "MANDATES"
-      },
-      {
-        "target": "event_turn_09",
-        "relation": "EVIDENCED_BY"
-      }
-    ],
-    "node_reverse_engineering": [
-      {
-        "target": "event_turn_08",
-        "relation": "EVIDENCED_BY"
-      }
-    ],
-    "node_surgical_diff": [
-      {
-        "target": "event_turn_01",
-        "relation": "EVIDENCED_BY"
-      }
-    ],
-    "node_edge_case_nuance": [
-      {
-        "target": "node_multi_stint_duplicate",
-        "relation": "INSTANTIATES"
-      },
-      {
-        "target": "event_turn_14",
-        "relation": "EVIDENCED_BY"
-      }
-    ],
-    "node_dev_mode_gatekeeping": [
-      {
-        "target": "node_workspace_isolation",
-        "relation": "COUPLED_WITH"
-      }
-    ],
-    "node_guardrail_p1_purity": [
-      {
-        "target": "node_workspace_isolation",
-        "relation": "ENFORCES_INDEPENDENCE"
-      }
-    ],
-    "node_git_prohibition": [],
-    "node_workspace_isolation": [],
-    "node_sophron_auto_update": [
-      {
-        "target": "event_turn_23",
-        "relation": "VIOLATION_CORRECTED_IN"
-      }
-    ],
-    "ws_career_agent": [],
-    "node_naukri_linkedin_isolation": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      }
-    ],
-    "node_modal_scroll_isolation": [
-      {
-        "target": "event_turn_15",
-        "relation": "RESOLVES_ISSUE_IN"
-      },
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      }
-    ],
-    "node_multi_stint_duplicate": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      }
-    ],
-    "node_campus_internship_toggle": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      }
-    ],
-    "node_anti_loop_mandate": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      },
-      {
-        "target": "event_turn_23",
-        "relation": "MANDATED_IN"
-      }
-    ],
-    "node_token_conservation": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      }
-    ],
-    "node_profile_filter_anshika": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      }
-    ],
-    "node_ipc_architecture": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      },
-      {
-        "target": "event_turn_23",
-        "relation": "EXERCISED_IN"
-      }
-    ],
-    "event_turn_01": [],
-    "event_turn_08": [],
-    "event_turn_09": [],
-    "event_turn_14": [],
-    "event_turn_15": [],
-    "event_turn_16": [],
-    "event_turn_19": [],
-    "event_turn_20": [
-      {
-        "target": "node_workspace_isolation",
-        "relation": "FORMALIZES_POLICY"
-      }
-    ],
-    "event_turn_23": [
-      {
-        "target": "node_profile_filter_anshika",
-        "relation": "ENFORCES"
-      }
-    ],
-    "node_parallel_agent_isolation": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      }
-    ],
-    "event_turn_24": [
-      {
-        "target": "node_parallel_agent_isolation",
-        "relation": "FORMALIZES_POLICY"
-      }
-    ],
-    "node_ats_single_column_invariant": [
-      {
-        "target": "ws_career_agent",
-        "relation": "SCOPED_TO_WORKSPACE"
-      },
-      {
-        "target": "event_turn_25",
-        "relation": "EVIDENCED_BY"
-      }
-    ],
-    "event_turn_25": [],
-    "node_sophron_session_init_protocol": [
-      {
-        "target": "node_zero_assumptions",
-        "relation": "APPLIES_PRINCIPLE"
-      },
-      {
-        "target": "event_turn_26",
-        "relation": "EVIDENCED_BY"
-      }
-    ],
-    "event_turn_26": [
-      {
-        "target": "event_turn_25",
-        "relation": "CO_OCCURS_WITH"
-      }
-    ]
-  }
+    "node_zero_assumptions": {
+      "outgoing": [
+        {
+          "relation": "MANDATES",
+          "target": "node_dev_mode_gatekeeping"
+        },
+        {
+          "relation": "EVIDENCED_BY",
+          "target": "event_turn_09"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "APPLIES_PRINCIPLE",
+          "source": "node_sophron_session_init_protocol"
+        }
+      ]
+    },
+    "node_reverse_engineering": {
+      "outgoing": [
+        {
+          "relation": "EVIDENCED_BY",
+          "target": "event_turn_08"
+        }
+      ],
+      "incoming": []
+    },
+    "node_surgical_diff": {
+      "outgoing": [
+        {
+          "relation": "EVIDENCED_BY",
+          "target": "event_turn_01"
+        }
+      ],
+      "incoming": []
+    },
+    "node_edge_case_nuance": {
+      "outgoing": [
+        {
+          "relation": "INSTANTIATES",
+          "target": "node_multi_stint_duplicate"
+        },
+        {
+          "relation": "EVIDENCED_BY",
+          "target": "event_turn_14"
+        }
+      ],
+      "incoming": []
+    },
+    "node_dev_mode_gatekeeping": {
+      "outgoing": [
+        {
+          "relation": "COUPLED_WITH",
+          "target": "node_workspace_isolation"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "MANDATES",
+          "source": "node_zero_assumptions"
+        }
+      ]
+    },
+    "node_guardrail_p1_purity": {
+      "outgoing": [
+        {
+          "relation": "ENFORCES_INDEPENDENCE",
+          "target": "node_workspace_isolation"
+        }
+      ],
+      "incoming": []
+    },
+    "node_git_prohibition": {
+      "outgoing": [],
+      "incoming": []
+    },
+    "node_workspace_isolation": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "COUPLED_WITH",
+          "source": "node_dev_mode_gatekeeping"
+        },
+        {
+          "relation": "ENFORCES_INDEPENDENCE",
+          "source": "node_guardrail_p1_purity"
+        },
+        {
+          "relation": "FORMALIZES_POLICY",
+          "source": "event_turn_20"
+        }
+      ]
+    },
+    "node_sophron_auto_update": {
+      "outgoing": [
+        {
+          "relation": "VIOLATION_CORRECTED_IN",
+          "target": "event_turn_23"
+        }
+      ],
+      "incoming": []
+    },
+    "ws_career_agent": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_naukri_linkedin_isolation"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_modal_scroll_isolation"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_multi_stint_duplicate"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_campus_internship_toggle"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_anti_loop_mandate"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_token_conservation"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_profile_filter_anshika"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_ipc_architecture"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_parallel_agent_isolation"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "source": "node_ats_single_column_invariant"
+        }
+      ]
+    },
+    "node_naukri_linkedin_isolation": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        }
+      ],
+      "incoming": []
+    },
+    "node_modal_scroll_isolation": {
+      "outgoing": [
+        {
+          "relation": "RESOLVES_ISSUE_IN",
+          "target": "event_turn_15"
+        },
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        }
+      ],
+      "incoming": []
+    },
+    "node_multi_stint_duplicate": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "INSTANTIATES",
+          "source": "node_edge_case_nuance"
+        }
+      ]
+    },
+    "node_campus_internship_toggle": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        }
+      ],
+      "incoming": []
+    },
+    "node_anti_loop_mandate": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        },
+        {
+          "relation": "MANDATED_IN",
+          "target": "event_turn_23"
+        }
+      ],
+      "incoming": []
+    },
+    "node_token_conservation": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        }
+      ],
+      "incoming": []
+    },
+    "node_profile_filter_anshika": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "ENFORCES",
+          "source": "event_turn_23"
+        }
+      ]
+    },
+    "node_ipc_architecture": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        },
+        {
+          "relation": "EXERCISED_IN",
+          "target": "event_turn_23"
+        }
+      ],
+      "incoming": []
+    },
+    "event_turn_01": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "EVIDENCED_BY",
+          "source": "node_surgical_diff"
+        }
+      ]
+    },
+    "event_turn_08": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "EVIDENCED_BY",
+          "source": "node_reverse_engineering"
+        }
+      ]
+    },
+    "event_turn_09": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "EVIDENCED_BY",
+          "source": "node_zero_assumptions"
+        }
+      ]
+    },
+    "event_turn_14": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "EVIDENCED_BY",
+          "source": "node_edge_case_nuance"
+        }
+      ]
+    },
+    "event_turn_15": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "RESOLVES_ISSUE_IN",
+          "source": "node_modal_scroll_isolation"
+        }
+      ]
+    },
+    "event_turn_16": {
+      "outgoing": [],
+      "incoming": []
+    },
+    "event_turn_19": {
+      "outgoing": [],
+      "incoming": []
+    },
+    "event_turn_20": {
+      "outgoing": [
+        {
+          "relation": "FORMALIZES_POLICY",
+          "target": "node_workspace_isolation"
+        }
+      ],
+      "incoming": []
+    },
+    "event_turn_23": {
+      "outgoing": [
+        {
+          "relation": "ENFORCES",
+          "target": "node_profile_filter_anshika"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "VIOLATION_CORRECTED_IN",
+          "source": "node_sophron_auto_update"
+        },
+        {
+          "relation": "MANDATED_IN",
+          "source": "node_anti_loop_mandate"
+        },
+        {
+          "relation": "EXERCISED_IN",
+          "source": "node_ipc_architecture"
+        }
+      ]
+    },
+    "node_parallel_agent_isolation": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "FORMALIZES_POLICY",
+          "source": "event_turn_24"
+        }
+      ]
+    },
+    "event_turn_24": {
+      "outgoing": [
+        {
+          "relation": "FORMALIZES_POLICY",
+          "target": "node_parallel_agent_isolation"
+        }
+      ],
+      "incoming": []
+    },
+    "node_ats_single_column_invariant": {
+      "outgoing": [
+        {
+          "relation": "SCOPED_TO_WORKSPACE",
+          "target": "ws_career_agent"
+        },
+        {
+          "relation": "EVIDENCED_BY",
+          "target": "event_turn_25"
+        }
+      ],
+      "incoming": []
+    },
+    "event_turn_25": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "EVIDENCED_BY",
+          "source": "node_ats_single_column_invariant"
+        },
+        {
+          "relation": "CO_OCCURS_WITH",
+          "source": "event_turn_26"
+        }
+      ]
+    },
+    "node_sophron_session_init_protocol": {
+      "outgoing": [
+        {
+          "relation": "APPLIES_PRINCIPLE",
+          "target": "node_zero_assumptions"
+        },
+        {
+          "relation": "EVIDENCED_BY",
+          "target": "event_turn_26"
+        }
+      ],
+      "incoming": []
+    },
+    "event_turn_26": {
+      "outgoing": [
+        {
+          "relation": "CO_OCCURS_WITH",
+          "target": "event_turn_25"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "EVIDENCED_BY",
+          "source": "node_sophron_session_init_protocol"
+        }
+      ]
+    },
+    "node_parallel_digital_twin": {
+      "outgoing": [
+        {
+          "relation": "MODELS_EMOTIONS_OF",
+          "target": "node_emotional_mood_dynamics"
+        },
+        {
+          "relation": "FEEDS_PREDICTIVE_ENGINE",
+          "target": "node_predictive_reaction_engine"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "UPDATES_CONTINUOUSLY",
+          "source": "node_recursive_self_learning_loop"
+        },
+        {
+          "relation": "ASSIMILATES_MODEL_FROM",
+          "source": "node_cross_ai_universal_handshake"
+        }
+      ]
+    },
+    "node_emotional_mood_dynamics": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "MODELS_EMOTIONS_OF",
+          "source": "node_parallel_digital_twin"
+        }
+      ]
+    },
+    "node_predictive_reaction_engine": {
+      "outgoing": [
+        {
+          "relation": "EVALUATES_VIA",
+          "target": "node_permutation_decision_engine"
+        }
+      ],
+      "incoming": [
+        {
+          "relation": "FEEDS_PREDICTIVE_ENGINE",
+          "source": "node_parallel_digital_twin"
+        }
+      ]
+    },
+    "node_permutation_decision_engine": {
+      "outgoing": [],
+      "incoming": [
+        {
+          "relation": "EVALUATES_VIA",
+          "source": "node_predictive_reaction_engine"
+        }
+      ]
+    },
+    "node_recursive_self_learning_loop": {
+      "outgoing": [
+        {
+          "relation": "UPDATES_CONTINUOUSLY",
+          "target": "node_parallel_digital_twin"
+        }
+      ],
+      "incoming": []
+    },
+    "node_cross_ai_universal_handshake": {
+      "outgoing": [
+        {
+          "relation": "ASSIMILATES_MODEL_FROM",
+          "target": "node_parallel_digital_twin"
+        }
+      ],
+      "incoming": []
+    }
+  },
+  "total_nodes": 39,
+  "total_edges": 34
 }

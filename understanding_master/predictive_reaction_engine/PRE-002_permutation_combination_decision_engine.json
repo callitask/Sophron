@@ -1,0 +1,38 @@
+{
+  "id": "PRE-002",
+  "category": "predictive_reaction_engine",
+  "title": "Permutation & Combination Engineering Decision Engine",
+  "timestamp": "2026-09-12T01:45:00+05:30",
+  "decision_permutations": [
+    {
+      "scenario": "Speed vs Empirical Verification",
+      "choice_a": "Execute quickly by assuming standard DOM selectors and layouts.",
+      "choice_b": "Inspect live DOM via CDP port 9222, verify elements, then execute.",
+      "predicted_user_selection": "Choice B (100% probability). The user always chooses empirical truth over unverified speed."
+    },
+    {
+      "scenario": "Resume Completeness vs Strict 2-Page Budget",
+      "choice_a": "Keep all bullet points across all 8 previous jobs, letting PDF flow to 3 pages.",
+      "choice_b": "Condense early apprenticeships and internships into compact lines to guarantee exactly 2 pages.",
+      "predicted_user_selection": "Choice B (100% probability). The 2-page ceiling is an executive non-negotiable."
+    },
+    {
+      "scenario": "Query Density: Single Entity vs Compound Strings",
+      "choice_a": "Combine Role + Company (e.g. 'Java Architect EY') into one search box.",
+      "choice_b": "Isolate Role ONLY (e.g. 'Java Architect') and Company ONLY (e.g. 'EY') in separate tasks.",
+      "predicted_user_selection": "Choice B (100% probability). Indian recruitment portal search engines degrade on compound strings."
+    },
+    {
+      "scenario": "Search Volume vs Technology Purity",
+      "choice_a": "Apply to loosely related roles (Python, Golang, generic Cloud) to maximize application count.",
+      "choice_b": "Apply strictly to roles matching verified candidate primary anchors (Java, Spring, Microservices, Enterprise Arch).",
+      "predicted_user_selection": "Choice B (100% probability). High-relevance precision beats vanity volume every time."
+    },
+    {
+      "scenario": "Code Refactoring: Wholesale Rewrite vs Surgical Fix",
+      "choice_a": "Rewrite the entire module or architecture to modern patterns.",
+      "choice_b": "Surgically identify the exact failure point (e.g. regex word boundary, URL navigation slug) and patch in-place.",
+      "predicted_user_selection": "Choice B (100% probability). Surgical evolution protects working systems from regressions."
+    }
+  ]
+}
