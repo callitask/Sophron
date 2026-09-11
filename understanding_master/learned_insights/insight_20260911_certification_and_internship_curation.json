@@ -1,0 +1,27 @@
+{
+  "insight_id": "insight_20260911_certification_and_internship_curation",
+  "temporal_anchor": "2026-09-11T23:12:12.346715",
+  "psychological_state": {
+    "mood": "collaborative",
+    "cognitive_load": "low",
+    "decision_style": "Delegative filtering of credentials"
+  },
+  "interaction_pairing": {
+    "user_action": "Provided raw certificate/badge list and NEC internship text, asking for selective high-credibility inclusion in resume.md",
+    "ai_response_quality": "High — strict professional filtering applied; chronologically integrated NEC apprenticeship",
+    "friction_points": "None",
+    "resolution": "resume.md updated with 4 high-value certs and NEC experience; low-value badges omitted"
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "User values high signal-to-noise ratio in resume; trusts agent to separate frivolous badges from legitimate credentials",
+    "changed_from_prior_belief": "None",
+    "consistency_with_axioms": "Axiom 2 (precision and evidence)"
+  },
+  "long_term_application": {
+    "future_implication": "Always filter out gamification/internal rewards when parsing candidate achievements for public resumes or job portals",
+    "workspace_scope": "career_agent",
+    "linked_insights": [
+      "insight_20260911_resume_strategic_skills_update"
+    ]
+  }
+}

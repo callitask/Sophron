@@ -1,5 +1,5 @@
 {
-  "total_reflections": 16,
+  "total_reflections": 17,
   "analyzed_turns": [
     "TURN-01",
     "TURN-08",
@@ -16,7 +16,8 @@
     "TURN-25",
     "TURN-26",
     "TURN-27",
-    "TURN-28"
+    "TURN-28",
+    "TURN-29"
   ],
   "reflection_schema": [
     "user_intent",
@@ -27,6 +28,6 @@
     "was_work_done_exactly_as_asked",
     "evolutionary_takeaways"
   ],
-  "last_updated": "2026-09-11T23:00:24.980368",
-  "last_turn_file": "turn_0006_turn-28.json"
+  "last_updated": "2026-09-11T23:12:12.380505",
+  "last_turn_file": "turn_0007_turn-29.json"
 }

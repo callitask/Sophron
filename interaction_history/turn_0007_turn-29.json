@@ -1,0 +1,11 @@
+{
+  "turn_id": "TURN-29",
+  "timestamp": "2026-09-11T23:12:12.337387",
+  "user_intent": "Add NEC Technologies apprenticeship and filter credible certifications for resume inclusion",
+  "why_user_made_such_thinking": "User wanted to document verifiable early-career training and add high-signal certifications while discarding low-signal gamification badges",
+  "why_user_performed_this_way": "Pragmatic profile enhancement: provided full list of certificates and badges and explicitly asked AI to filter only credible and purposeful ones",
+  "user_reaction_and_satisfaction": "Pending presentation of selected certs vs filtered gamification badges",
+  "did_ai_actually_understand": "Yes — filtered out internal gamification badges (Duelist, Warrior, Studious Bee, Ace) and included high-relevance industry credentials (Google Cloud, Cyber Security SDLC, Privacy by Design, GenAI)",
+  "was_work_done_exactly_as_asked": "Yes — edited resume.md with NEC apprenticeship in chronological order and curated certifications section",
+  "evolutionary_takeaways": "Distinguish between internal corporate gamification badges vs industry-recognized certifications to maintain professional senior architect branding."
+}
