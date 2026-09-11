@@ -6,6 +6,13 @@
       "task_summary": "Sophron automation build",
       "registered_at": "2026-09-11T20:59:01.286338",
       "last_heartbeat": "2026-09-11T20:59:01.286343"
+    },
+    "54423117-be3b-4d55-bfbc-c03d658eda4d": {
+      "session_uuid": "54423117-be3b-4d55-bfbc-c03d658eda4d",
+      "workspace": "career_agent",
+      "task_summary": "Universal Autonomous Career Agent for Udaysagar Kandpal - Bangalore Java Lead/Architect",
+      "registered_at": "2026-09-11T21:11:13.647110",
+      "last_heartbeat": "2026-09-11T21:11:13.647116"
     }
   },
   "past_sessions": []

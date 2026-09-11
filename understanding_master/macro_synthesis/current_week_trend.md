@@ -14,3 +14,4 @@
 - [2026-09-11 20:05 IST] [insight_20260911_ats_table_deconstruction_and_option_b_engine]: Deconstructed ATS table parsing failure in Playwright PDF pipeline; upgraded tailoring engine with Option B (regex keyword prioritization on single-column bold labels); migrated all 5 candidate profile resumes to 0-table/0-en-dash format; reinforced Sophron Active Meta-Cognition and Decade-Scale memory protocol.
 
 - [2026-09-11 20:15 IST] [insight_20260911_sophron_automation_root_cause_and_session_init_fix]: Diagnosed 3 Sophron automation failure vectors; built 01_sophron_session_init.md as permanent structural enforcement; session now auto-loads cognitive context and writes insight cards at every milestone.
+- [2026-09-11 21:11 IST] [insight_20260911_naukri_execution_and_concurrency_guard]: Sophron v2 Concurrency Safe layer initialized; session registered; token-saving minimal reporting mode engaged for live Bangalore career agent.
