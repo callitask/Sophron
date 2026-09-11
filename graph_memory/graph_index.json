@@ -1,5 +1,5 @@
 {
-  "total_indexed_nodes": 21,
+  "total_indexed_nodes": 31,
   "adjacency": {
     "node_zero_assumptions": {
       "incoming": [],
@@ -145,6 +145,23 @@
         "category": "session_rule"
       }
     },
+    "node_sophron_auto_update": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "event_turn_23",
+          "relation": "VIOLATION_CORRECTED_IN"
+        }
+      ],
+      "data": {
+        "id": "node_sophron_auto_update",
+        "type": "UniversalRule",
+        "tier": 1,
+        "name": "Sophron Auto-Update After Every Session",
+        "category": "session_rule",
+        "description": "Sophron memory MUST be written at the end of every significant agent session, not only when user reminds. Failure to auto-update is a critical OS breach."
+      }
+    },
     "ws_career_agent": {
       "incoming": [
         {
@@ -161,6 +178,30 @@
         },
         {
           "source": "node_campus_internship_toggle",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_anti_loop_mandate",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_token_conservation",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_profile_filter_anshika",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_ipc_architecture",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_parallel_agent_isolation",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "source": "node_ats_single_column_invariant",
           "relation": "SCOPED_TO_WORKSPACE"
         }
       ],
@@ -244,6 +285,109 @@
         "tier": 2,
         "name": "Naukri Campus Job/Internship Toggle",
         "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+      }
+    },
+    "node_anti_loop_mandate": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "target": "event_turn_23",
+          "relation": "MANDATED_IN"
+        }
+      ],
+      "data": {
+        "id": "node_anti_loop_mandate",
+        "type": "DomainRule",
+        "tier": 2,
+        "name": "Anti-Loop Designation Exhaustion Rule",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+        "description": "If a Naukri search designation returns 0 results across 2+ consecutive cycles, retire it from active search, log it to processed_ledger, and advance to the next designation immediately. Never repeat a dead keyword."
+      }
+    },
+    "node_token_conservation": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "data": {
+        "id": "node_token_conservation",
+        "type": "DomainRule",
+        "tier": 2,
+        "name": "Token Conservation \u2014 Silent Execution",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+        "description": "Only output to chat when: IPC prompt appears, critical error occurs, or user explicitly requests output. Suppress all intermediate step logs."
+      }
+    },
+    "node_profile_filter_anshika": {
+      "incoming": [
+        {
+          "source": "event_turn_23",
+          "relation": "ENFORCES"
+        }
+      ],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "data": {
+        "id": "node_profile_filter_anshika",
+        "type": "CandidateRule",
+        "tier": 2,
+        "name": "Anshika Garg Profile Filters",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+        "allowed_domains": [
+          "Finance",
+          "Audit",
+          "Assurance",
+          "Valuation",
+          "Deals",
+          "Due Diligence",
+          "BFSI Research",
+          "Financial Advisory"
+        ],
+        "blocked_domains": [
+          "CA Articleship",
+          "Customer Service",
+          "Warehouse",
+          "Retail Banking",
+          "Legal",
+          "Executive Level"
+        ],
+        "salary_target_lpa": 8,
+        "city_preference": [
+          "Bengaluru, Karnataka",
+          "Delhi NCR"
+        ]
+      }
+    },
+    "node_ipc_architecture": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "target": "event_turn_23",
+          "relation": "EXERCISED_IN"
+        }
+      ],
+      "data": {
+        "id": "node_ipc_architecture",
+        "type": "SystemKnowledge",
+        "tier": 2,
+        "name": "IPC Cognitive Architecture (pending_question.json)",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+        "description": "Two IPC task types: STARVATION_EXPANSION (expects JSON array of 6-10 designations), RESUME_TAILORING (expects tailored_summary + prioritized_skills JSON). 75-second timeout, 10-second heartbeat. Responses must land within window."
       }
     },
     "event_turn_01": {
@@ -354,6 +498,126 @@
         "type": "CognitiveReflection",
         "turn_id": "TURN-20",
         "name": "Distributed Git & Graph Memory"
+      }
+    },
+    "event_turn_23": {
+      "incoming": [
+        {
+          "source": "node_sophron_auto_update",
+          "relation": "VIOLATION_CORRECTED_IN"
+        },
+        {
+          "source": "node_anti_loop_mandate",
+          "relation": "MANDATED_IN"
+        },
+        {
+          "source": "node_ipc_architecture",
+          "relation": "EXERCISED_IN"
+        }
+      ],
+      "outgoing": [
+        {
+          "target": "node_profile_filter_anshika",
+          "relation": "ENFORCES"
+        }
+      ],
+      "data": {
+        "id": "event_turn_23",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-23",
+        "name": "Session-23 IPC Cycles, Applications, Sophron Sync Correction",
+        "applications": [
+          "PwC - Internal Audit Associate (CHATBOT)",
+          "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"
+        ],
+        "corrections": [
+          "anti-loop mandate",
+          "token conservation",
+          "Sophron auto-update breach remediation",
+          "profile domain filter finalization"
+        ],
+        "timestamp": "2026-09-10T12:19:00+05:30"
+      }
+    },
+    "node_parallel_agent_isolation": {
+      "incoming": [
+        {
+          "source": "event_turn_24",
+          "relation": "FORMALIZES_POLICY"
+        }
+      ],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        }
+      ],
+      "data": {
+        "id": "node_parallel_agent_isolation",
+        "type": "SystemArchitecturePrinciple",
+        "tier": 2,
+        "name": "Parallel Multi-Agent Chrome Isolation",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+        "description": "Two agents can run simultaneously for two profiles without crossover. Isolation requires: (1) unique --user-data-dir per Chrome instance, (2) unique --remote-debugging-port, (3) unique cdp_url in candidate_config.json. Port registry: 9222=anshika_garg, 9223=udaysagar_kandpal. Each profile's IPC file is namespaced to profiles/<name>/output/pending_question.json.",
+        "port_registry": {
+          "9222": "anshika_garg",
+          "9223": "udaysagar_kandpal"
+        }
+      }
+    },
+    "event_turn_24": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "node_parallel_agent_isolation",
+          "relation": "FORMALIZES_POLICY"
+        }
+      ],
+      "data": {
+        "id": "event_turn_24",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-24",
+        "name": "Parallel Agent Architecture \u2014 User Thought Process Captured",
+        "insight": "User reasoned like a systems architect: isolate at OS/browser boundary first, then config, then code. Recognized port/user-data-dir duality before asking implementation.",
+        "config_change": "udaysagar_kandpal cdp_url updated to http://127.0.0.1:9223",
+        "timestamp": "2026-09-10T13:32:00+05:30"
+      }
+    },
+    "node_ats_single_column_invariant": {
+      "incoming": [],
+      "outgoing": [
+        {
+          "target": "ws_career_agent",
+          "relation": "SCOPED_TO_WORKSPACE"
+        },
+        {
+          "target": "event_turn_25",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "data": {
+        "id": "node_ats_single_column_invariant",
+        "type": "SystemArchitecturePrinciple",
+        "tier": 2,
+        "name": "ATS Single-Column & Zero-Table Invariant (Option B)",
+        "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+        "description": "Tables in markdown convert to PDF 2D grid cells, scrambling under horizontal ATS coordinate sweeps. All resumes must be single-column with bold labels (**Category:** Skill 1, Skill 2) and ASCII hyphens (-). Tailoring engine uses regex to prioritize JD skills without tables."
+      }
+    },
+    "event_turn_25": {
+      "incoming": [
+        {
+          "source": "node_ats_single_column_invariant",
+          "relation": "EVIDENCED_BY"
+        }
+      ],
+      "outgoing": [],
+      "data": {
+        "id": "event_turn_25",
+        "type": "CognitiveReflection",
+        "turn_id": "TURN-25",
+        "name": "ATS Parseability Audit & Option B Engine Upgrade",
+        "timestamp": "2026-09-11T20:05:00+05:30"
       }
     }
   }

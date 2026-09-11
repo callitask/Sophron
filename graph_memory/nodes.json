@@ -1,5 +1,5 @@
 {
-  "total_nodes": 29,
+  "total_nodes": 31,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -112,7 +112,7 @@
       "id": "node_token_conservation",
       "type": "DomainRule",
       "tier": 2,
-      "name": "Token Conservation — Silent Execution",
+      "name": "Token Conservation \u2014 Silent Execution",
       "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
       "description": "Only output to chat when: IPC prompt appears, critical error occurs, or user explicitly requests output. Suppress all intermediate step logs."
     },
@@ -122,10 +122,29 @@
       "tier": 2,
       "name": "Anshika Garg Profile Filters",
       "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-      "allowed_domains": ["Finance", "Audit", "Assurance", "Valuation", "Deals", "Due Diligence", "BFSI Research", "Financial Advisory"],
-      "blocked_domains": ["CA Articleship", "Customer Service", "Warehouse", "Retail Banking", "Legal", "Executive Level"],
+      "allowed_domains": [
+        "Finance",
+        "Audit",
+        "Assurance",
+        "Valuation",
+        "Deals",
+        "Due Diligence",
+        "BFSI Research",
+        "Financial Advisory"
+      ],
+      "blocked_domains": [
+        "CA Articleship",
+        "Customer Service",
+        "Warehouse",
+        "Retail Banking",
+        "Legal",
+        "Executive Level"
+      ],
       "salary_target_lpa": 8,
-      "city_preference": ["Bengaluru, Karnataka", "Delhi NCR"]
+      "city_preference": [
+        "Bengaluru, Karnataka",
+        "Delhi NCR"
+      ]
     },
     {
       "id": "node_ipc_architecture",
@@ -188,8 +207,16 @@
       "type": "CognitiveReflection",
       "turn_id": "TURN-23",
       "name": "Session-23 IPC Cycles, Applications, Sophron Sync Correction",
-      "applications": ["PwC - Internal Audit Associate (CHATBOT)", "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"],
-      "corrections": ["anti-loop mandate", "token conservation", "Sophron auto-update breach remediation", "profile domain filter finalization"],
+      "applications": [
+        "PwC - Internal Audit Associate (CHATBOT)",
+        "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"
+      ],
+      "corrections": [
+        "anti-loop mandate",
+        "token conservation",
+        "Sophron auto-update breach remediation",
+        "profile domain filter finalization"
+      ],
       "timestamp": "2026-09-10T12:19:00+05:30"
     },
     {
@@ -208,10 +235,25 @@
       "id": "event_turn_24",
       "type": "CognitiveReflection",
       "turn_id": "TURN-24",
-      "name": "Parallel Agent Architecture — User Thought Process Captured",
+      "name": "Parallel Agent Architecture \u2014 User Thought Process Captured",
       "insight": "User reasoned like a systems architect: isolate at OS/browser boundary first, then config, then code. Recognized port/user-data-dir duality before asking implementation.",
       "config_change": "udaysagar_kandpal cdp_url updated to http://127.0.0.1:9223",
       "timestamp": "2026-09-10T13:32:00+05:30"
+    },
+    {
+      "id": "node_ats_single_column_invariant",
+      "type": "SystemArchitecturePrinciple",
+      "tier": 2,
+      "name": "ATS Single-Column & Zero-Table Invariant (Option B)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Tables in markdown convert to PDF 2D grid cells, scrambling under horizontal ATS coordinate sweeps. All resumes must be single-column with bold labels (**Category:** Skill 1, Skill 2) and ASCII hyphens (-). Tailoring engine uses regex to prioritize JD skills without tables."
+    },
+    {
+      "id": "event_turn_25",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-25",
+      "name": "ATS Parseability Audit & Option B Engine Upgrade",
+      "timestamp": "2026-09-11T20:05:00+05:30"
     }
   ]
 }
