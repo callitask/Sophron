@@ -17,3 +17,4 @@
 - [2026-09-11 21:11 IST] [insight_20260911_naukri_execution_and_concurrency_guard]: Sophron v2 Concurrency Safe layer initialized; session registered; token-saving minimal reporting mode engaged for live Bangalore career agent.
 - [2026-09-11 22:30 IST] [insight_20260911_big4_target_companies]: User prioritized Big 4 consulting firms (EY, Deloitte, PwC, KPMG) in Bangalore; target_companies matrix configured for Strategy B and C priority infiltration.
 - [2026-09-11 22:50 IST] [insight_20260911_exclude_golang]: User explicitly stated zero Golang background; added Golang, Go Developer, GoLang to negative_keywords to suppress out-of-domain Go backend postings.
+- [2026-09-11 23:00 IST] [insight_20260911_resume_strategic_skills_update]: Resume.md + candidate_config.json updated with 5 strategic skills; search keywords expanded; daemon relaunching.
