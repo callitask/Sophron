@@ -1,0 +1,12 @@
+{
+  "active_sessions": {
+    "e49e3776-84a3-47ee-b275-94a400410933": {
+      "session_uuid": "e49e3776-84a3-47ee-b275-94a400410933",
+      "workspace": "career_agent",
+      "task_summary": "Sophron automation build",
+      "registered_at": "2026-09-11T20:59:01.286338",
+      "last_heartbeat": "2026-09-11T20:59:01.286343"
+    }
+  },
+  "past_sessions": []
+}
