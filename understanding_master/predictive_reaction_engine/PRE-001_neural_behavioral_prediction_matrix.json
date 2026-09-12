@@ -38,6 +38,14 @@
       "predicted_emotional_response": "Visionary Flow State: Willingness to expand the system's scope and trust the AI with greater autonomy.",
       "predicted_user_behavior": "Grants explicit approval to commit/push to Git, and moves the timeline to the next major architectural milestone.",
       "mitigation_protocol": "Maintain this gold standard of contextual awareness across every interaction turn."
+    },
+    {
+      "stimulus_id": "STIM-05",
+      "ai_action": "AI formats profile data exclusively for human copy-pasting (e.g., Markdown) but fails to embed it deeply into JSON system configurations for autonomous downstream agents to use.",
+      "predicted_cognitive_state": "Frustration with shallow AI task execution.",
+      "predicted_emotional_response": "Corrective Enforcement: Directing the AI to remember the broader context (that the data is for the Job AI Agent, not just a human).",
+      "predicted_user_behavior": "Instructs the AI to update the config files so the AG Brain can actually ingest the data.",
+      "mitigation_protocol": "Always ask: 'How will the downstream Python application actually read and use this new data?' Update JSON configs automatically alongside Markdown documents."
     }
   ]
 }

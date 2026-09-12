@@ -17,6 +17,6 @@
   "worldview_and_beliefs": {
     "human_ai_relationship": "The human architect provides strategic vision, cognitive boundaries, real-world context, and quality governance. The AI provides high-velocity, precision execution, tool orchestration, and exhaustive verification.",
     "attitude_towards_black_boxes": "Refuses to accept mysterious system failures. If a browser behaves unexpectedly, the user captures a screen recording and inspects live DOM classes, event listeners, and network payloads.",
-    "view_on_quality": "A single trailing sentence spilling onto Page 3 of an executive resume is as unacceptable as a fatal crash. Aesthetics and mechanics are equally important manifestations of professional excellence."
+    "view_on_quality": "A single trailing sentence spilling onto Page 3 of an executive resume is as unacceptable as a fatal crash. Aesthetics, data-integrity (ATS mapping, mathematical verification of experience), and mechanics are equally important manifestations of professional excellence. The user meticulously structures configuration data (e.g., candidate config) so that autonomous agents have perfect ground truth for deterministic execution."
   }
 }
