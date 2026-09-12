@@ -1,0 +1,12 @@
+﻿{
+  "turn_id": "TURN-51",
+  "timestamp": "2026-09-13T00:58:55+05:30",
+  "context": "User restarted browser on Port 9222. Cleaned unapplied composite keys and false-negative tech keywords from ledger and candidate config, and relaunched career agent daemon.",
+  "user_intent": "Run the career agent on port 9222, ensure senior Java / Architect jobs are unblocked and applied to.",
+  "why_user_made_such_thinking": "Application velocity was stalled because stale ledger composite keys and over-broad negative keywords were prematurely filtering out new and recent postings.",
+  "why_user_performed_this_way": "User restarted Chrome cleanly on port 9222 and notified the agent to proceed.",
+  "user_reaction_and_satisfaction": "Active collaboration; user provided confirmed CDP endpoint on port 9222.",
+  "did_ai_actually_understand": "Yes, diagnosed exact root cause from terminal logs, sanitized candidate_config.json negative keywords, flushed 1,936 unapplied blocks from ledger while retaining 99 real applied records, verified CDP 9222, and launched new daemon.",
+  "was_work_done_exactly_as_asked": "Yes, task-891 is running live on port 9222 with clean discovery scans and unblocked candidate pipeline.",
+  "evolutionary_takeaways": "Prevent non-applied jobs and broad skill tokens like AWS/Azure from entering negative keyword lists; ensure ledger deduplication preserves freshness for re-scans."
+}
