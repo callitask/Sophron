@@ -1,0 +1,30 @@
+{
+  "insight_id": "insight_20260913_ag_brain_talent_strategist_decoupling",
+  "temporal_anchor": "2026-09-13T16:53:00+05:30",
+  "_dedup_fingerprint": "6c8fb0326b7b",
+  "psychological_state": {
+    "mood": "decisive",
+    "cognitive_load": "high",
+    "decision_style": "First-principles architectural purity and uncompromising zero-trust boundary enforcement"
+  },
+  "interaction_pairing": {
+    "user_action": "User forcefully mandated that all preset designation templates, seniority heuristics, and experience threshold branching (e.g. if candidate_exp >= 8.0: standard_templates = [...]) must be completely eliminated from Python scripts. Demanded that the AG Brain be established as the sole intelligent decider and talent strategist, executing a push-start profile analysis at the start of every session to populate candidate_config.json, with Python scripts acting strictly as a headless browser actuator between job portals and the AG Brain.",
+    "ai_response_quality": "Flawless structural alignment: physically deleted all residual heuristics from core/ai_client.py, replaced starvation fallback with pure candidate_config.json extraction, codified RULE 7 and RULE 8 in .agents/rules/02_career_agent_operational_rules.md, authored .agents/rules/03_career_agent_session_profile_init.md, injected append-only AI context changelogs across all 16 Python files, verified 0 hardcoded values via Guardrail P1, and synced Sophron cognitive memory.",
+    "friction_points": "Earlier AI implementations left residual heuristic branches in analyze_and_expand_designations() as a naive fallback, mistakenly treating scripts as semi-intelligent deciders instead of recognizing that all intelligence must reside in the AG Brain.",
+    "resolution": "Complete physical purge of all heuristics and templates from Python code. Hardcoded templates replaced with pure AG Brain IPC generation and candidate_config.json backup extraction. Session push-start protocol codified in permanent operating rules."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "The Architect views the Universal Autonomous Career Agent as a strict two-layer architecture: Layer 1 (AG Brain) is the executive talent strategist, career psychologist, and decision authority; Layer 2 (Python scripts) is strictly an actuator / browser medium that automates DOM interactions on Naukri and LinkedIn. No intelligence, choices, or heuristics may ever leak into Layer 2.",
+    "changed_from_prior_belief": "Supersedes any prior assumption that Python scripts should have fallback heuristic rules for designation generation. All role decisions must either be pre-configured by the AG Brain in candidate_config.json during session push-start or generated dynamically via live IPC.",
+    "consistency_with_axioms": "Demonstrates Axiom 1 (Zero Assumptions - never assume a hardcoded template fits a candidate), Axiom 3 (Surgical Diff - preserving codebase integrity while purging heuristics), Axiom 4 (Purity Guardrail P1 - zero tolerance for hardcoded data), and Axiom 5 (Decade-Scale Memory - codifying rules so future agents never repeat the mistake)."
+  },
+  "long_term_application": {
+    "future_implication": "In all future sessions, the AG Brain must automatically read docs/, identify the candidate profile, read resume.md, analyze the career trajectory as an expert talent architect, and push-start candidate_config.json before running any script. Python scripts must remain pure actuators.",
+    "workspace_scope": "career_agent",
+    "linked_insights": [
+      "insight_20260909_temporal_psychology",
+      "insight_20260911_sophron_automation_root_cause_and_session_init_fix",
+      "insight_20260911_resume_strategic_skills_update"
+    ]
+  }
+}

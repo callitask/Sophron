@@ -1,5 +1,5 @@
 {
-  "total_edges": 34,
+  "total_edges": 42,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -170,6 +170,46 @@
       "source": "node_cross_ai_universal_handshake",
       "relation": "ASSIMILATES_MODEL_FROM",
       "target": "node_parallel_digital_twin"
+    },
+    {
+      "source": "node_brain_actuator_decoupling",
+      "target": "node_ag_brain_talent_strategist",
+      "relation": "MANDATES"
+    },
+    {
+      "source": "node_ag_brain_talent_strategist",
+      "target": "node_session_push_start_protocol",
+      "relation": "EXECUTES"
+    },
+    {
+      "source": "node_brain_actuator_decoupling",
+      "target": "node_guardrail_p1_purity",
+      "relation": "STRENGTHENS"
+    },
+    {
+      "source": "node_session_push_start_protocol",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_append_only_ai_context",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_career_sophron_isolation",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "node_brain_actuator_decoupling",
+      "target": "event_turn_55",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "node_ag_brain_talent_strategist",
+      "target": "event_turn_55",
+      "relation": "DEMONSTRATED_IN"
     }
   ]
 }

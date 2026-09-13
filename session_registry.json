@@ -1,25 +1,11 @@
 {
   "active_sessions": {
-    "e49e3776-84a3-47ee-b275-94a400410933": {
-      "session_uuid": "e49e3776-84a3-47ee-b275-94a400410933",
+    "b5c27373-432c-423d-85b5-ce03fdfef70e": {
+      "session_uuid": "b5c27373-432c-423d-85b5-ce03fdfef70e",
       "workspace": "career_agent",
-      "task_summary": "Sophron automation build",
-      "registered_at": "2026-09-11T20:59:01.286338",
-      "last_heartbeat": "2026-09-11T20:59:01.286343"
-    },
-    "54423117-be3b-4d55-bfbc-c03d658eda4d": {
-      "session_uuid": "54423117-be3b-4d55-bfbc-c03d658eda4d",
-      "workspace": "career_agent",
-      "task_summary": "Resume update: IT governance + enterprise architecture skills",
-      "registered_at": "2026-09-11T22:57:19.130502",
-      "last_heartbeat": "2026-09-11T22:57:19.130510"
-    },
-    "42fff6c1-e5cd-49f7-bc9c-67b9f8ec4332": {
-      "session_uuid": "42fff6c1-e5cd-49f7-bc9c-67b9f8ec4332",
-      "workspace": "career_agent",
-      "task_summary": "Terminal execution log forensic analysis & root cause diagnosis",
-      "registered_at": "2026-09-12T15:25:59.000000",
-      "last_heartbeat": "2026-09-12T15:31:00.000000"
+      "task_summary": "Decoupling AG Brain as Sole Decider and Talent Strategist vs Python Actuator",
+      "registered_at": "2026-09-13T16:53:14.967815",
+      "last_heartbeat": "2026-09-13T16:53:14.967819"
     }
   },
   "past_sessions": []

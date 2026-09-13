@@ -1,5 +1,5 @@
 {
-  "total_nodes": 39,
+  "total_nodes": 45,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -112,7 +112,7 @@
       "id": "node_token_conservation",
       "type": "DomainRule",
       "tier": 2,
-      "name": "Token Conservation \u2014 Silent Execution",
+      "name": "Token Conservation — Silent Execution",
       "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
       "description": "Only output to chat when: IPC prompt appears, critical error occurs, or user explicitly requests output. Suppress all intermediate step logs."
     },
@@ -235,7 +235,7 @@
       "id": "event_turn_24",
       "type": "CognitiveReflection",
       "turn_id": "TURN-24",
-      "name": "Parallel Agent Architecture \u2014 User Thought Process Captured",
+      "name": "Parallel Agent Architecture — User Thought Process Captured",
       "insight": "User reasoned like a systems architect: isolate at OS/browser boundary first, then config, then code. Recognized port/user-data-dir duality before asking implementation.",
       "config_change": "udaysagar_kandpal cdp_url updated to http://127.0.0.1:9223",
       "timestamp": "2026-09-10T13:32:00+05:30"
@@ -310,6 +310,49 @@
       "tier": 1,
       "name": "Cross-AI Universal Handshake Protocol",
       "category": "self_learning_loop"
+    },
+    {
+      "id": "node_brain_actuator_decoupling",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Brain-Actuator Decoupling",
+      "category": "architecture_axiom"
+    },
+    {
+      "id": "node_ag_brain_talent_strategist",
+      "type": "CognitiveRole",
+      "tier": 1,
+      "name": "AG Brain as Sole Talent Strategist",
+      "category": "decision_engine"
+    },
+    {
+      "id": "node_session_push_start_protocol",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Session Startup Profile Push-Start",
+      "category": "operational_protocol"
+    },
+    {
+      "id": "node_append_only_ai_context",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Append-Only AI Context Headers",
+      "category": "anti_regression"
+    },
+    {
+      "id": "node_career_sophron_isolation",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Career Agent vs Sophron Subsystem Isolation",
+      "category": "system_boundary"
+    },
+    {
+      "id": "event_turn_55",
+      "type": "Event",
+      "tier": 2,
+      "name": "Elimination of Python Heuristic Presets & Elevation of AG Brain Decider",
+      "category": "interaction_event",
+      "timestamp": "2026-09-13T16:53:00+05:30"
     }
   ]
 }
