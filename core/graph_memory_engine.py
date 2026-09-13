@@ -58,11 +58,15 @@ class GraphMemoryEngine:
         if node_id not in self.adjacency:
             return []
         connected = []
-        for edge in self.adjacency[node_id].get("outgoing", []):
-            if relation_type is None or edge["relation"] == relation_type:
-                target_node = self.nodes.get(edge["target"])
+        raw_edges = self.adjacency[node_id]
+        edges = raw_edges.get("outgoing", []) if isinstance(raw_edges, dict) else (raw_edges if isinstance(raw_edges, list) else [])
+        for edge in edges:
+            if not isinstance(edge, dict):
+                continue
+            if relation_type is None or edge.get("relation") == relation_type:
+                target_node = self.nodes.get(edge.get("target"))
                 if target_node:
-                    connected.append({"node": target_node, "relation": edge["relation"]})
+                    connected.append({"node": target_node, "relation": edge.get("relation", "RELATED_TO")})
         return connected
 
     def get_workspace_memories(self, workspace_slug: str) -> List[Dict[str, Any]]:
