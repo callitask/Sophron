@@ -1,4 +1,4 @@
-﻿"""
+"""
 sophron_write_guard.py
 ======================
 Concurrency-safe write layer for Sophron cognitive memory.
@@ -29,7 +29,7 @@ import subprocess
 from pathlib import Path
 from datetime import datetime, timezone
 
-SOPHRON_ROOT = Path(r"F:\JOB AI AGENT\Sophron")
+SOPHRON_ROOT = Path(__file__).resolve().parent.parent
 LOCK_FILE = SOPHRON_ROOT / ".sophron_write.lock"
 SESSION_REGISTRY = SOPHRON_ROOT / "session_registry.json"
 MULTITASKING_CARDS_DIR = SOPHRON_ROOT / "understanding_master" / "multitasking_cards"

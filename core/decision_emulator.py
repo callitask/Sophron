@@ -154,7 +154,7 @@ class DecisionEmulator:
 
         if not matched_prediction:
             # Default prediction based on sentiment/action
-            if any(w in text_lower for w in ["guess", "assume", "speculate", "without running", "3 pages", "orphan", "tcs", "git commit"]):
+            if any(w in text_lower for w in ["guess", "assume", "speculate", "without running", "3 pages", "orphan", "blacklisted", "negative company", "git commit"]):
                 matched_prediction = {
                     "predicted_cognitive_state": "Cognitive friction; violation of established quality or safety axioms.",
                     "predicted_emotional_response": "Sharp irritation, loss of trust, demanding immediate correction.",
@@ -178,7 +178,7 @@ class DecisionEmulator:
         
         if "guess" in text_lower or "assume" in text_lower: score -= 15
         if "3 page" in text_lower or "orphan" in text_lower: score -= 12
-        if "tcs" in text_lower or "blacklisted" in text_lower: score -= 20
+        if "negative company" in text_lower or "blacklisted" in text_lower: score -= 20
         if "unauthorized git" in text_lower: score -= 25
 
         return {

@@ -179,7 +179,7 @@ class TestMasterPersonaAgent(unittest.TestCase):
             from Sophron.core.workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
         except ImportError:
             from workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
-        guard = WorkspaceGuard(current_workspace_uri="file:///f:/JOB%20AI%20AGENT")
+        guard = WorkspaceGuard(current_workspace_uri=MASTER_DIR.parent.as_uri())
 
         # Tier 1 global memory: Allowed
         t1_allowed = guard.filter_memory_access({"id": "m1", "tier": "TIER_1_UNIVERSAL"})
@@ -220,7 +220,7 @@ class TestMasterPersonaAgent(unittest.TestCase):
             from Sophron.core.antigravity_context_bridge import AntigravityContextBridge
         except ImportError:
             from antigravity_context_bridge import AntigravityContextBridge
-        bridge = AntigravityContextBridge(current_workspace_uri="file:///f:/JOB%20AI%20AGENT")
+        bridge = AntigravityContextBridge(current_workspace_uri=MASTER_DIR.parent.as_uri())
         prompt = bridge.compile_system_prompt_injection()
         self.assertIn("USER COGNITIVE OPERATING SYSTEM", prompt)
         self.assertIn("Zero Assumptions", prompt)

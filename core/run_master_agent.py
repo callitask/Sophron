@@ -125,9 +125,11 @@ def main():
                 except Exception:
                     pass
         if not t_path:
-            candidate_logs = list(Path(r"C:\Users\7303150607\.gemini\antigravity\brain").glob("*/.system_generated/logs/transcript.jsonl"))
-            if candidate_logs:
-                t_path = candidate_logs[-1]
+            home_brain = Path.home() / ".gemini" / "antigravity" / "brain"
+            if home_brain.exists():
+                candidate_logs = list(home_brain.glob("*/.system_generated/logs/transcript.jsonl"))
+                if candidate_logs:
+                    t_path = candidate_logs[-1]
 
         learner = TranscriptLearner(transcript_path=t_path)
         turns = learner.extract_user_turns()
@@ -214,7 +216,8 @@ def main():
         print("=======================================================\n")
 
     elif args.command == "export-prompt":
-        bridge = AntigravityContextBridge(current_workspace_uri="file:///f:/JOB%20AI%20AGENT")
+        ws_uri = MASTER_AGENT_DIR.parent.as_uri()
+        bridge = AntigravityContextBridge(current_workspace_uri=ws_uri)
         out_file = Path(args.out) if args.out else MASTER_AGENT_DIR / "SYSTEM_PROMPT_INJECTION.md"
         written = bridge.write_prompt_file(out_file)
         print(f"[ContextBridge] Successfully exported prompt injection to: {written}")
