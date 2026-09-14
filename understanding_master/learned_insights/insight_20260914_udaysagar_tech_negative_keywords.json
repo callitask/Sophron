@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2",
+  "id": "insight_20260914_udaysagar_tech_negative_keywords",
+  "timestamp": "2026-09-14T21:01:40+05:30",
+  "type": "USER_PREFERENCE_INSTRUCTION",
+  "data_subject": "PROFILE_UDAYSAGAR",
+  "rule_tier": "PROFILE_SPECIFIC",
+  "context_at_time_of_insight": "Active daemon search sweep on Mumbai location for udaysagar_kandpal",
+  "was_there_a_context_switch": false,
+  "core_insight": "User explicitly instructed to strictly ignore jobs requiring Python, C++, C, or .NET as these are not relevant skills for profile Udaysagar Kandpal. Updated candidate_config.json negative_keywords to block matching postings during deep scan and evaluation.",
+  "action_taken": "Appended Python, Python Developer, Python Lead, Python Architect, C++, C++ Developer, C/C++, C Developer to candidate_config.json negative_keywords."
+}

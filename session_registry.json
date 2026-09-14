@@ -13,6 +13,13 @@
       "task_summary": "Run continuous_career_agent for anshika_garg",
       "registered_at": "2026-09-14T10:16:41.497817",
       "last_heartbeat": "2026-09-14T10:16:41.497824"
+    },
+    "027a05d5-5eeb-4ab8-8e84-44b562183c52": {
+      "session_uuid": "027a05d5-5eeb-4ab8-8e84-44b562183c52",
+      "workspace": "career_agent",
+      "task_summary": "Negative keyword addition: Python/C++/C/.NET",
+      "registered_at": "2026-09-14T21:01:47.946191",
+      "last_heartbeat": "2026-09-14T21:01:47.946199"
     }
   },
   "past_sessions": []
