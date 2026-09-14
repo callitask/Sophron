@@ -6,6 +6,13 @@
       "task_summary": "Decoupling AG Brain as Sole Decider and Talent Strategist vs Python Actuator",
       "registered_at": "2026-09-13T16:53:14.967815",
       "last_heartbeat": "2026-09-13T16:53:14.967819"
+    },
+    "1be1074f-198c-4b29-81b1-7577aff1b215": {
+      "session_uuid": "1be1074f-198c-4b29-81b1-7577aff1b215",
+      "workspace": "career_agent",
+      "task_summary": "Run continuous_career_agent for anshika_garg",
+      "registered_at": "2026-09-14T10:16:41.497817",
+      "last_heartbeat": "2026-09-14T10:16:41.497824"
     }
   },
   "past_sessions": []
