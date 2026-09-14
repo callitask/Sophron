@@ -1,6 +1,6 @@
 {
-  "total_indexed_nodes": 45,
-  "total_indexed_edges": 42,
+  "total_indexed_nodes": 50,
+  "total_indexed_edges": 57,
   "adjacency": {
     "node_zero_assumptions": [
       {
@@ -165,12 +165,20 @@
       {
         "target": "event_turn_26",
         "relation": "EVIDENCED_BY"
+      },
+      {
+        "target": "event_turn_61",
+        "relation": "REFINES"
       }
     ],
     "event_turn_26": [
       {
         "target": "event_turn_25",
         "relation": "CO_OCCURS_WITH"
+      },
+      {
+        "target": "event_turn_61",
+        "relation": "REFINES"
       }
     ],
     "node_parallel_digital_twin": [
@@ -245,6 +253,67 @@
         "relation": "SCOPED_TO_WORKSPACE"
       }
     ],
-    "event_turn_55": []
+    "event_turn_55": [],
+    "pattern_architectural_rule_codification": [
+      {
+        "target": "event_turn_55",
+        "relation": "EVIDENCED_BY"
+      },
+      {
+        "target": "event_turn_26",
+        "relation": "EVIDENCED_BY"
+      },
+      {
+        "target": "event_turn_61",
+        "relation": "EVIDENCED_BY"
+      },
+      {
+        "target": "node_dev_mode_gatekeeping",
+        "relation": "EXEMPLIFIES"
+      },
+      {
+        "target": "ws_career_agent",
+        "relation": "OBSERVED_IN"
+      },
+      {
+        "target": "ws_sophron_architecture",
+        "relation": "OBSERVED_IN"
+      }
+    ],
+    "pattern_empirical_observation_trigger": [
+      {
+        "target": "node_zero_assumptions",
+        "relation": "APPLIES_PRINCIPLE"
+      },
+      {
+        "target": "event_turn_61",
+        "relation": "DEMONSTRATED_IN"
+      }
+    ],
+    "pattern_brain_actuator_separation_preference": [
+      {
+        "target": "node_brain_actuator_decoupling",
+        "relation": "EXEMPLIFIES"
+      },
+      {
+        "target": "ws_career_agent",
+        "relation": "OBSERVED_IN"
+      },
+      {
+        "target": "ws_sophron_architecture",
+        "relation": "OBSERVED_IN"
+      }
+    ],
+    "ws_sophron_architecture": [],
+    "event_turn_61": [
+      {
+        "target": "pattern_architectural_rule_codification",
+        "relation": "CAUSED_BY"
+      },
+      {
+        "target": "ws_sophron_architecture",
+        "relation": "SCOPED_TO_WORKSPACE"
+      }
+    ]
   }
 }
