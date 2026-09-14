@@ -1,0 +1,25 @@
+{
+  "insight_id": "insight_20260914_config_dept_salary_keyword_fix",
+  "created_at": "2026-09-14T22:05:00+05:30",
+  "CONTEXT_CLASSIFICATION": {
+    "milestone_type": "config_update",
+    "priority": "P1",
+    "candidate": "udaysagar_kandpal"
+  },
+  "title": "Config Fix: Dept Filters + Salary Bracket + Senior Java Dev Keyword",
+  "trigger": "Wrong jobs applied (quantum computing, MEP architect, content strategy). No dept gate, 3x salary, wrong keyword.",
+  "changes": [
+    "salary_filter_bracket: 25-70 -> 25-50",
+    "ctc_filters: [25to50, 50to75, 75to100] -> [25to50]",
+    "naukri_filters.functionAreaIdGid: [5,8,19,12] added",
+    "facet_filters.department: 4 Eng/IT/Consulting/PPM depts added",
+    "keywords: Senior Java Developer added as first entry",
+    "cognitive_profile active_cycle_index: 1 -> 0",
+    "search_cycles[0]: Senior Java Developer added, Technical Architect Java (not generic Architect)"
+  ],
+  "guardrails_honoured": [
+    "C23 no edits to core/",
+    "Gate 1 no PII in py",
+    "Gate 3 config-only"
+  ]
+}

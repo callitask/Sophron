@@ -22,5 +22,11 @@
       "last_heartbeat": "2026-09-14T21:01:47.946199"
     }
   },
-  "past_sessions": []
+  "past_sessions": [
+    {
+      "session_uuid": "ag-config-fix-20260914-v2",
+      "workspace": "career_agent",
+      "ended_at": "2026-09-14T22:06:45.528765"
+    }
+  ]
 }
