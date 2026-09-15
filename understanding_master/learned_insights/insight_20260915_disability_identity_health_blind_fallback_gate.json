@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "insight_id": "insight_20260915_disability_identity_health_blind_fallback_gate",
+  "temporal_anchor": "2026-09-15T15:54:09.297040",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent_core",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": true,
+    "context_at_time_of_insight": "During live Naukri chatbot application for anshika_garg, _heuristic_screening_answer() blindly returned options[0] = 'I have a disability' because no disability/PWD handler existed. The blind `if options: return options[0]` fallback was the last-resort for any unrecognised question with choices."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": true,
+    "cognitive_load_at_switch": "high",
+    "previous_context": "Daemon monitoring Cycle #1 job applications",
+    "trigger_for_switch": "User observed that the AI selected 'I have a disability' on a live chatbot form. User issued directive: health/identity questions with no profile evidence must default to No.",
+    "new_context": "Code fix mode — disability gate + senior role matching tightening"
+  },
+  "psychological_state": {
+    "mood": "corrective",
+    "cognitive_load": "high",
+    "decision_style": "User was sharp and direct. Immediately identified the root cause as an architectural gap (no handler for an entire class of identity/health questions). Did not accept a workaround — demanded a structural gate with proper config-driven default logic."
+  },
+  "interaction_pairing": {
+    "user_action": "User flagged 'the user has no disability why did you add it according to you?' and specified that if a question is not answerable from the profile with certainty, the AI should skip or select NO — not guess blindly.",
+    "ai_response_quality": "High — traced root cause to line 2053 `if options: return options[0]`, proposed disability/PWD keyword gate with three-tier option matching, read has_disability dynamically from config (absent field = False = No). Executed after user approval. Purity check passed.",
+    "friction_points": "Initial response drafted was going to hardcode 'No' directly — user rule prohibits any hardcoding. Corrected to read `cand.get('has_disability', False)` from candidate_config.json.",
+    "resolution": "ENTRY #015 inserted: disability/PWD/health keyword gate in section 6b of _heuristic_screening_answer(). Three-tier: (1) explicit no-disability markers in option text, (2) option without 'have a disability'/'yes', (3) options[-1] industry convention. Numeric questions return '0'."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Identity and health questions (disability, PWD, medical conditions) are a DISTINCT class of screening question that must NEVER fall through to a generic fallback. options[0] is the affirming choice in most portal frameworks — blind fallback to options[0] is structurally wrong for any binary identity/health question.",
+    "changed_from_prior_belief": "Previously assumed `if options: return options[0]` was safe as a catch-all. Now understood: any question whose incorrect answer causes real-world misrepresentation (disability, criminal record, health status) must have an explicit handler with config-grounded default.",
+    "consistency_with_axioms": "Axiom 1 (empirical observation: live chatbot fired the bug). Axiom 2 (zero hardcoding: solution reads from config, not hardcoded). Axiom 4 (agent as investigator: traced to exact line, proposed precise fix)."
+  },
+  "long_term_application": {
+    "future_implication": "For ALL profiles: any question containing disability/pwd/handicap/impairment/health condition/medical condition keywords must be handled by section 6b gate BEFORE any generic fallback. If has_disability is True in config, the agent must then read the declared disability type and select the correct affirmative option. If absent or False, always select No-equivalent.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Applies to any chatbot/form automation system. Identity/health/legal-status questions must always have an explicit handler that reads from the candidate's declared profile. Never let a generic fallback answer identity questions.",
+    "linked_insights": [
+      "insight_20260914_rule_adherence_architecture_and_sophron_intelligence_upgrade",
+      "insight_20260915_142200_universal_design_dynamic_injection"
+    ]
+  }
+}

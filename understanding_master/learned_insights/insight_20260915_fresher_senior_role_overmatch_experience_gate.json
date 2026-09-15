@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "insight_id": "insight_20260915_fresher_senior_role_overmatch_experience_gate",
+  "temporal_anchor": "2026-09-15T15:54:09.297040",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent_core",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": true,
+    "context_at_time_of_insight": "For anshika_garg (fresher, cand_exp=0.5), the daemon was applying to CFO, Finance Manager (5+ yrs), Regional Commercial Manager (12-15 yrs), Senior Accountant — all vastly senior roles. Root: match_threshold=40 (too low) + hardcoded +3 yr experience tolerance."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": false,
+    "previous_context": "Disability gate fix",
+    "trigger_for_switch": "N/A — same code-fix session, sequential issue",
+    "new_context": "Experience band + match threshold recalibration for fresher profiles"
+  },
+  "psychological_state": {
+    "mood": "analytical-corrective",
+    "cognitive_load": "medium",
+    "decision_style": "User caught the pattern from application tracker. Not a technical bug — a calibration failure. User expected the AG brain to 'exactly know the skill set, the experience level and the profile details'. Demanded that JD verification be done properly before applying."
+  },
+  "interaction_pairing": {
+    "user_action": "User asked: 'why are you searching or matching too senior roles? The AG brain should exactly know the skill set, the experience level and the profile details and then only the match should be done.' Also: 'ensure that the job experience is selected according to profile since it is a fresher with internship.'",
+    "ai_response_quality": "High — identified two root causes: (1) match_threshold=40 allowed 40% LLM score matches through, (2) hardcoded `cand_exp + 3` accepted roles requiring up to 3.5 yrs. Fixed both. match_threshold raised to 65. max_experience_gap_years=2 added to config. Python code now reads gap dynamically from config.",
+    "friction_points": "Initial analysis focused only on the LLM scoring. Had to additionally recognize that the Stage 1 hard gate (experience band) was also miscalibrated.",
+    "resolution": "candidate_config.json: match_threshold 40→65, max_experience_gap_years:2 added. core/ai_client.py evaluate_job_match(): cand_exp+3 → cand_exp+_max_gap (from config). Net effect: roles requiring >2.5 yrs hard-rejected at Stage 1. LLM must score ≥65% to pass (previously 40%)."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "For fresher profiles (cand_exp < 1.0), the system requires TIGHTER gates than defaults: (1) experience gap tolerance should be ≤2 years (not 3), (2) match_threshold should be ≥65 (not 40). These are profile-tier parameters that must live in config, not code. When a new fresher profile is onboarded, these values must be explicitly set.",
+    "changed_from_prior_belief": "Prior assumption: match_threshold=40 provides broad coverage to avoid missing roles. Corrected: for freshers, broad coverage means WRONG coverage — senior roles drown out entry-level. Precision > Recall for fresher profiles.",
+    "consistency_with_axioms": "Axiom 2 (no hardcoding: gap now reads from config). Axiom 1 (empirical: CFO/Finance Manager in tracker proved the miscalibration)."
+  },
+  "long_term_application": {
+    "future_implication": "When onboarding any new fresher profile (cand_exp < 1.0):   - Set match_threshold ≥ 65 in candidate_config.json   - Set max_experience_gap_years ≤ 2 in candidate_config.json   - Verify search matrix contains ONLY entry-level designations (0-2 yr roles). For mid-senior profiles (cand_exp 3-7): match_threshold 55-60, gap 3-4. For senior profiles (cand_exp >8): match_threshold 50, gap 5.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Any AI-driven job matching system must calibrate its permissiveness inversely with experience level. Freshers need tight gates. Seniors can tolerate broader overlap.",
+    "linked_insights": [
+      "insight_20260914_rule_adherence_architecture_and_sophron_intelligence_upgrade",
+      "insight_20260910_anshika_finance_anti_hallucination_real_roles"
+    ]
+  }
+}

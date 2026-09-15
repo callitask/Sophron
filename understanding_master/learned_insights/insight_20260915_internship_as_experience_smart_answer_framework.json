@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "insight_id": "insight_20260915_internship_as_experience_smart_answer_framework",
+  "temporal_anchor": "2026-09-15T15:54:09.297040",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent_core",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": true,
+    "context_at_time_of_insight": "User clarified that for fresher profiles with internships, the agent should intelligently map internship experience to chatbot questions about role-relevant experience. e.g. if audit exp is asked, internship mentions of audit work in resume should be cited honestly. But filling vague fields with wrong fabricated details is never acceptable."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": false,
+    "previous_context": "Senior role over-matching fix",
+    "trigger_for_switch": "N/A — same session, sequential refinement",
+    "new_context": "Smart internship-to-experience mapping framework for chatbot screening"
+  },
+  "psychological_state": {
+    "mood": "directive-clarifying",
+    "cognitive_load": "medium",
+    "decision_style": "User drew a precise line between honest smart mapping (internship experience → audit exposure) and unacceptable fabrication (inventing work history). This is an ethical standard for the agent, not just a technical one."
+  },
+  "interaction_pairing": {
+    "user_action": "User stated: 'We planned that we can smartly add the details — since the resume mentions various kinds of work done, we can be honest but mention the work we have. Like if audit exp is asked, resume and profile analysis may show internship or college society exp in audit, which can be mentioned accurately. Filling vague jobs with wrong details is not acceptable.'",
+    "ai_response_quality": "Documented the directive. The heuristic engine already pulls from resume/config for answers. Key upgrade needed: when a years-of-experience question about a specific skill is asked for a fresher, the agent should cite internship duration (e.g. 3-month Zeilhoch internship for finance) as 0 years full-time but acknowledge internship exposure in text-type fields.",
+    "friction_points": "No immediate code change — directive is a behavioral/cognitive standard.",
+    "resolution": "Codified as: (1) For numeric 'years of experience' fields — report actual FTE months converted to years (0 or <1). Never inflate. (2) For text fields asking to 'describe your experience' — draw on internship + college society work + academic projects from resume.md factually. (3) Never invent employers, roles, or durations not present in resume.md or candidate_config.json."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Fresher profiles have a dual-mode experience representation: (A) Numeric mode: actual months of exposure, converted to years (always honest, never rounded up). (B) Narrative mode: resume-grounded storytelling that maps internship work to skill keywords in the JD. This is legitimate and expected for fresher applications — it is how freshers apply. The distinction between modes must be driven by the control_type of the chatbot field.",
+    "changed_from_prior_belief": "Previously the agent defaulted 'years of experience' to '0' for freshers across all cases. Corrected: for text/narrative fields, '0 years' is wrong — the correct answer is a factual narrative citing internship experience. Only for strict numeric fields should '0' or '<1' appear.",
+    "consistency_with_axioms": "Axiom 3 (100% factual grounding — no hallucinated credentials). Axiom 2 (dynamic sourcing from resume.md, not hardcoded template answers)."
+  },
+  "long_term_application": {
+    "future_implication": "All chatbot experience answers for fresher profiles must follow this protocol: 1. Identify field type: numeric vs text. 2. Numeric: compute actual months → years from resume internship dates. Report honestly (e.g. 0 or 0.25). 3. Text: compose a factual narrative citing specific internship/project experience from resume.md    that is RELEVANT to the JD skill keyword being asked. 4. Never cite experience not documented in resume.md or candidate_config.json. 5. When in doubt about relevance, ask via IPC rather than fabricate.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Applies to all fresher/entry-level candidate profiles. The control_type field in pending_question.json determines numeric vs narrative mode.",
+    "linked_insights": [
+      "insight_20260913_ag_brain_talent_strategist_decoupling",
+      "insight_20260915_fresher_senior_role_overmatch_experience_gate",
+      "insight_20260914_config_dept_salary_keyword_fix"
+    ]
+  }
+}

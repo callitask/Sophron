@@ -44,3 +44,19 @@
   - `IS-002` (Feedback Cadence): Low-frequency, high-signal chat output rule added.
   - `DT-004` (Communication DNA): Input pattern 5 & decoded subtext added.
   - `PRE-003` (Predictive Reaction Model): Token Economy & Output Signal-to-Noise Ratio axis codified.
+
+
+---
+## Session 2026-09-15 Addendum (15:49 IST)
+
+### New Structural Gates Added (ENTRY #015)
+| Gate | Location | Behaviour |
+|------|----------|-----------|
+| **Disability/PWD section 6b** | `_heuristic_screening_answer()` | Any disability/pwd/health keyword → read `has_disability` from config (absent=False=No) → three-tier option matching → never `options[0]` |
+| **Experience band dynamic** | `evaluate_job_match()` | `cand_exp + _max_gap` where `_max_gap` = `target_jobs.max_experience_gap_years` (config, default 2) |
+| **match_threshold** | `candidate_config.json` (anshika_garg) | Raised 40 → 65 |
+
+### Critical New Rules (load every boot)
+- **Identity/health questions** (disability, PWD, criminal record, medical): ALWAYS handled by explicit gate. NEVER let options[0] fallback answer them.
+- **Fresher profile calibration**: match_threshold ≥ 65, experience_gap ≤ 2 — set in config, not code.
+- **Internship-as-experience**: numeric chatbot fields → actual months→years (honest). Text fields → factual resume narrative. Never fabricate.
