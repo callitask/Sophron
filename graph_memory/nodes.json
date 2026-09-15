@@ -1,448 +1,460 @@
-﻿{
-    "total_nodes": 51,
-    "nodes": [
-        {
-            "id": "node_zero_assumptions",
-            "type": "MetaPrinciple",
-            "tier": 1,
-            "name": "Zero Assumptions",
-            "category": "thinking_pattern"
-        },
-        {
-            "id": "node_reverse_engineering",
-            "type": "MetaPrinciple",
-            "tier": 1,
-            "name": "Visual Reverse Engineering",
-            "category": "thinking_pattern"
-        },
-        {
-            "id": "node_surgical_diff",
-            "type": "MetaPrinciple",
-            "tier": 1,
-            "name": "Surgical Updates Over Overwrite",
-            "category": "thinking_pattern"
-        },
-        {
-            "id": "node_edge_case_nuance",
-            "type": "MetaPrinciple",
-            "tier": 1,
-            "name": "Edge Case & Nuance Mastery",
-            "category": "thinking_pattern"
-        },
-        {
-            "id": "node_dev_mode_gatekeeping",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Developer Mode Gatekeeping",
-            "category": "session_rule"
-        },
-        {
-            "id": "node_guardrail_p1_purity",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Codebase Purity (P1)",
-            "category": "session_rule"
-        },
-        {
-            "id": "node_git_prohibition",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Git Command Prohibition",
-            "category": "session_rule"
-        },
-        {
-            "id": "node_workspace_isolation",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Strict Workspace Isolation",
-            "category": "session_rule"
-        },
-        {
-            "id": "node_sophron_auto_update",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Sophron Auto-Update After Every Session",
-            "category": "session_rule",
-            "description": "Sophron memory MUST be written at the end of every significant agent session, not only when user reminds. Failure to auto-update is a critical OS breach."
-        },
-        {
-            "id": "ws_career_agent",
-            "type": "WorkspaceScope",
-            "tier": 2,
-            "name": "Universal Autonomous Career Agent",
-            "uri": "file:///f:/JOB%20AI%20AGENT"
-        },
-        {
-            "id": "node_naukri_linkedin_isolation",
-            "type": "DomainRule",
-            "tier": 2,
-            "name": "Platform Isolation (Naukri vs LinkedIn)",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
-        },
-        {
-            "id": "node_modal_scroll_isolation",
-            "type": "DomainRule",
-            "tier": 2,
-            "name": "Container-Isolated Modal Scrolling",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
-        },
-        {
-            "id": "node_multi_stint_duplicate",
-            "type": "DomainRule",
-            "tier": 2,
-            "name": "Multi-Attribute Duplicate Checking (C16)",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
-        },
-        {
-            "id": "node_campus_internship_toggle",
-            "type": "DomainFeature",
-            "tier": 2,
-            "name": "Naukri Campus Job/Internship Toggle",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
-        },
-        {
-            "id": "node_anti_loop_mandate",
-            "type": "DomainRule",
-            "tier": 2,
-            "name": "Anti-Loop Designation Exhaustion Rule",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-            "description": "If a Naukri search designation returns 0 results across 2+ consecutive cycles, retire it from active search, log it to processed_ledger, and advance to the next designation immediately. Never repeat a dead keyword."
-        },
-        {
-            "id": "node_token_conservation",
-            "type": "DomainRule",
-            "tier": 2,
-            "name": "Token Conservation \u00e2\u20ac\u201d Silent Execution",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-            "description": "Only output to chat when: IPC prompt appears, critical error occurs, or user explicitly requests output. Suppress all intermediate step logs."
-        },
-        {
-            "id": "node_profile_filter_anshika",
-            "type": "CandidateRule",
-            "tier": 2,
-            "name": "Anshika Garg Profile Filters",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-            "allowed_domains": [
-                "Finance",
-                "Audit",
-                "Assurance",
-                "Valuation",
-                "Deals",
-                "Due Diligence",
-                "BFSI Research",
-                "Financial Advisory"
-            ],
-            "blocked_domains": [
-                "CA Articleship",
-                "Customer Service",
-                "Warehouse",
-                "Retail Banking",
-                "Legal",
-                "Executive Level"
-            ],
-            "salary_target_lpa": 8,
-            "city_preference": [
-                "Bengaluru, Karnataka",
-                "Delhi NCR"
-            ]
-        },
-        {
-            "id": "node_ipc_architecture",
-            "type": "SystemKnowledge",
-            "tier": 2,
-            "name": "IPC Cognitive Architecture (pending_question.json)",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-            "description": "Two IPC task types: STARVATION_EXPANSION (expects JSON array of 6-10 designations), RESUME_TAILORING (expects tailored_summary + prioritized_skills JSON). 75-second timeout, 10-second heartbeat. Responses must land within window."
-        },
-        {
-            "id": "event_turn_01",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-01",
-            "name": "Developer Mode Inception"
-        },
-        {
-            "id": "event_turn_08",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-08",
-            "name": "SRP Reverse Engineering"
-        },
-        {
-            "id": "event_turn_09",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-09",
-            "name": "Live Tool Mandate Correction"
-        },
-        {
-            "id": "event_turn_14",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-14",
-            "name": "Campus & Duplicate Nuance"
-        },
-        {
-            "id": "event_turn_15",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-15",
-            "name": "Modal Scroll Leak Observation"
-        },
-        {
-            "id": "event_turn_16",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-16",
-            "name": "Onboarding & Candidate Privacy"
-        },
-        {
-            "id": "event_turn_19",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-19",
-            "name": "Master Agent Alter-Ego Creation"
-        },
-        {
-            "id": "event_turn_20",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-20",
-            "name": "Distributed Git & Graph Memory"
-        },
-        {
-            "id": "event_turn_23",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-23",
-            "name": "Session-23 IPC Cycles, Applications, Sophron Sync Correction",
-            "applications": [
-                "PwC - Internal Audit Associate (CHATBOT)",
-                "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"
-            ],
-            "corrections": [
-                "anti-loop mandate",
-                "token conservation",
-                "Sophron auto-update breach remediation",
-                "profile domain filter finalization"
-            ],
-            "timestamp": "2026-09-10T12:19:00+05:30"
-        },
-        {
-            "id": "node_parallel_agent_isolation",
-            "type": "SystemArchitecturePrinciple",
-            "tier": 2,
-            "name": "Parallel Multi-Agent Chrome Isolation",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-            "description": "Two agents can run simultaneously for two profiles without crossover. Isolation requires: (1) unique --user-data-dir per Chrome instance, (2) unique --remote-debugging-port, (3) unique cdp_url in candidate_config.json. Port registry: 9222=anshika_garg, 9223=udaysagar_kandpal. Each profile's IPC file is namespaced to profiles/<name>/output/pending_question.json.",
-            "port_registry": {
-                "9222": "anshika_garg",
-                "9223": "udaysagar_kandpal"
-            }
-        },
-        {
-            "id": "event_turn_24",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-24",
-            "name": "Parallel Agent Architecture \u00e2\u20ac\u201d User Thought Process Captured",
-            "insight": "User reasoned like a systems architect: isolate at OS/browser boundary first, then config, then code. Recognized port/user-data-dir duality before asking implementation.",
-            "config_change": "udaysagar_kandpal cdp_url updated to http://127.0.0.1:9223",
-            "timestamp": "2026-09-10T13:32:00+05:30"
-        },
-        {
-            "id": "node_ats_single_column_invariant",
-            "type": "SystemArchitecturePrinciple",
-            "tier": 2,
-            "name": "ATS Single-Column & Zero-Table Invariant (Option B)",
-            "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-            "description": "Tables in markdown convert to PDF 2D grid cells, scrambling under horizontal ATS coordinate sweeps. All resumes must be single-column with bold labels (**Category:** Skill 1, Skill 2) and ASCII hyphens (-). Tailoring engine uses regex to prioritize JD skills without tables."
-        },
-        {
-            "id": "event_turn_25",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-25",
-            "name": "ATS Parseability Audit & Option B Engine Upgrade",
-            "timestamp": "2026-09-11T20:05:00+05:30"
-        },
-        {
-            "id": "node_sophron_session_init_protocol",
-            "type": "SystemArchitecturePrinciple",
-            "tier": 1,
-            "name": "Sophron Session Auto-Init Protocol (01_sophron_session_init.md)",
-            "description": "Mandatory 6-step session initialization enforced via auto-loaded rule file. Non-negotiable for every AG session."
-        },
-        {
-            "id": "event_turn_26",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-26",
-            "name": "Sophron Automation Diagnosis and Session Init Fix",
-            "timestamp": "2026-09-11T20:15:00+05:30"
-        },
-        {
-            "id": "node_parallel_digital_twin",
-            "type": "DigitalTwinCore",
-            "tier": 1,
-            "name": "Parallel User Digital Twin",
-            "category": "parallel_digital_twin"
-        },
-        {
-            "id": "node_emotional_mood_dynamics",
-            "type": "CognitivePsychology",
-            "tier": 1,
-            "name": "Emotional & Mood Dynamics Model",
-            "category": "parallel_digital_twin"
-        },
-        {
-            "id": "node_predictive_reaction_engine",
-            "type": "AlgorithmicPredictor",
-            "tier": 1,
-            "name": "Neural Behavioral Prediction Matrix",
-            "category": "predictive_reaction_engine"
-        },
-        {
-            "id": "node_permutation_decision_engine",
-            "type": "DecisionOptimizer",
-            "tier": 1,
-            "name": "Permutation & Combination Decision Engine",
-            "category": "predictive_reaction_engine"
-        },
-        {
-            "id": "node_recursive_self_learning_loop",
-            "type": "MetaLearner",
-            "tier": 1,
-            "name": "Recursive Cognitive Self-Learning Loop",
-            "category": "self_learning_loop"
-        },
-        {
-            "id": "node_cross_ai_universal_handshake",
-            "type": "UniversalBridge",
-            "tier": 1,
-            "name": "Cross-AI Universal Handshake Protocol",
-            "category": "self_learning_loop"
-        },
-        {
-            "id": "node_brain_actuator_decoupling",
-            "type": "MetaPrinciple",
-            "tier": 1,
-            "name": "Brain-Actuator Decoupling",
-            "category": "architecture_axiom"
-        },
-        {
-            "id": "node_ag_brain_talent_strategist",
-            "type": "CognitiveRole",
-            "tier": 1,
-            "name": "AG Brain as Sole Talent Strategist",
-            "category": "decision_engine"
-        },
-        {
-            "id": "node_session_push_start_protocol",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Session Startup Profile Push-Start",
-            "category": "operational_protocol"
-        },
-        {
-            "id": "node_append_only_ai_context",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Append-Only AI Context Headers",
-            "category": "anti_regression"
-        },
-        {
-            "id": "node_career_sophron_isolation",
-            "type": "UniversalRule",
-            "tier": 1,
-            "name": "Career Agent vs Sophron Subsystem Isolation",
-            "category": "system_boundary"
-        },
-        {
-            "id": "event_turn_55",
-            "type": "Event",
-            "tier": 2,
-            "name": "Elimination of Python Heuristic Presets & Elevation of AG Brain Decider",
-            "category": "interaction_event",
-            "timestamp": "2026-09-13T16:53:00+05:30"
-        },
-        {
-            "id": "pattern_architectural_rule_codification",
-            "type": "UserBehavioralPattern",
-            "tier": 1,
-            "name": "Architectural Rule Codification Pattern",
-            "category": "cross_project_behavior",
-            "description": "User consistently responds to any AI rule violation not with a one-time correction but with a permanent structural fix: root-cause analysis -> codify rule in .agents/rules/ -> inject into schema. Seen in: RULE 7 creation (TURN-55), 01_sophron_session_init.md creation (TURN-26), ACTIVE_CONSTRAINT_BLOCK.md creation (this session TURN-61). Pattern frequency: every 3-5 sessions.",
-            "frequency": "high",
-            "projects_observed_in": [
-                "career_agent",
-                "sophron_architecture"
-            ],
-            "insight_links": [
-                "insight_20260913_ag_brain_talent_strategist_decoupling",
-                "insight_20260911_sophron_automation_root_cause_and_session_init_fix"
-            ]
-        },
-        {
-            "id": "pattern_empirical_observation_trigger",
-            "type": "UserBehavioralPattern",
-            "tier": 1,
-            "name": "Empirical Observation Before Intervention Pattern",
-            "category": "cross_project_behavior",
-            "description": "User never prescribes a fix without first observing runtime evidence. Typical sequence: run daemon -> monitor logs -> identify empirical bottleneck (not theoretical one) -> prescribe targeted fix. Seen in: ledger saturation forensics (TURN-60), starvation diagnosis, DOM reverse engineering sessions. Matches Axiom 1: Truth is found in runtime reality.",
-            "frequency": "very_high",
-            "projects_observed_in": [
-                "career_agent",
-                "sophron_architecture",
-                "global"
-            ],
-            "insight_links": [
-                "insight_20260909_temporal_psychology",
-                "insight_20260910_anshika_finance_anti_hallucination_real_roles"
-            ]
-        },
-        {
-            "id": "pattern_brain_actuator_separation_preference",
-            "type": "UserBehavioralPattern",
-            "tier": 1,
-            "name": "Brain-Actuator Strict Separation Preference",
-            "category": "cross_project_behavior",
-            "description": "User consistently pushes intelligence to the boundary: AI brain makes all decisions, mechanical scripts/tools are pure executors. Seen across career agent (Python = browser actuator), Sophron (Python = file I/O scaffold, AI brain writes cognitive distillation), and general philosophy. This is a fundamental architectural axiom, not just a career agent rule.",
-            "frequency": "very_high",
-            "projects_observed_in": [
-                "career_agent",
-                "sophron_architecture",
-                "global"
-            ],
-            "insight_links": [
-                "insight_20260913_ag_brain_talent_strategist_decoupling"
-            ]
-        },
-        {
-            "id": "ws_sophron_architecture",
-            "type": "WorkspaceScope",
-            "tier": 1,
-            "name": "Sophron Architecture Workspace",
-            "description": "Sessions focused on building, upgrading, or debugging the Sophron cognitive memory system itself \u2014 distinct from sessions using Sophron as a tool during career agent work.",
-            "uri": "file:///F:/JOB%20AI%20AGENT/Sophron"
-        },
-        {
-            "id": "event_turn_61",
-            "type": "CognitiveReflection",
-            "turn_id": "TURN-61",
-            "tier": 2,
-            "name": "Rule Adherence Architecture + Sophron Intelligence Upgrade",
-            "timestamp": "2026-09-14T18:32:00+05:30",
-            "workspace_origin": "sophron_architecture",
-            "data_subject": "AGENT_SOPHRON",
-            "context_switch": "User shifted from career agent monitoring (starvation debugging) to meta-level rule architecture discussion, triggered by observing rule amnesia and Sophron context skip across multiple sessions",
-            "actions_taken": [
-                "Created ACTIVE_CONSTRAINT_BLOCK.md (10 gates, 200 tokens) in .agents/rules/ + global rules",
-                "Created SCAR_TISSUE.md (8 historical violations with exact corrections)",
-                "Created BOOT_SUMMARY.md (fast cold-start orientation file)",
-                "Upgraded 01_sophron_session_init.md with CONTEXT_CLASSIFICATION + CONTEXT_TRANSITION schema v2",
-                "Upgraded TURN reflection schema to v2",
-                "Added MID-SESSION COGNITIVE CHECKPOINT block (every 5 exchanges)",
-                "Added SESSION END: BOOT_SUMMARY UPDATE mandate",
-                "Added UserBehavioralPattern nodes to graph",
-                "Added cross-project edges to graph"
-            ]
-        },
-        {
-            "id": "node_universal_parameter_design",
-            "type": "principle",
-            "tier": 1,
-            "name": "Universal Parameter-Driven Design",
-            "category": "architecture",
-            "description": "Never hardcode profile-specific data (skills, roles, locations) anywhere in core/*.py scripts. All logic, including AI prompt strings, must be dynamically injected via parameterization from the candidate's config sandbox."
-        }
-    ]
+{
+  "total_nodes": 52,
+  "nodes": [
+    {
+      "id": "node_zero_assumptions",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Zero Assumptions",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_reverse_engineering",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Visual Reverse Engineering",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_surgical_diff",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Surgical Updates Over Overwrite",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_edge_case_nuance",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Edge Case & Nuance Mastery",
+      "category": "thinking_pattern"
+    },
+    {
+      "id": "node_dev_mode_gatekeeping",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Developer Mode Gatekeeping",
+      "category": "session_rule"
+    },
+    {
+      "id": "node_guardrail_p1_purity",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Codebase Purity (P1)",
+      "category": "session_rule"
+    },
+    {
+      "id": "node_git_prohibition",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Git Command Prohibition",
+      "category": "session_rule"
+    },
+    {
+      "id": "node_workspace_isolation",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Strict Workspace Isolation",
+      "category": "session_rule"
+    },
+    {
+      "id": "node_sophron_auto_update",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Sophron Auto-Update After Every Session",
+      "category": "session_rule",
+      "description": "Sophron memory MUST be written at the end of every significant agent session, not only when user reminds. Failure to auto-update is a critical OS breach."
+    },
+    {
+      "id": "ws_career_agent",
+      "type": "WorkspaceScope",
+      "tier": 2,
+      "name": "Universal Autonomous Career Agent",
+      "uri": "file:///f:/JOB%20AI%20AGENT"
+    },
+    {
+      "id": "node_naukri_linkedin_isolation",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Platform Isolation (Naukri vs LinkedIn)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_modal_scroll_isolation",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Container-Isolated Modal Scrolling",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_multi_stint_duplicate",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Multi-Attribute Duplicate Checking (C16)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_campus_internship_toggle",
+      "type": "DomainFeature",
+      "tier": 2,
+      "name": "Naukri Campus Job/Internship Toggle",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent"
+    },
+    {
+      "id": "node_anti_loop_mandate",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Anti-Loop Designation Exhaustion Rule",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "If a Naukri search designation returns 0 results across 2+ consecutive cycles, retire it from active search, log it to processed_ledger, and advance to the next designation immediately. Never repeat a dead keyword."
+    },
+    {
+      "id": "node_token_conservation",
+      "type": "DomainRule",
+      "tier": 2,
+      "name": "Token Conservation â€” Silent Execution",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Only output to chat when: IPC prompt appears, critical error occurs, or user explicitly requests output. Suppress all intermediate step logs."
+    },
+    {
+      "id": "node_profile_filter_anshika",
+      "type": "CandidateRule",
+      "tier": 2,
+      "name": "Anshika Garg Profile Filters",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "allowed_domains": [
+        "Finance",
+        "Audit",
+        "Assurance",
+        "Valuation",
+        "Deals",
+        "Due Diligence",
+        "BFSI Research",
+        "Financial Advisory"
+      ],
+      "blocked_domains": [
+        "CA Articleship",
+        "Customer Service",
+        "Warehouse",
+        "Retail Banking",
+        "Legal",
+        "Executive Level"
+      ],
+      "salary_target_lpa": 8,
+      "city_preference": [
+        "Bengaluru, Karnataka",
+        "Delhi NCR"
+      ]
+    },
+    {
+      "id": "node_ipc_architecture",
+      "type": "SystemKnowledge",
+      "tier": 2,
+      "name": "IPC Cognitive Architecture (pending_question.json)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Two IPC task types: STARVATION_EXPANSION (expects JSON array of 6-10 designations), RESUME_TAILORING (expects tailored_summary + prioritized_skills JSON). 75-second timeout, 10-second heartbeat. Responses must land within window."
+    },
+    {
+      "id": "event_turn_01",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-01",
+      "name": "Developer Mode Inception"
+    },
+    {
+      "id": "event_turn_08",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-08",
+      "name": "SRP Reverse Engineering"
+    },
+    {
+      "id": "event_turn_09",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-09",
+      "name": "Live Tool Mandate Correction"
+    },
+    {
+      "id": "event_turn_14",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-14",
+      "name": "Campus & Duplicate Nuance"
+    },
+    {
+      "id": "event_turn_15",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-15",
+      "name": "Modal Scroll Leak Observation"
+    },
+    {
+      "id": "event_turn_16",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-16",
+      "name": "Onboarding & Candidate Privacy"
+    },
+    {
+      "id": "event_turn_19",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-19",
+      "name": "Master Agent Alter-Ego Creation"
+    },
+    {
+      "id": "event_turn_20",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-20",
+      "name": "Distributed Git & Graph Memory"
+    },
+    {
+      "id": "event_turn_23",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-23",
+      "name": "Session-23 IPC Cycles, Applications, Sophron Sync Correction",
+      "applications": [
+        "PwC - Internal Audit Associate (CHATBOT)",
+        "Merit Data And Technology - Research Analyst UK Shift (1CLICK)"
+      ],
+      "corrections": [
+        "anti-loop mandate",
+        "token conservation",
+        "Sophron auto-update breach remediation",
+        "profile domain filter finalization"
+      ],
+      "timestamp": "2026-09-10T12:19:00+05:30"
+    },
+    {
+      "id": "node_parallel_agent_isolation",
+      "type": "SystemArchitecturePrinciple",
+      "tier": 2,
+      "name": "Parallel Multi-Agent Chrome Isolation",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Two agents can run simultaneously for two profiles without crossover. Isolation requires: (1) unique --user-data-dir per Chrome instance, (2) unique --remote-debugging-port, (3) unique cdp_url in candidate_config.json. Port registry: 9222=anshika_garg, 9223=udaysagar_kandpal. Each profile's IPC file is namespaced to profiles/<name>/output/pending_question.json.",
+      "port_registry": {
+        "9222": "anshika_garg",
+        "9223": "udaysagar_kandpal"
+      }
+    },
+    {
+      "id": "event_turn_24",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-24",
+      "name": "Parallel Agent Architecture â€” User Thought Process Captured",
+      "insight": "User reasoned like a systems architect: isolate at OS/browser boundary first, then config, then code. Recognized port/user-data-dir duality before asking implementation.",
+      "config_change": "udaysagar_kandpal cdp_url updated to http://127.0.0.1:9223",
+      "timestamp": "2026-09-10T13:32:00+05:30"
+    },
+    {
+      "id": "node_ats_single_column_invariant",
+      "type": "SystemArchitecturePrinciple",
+      "tier": 2,
+      "name": "ATS Single-Column & Zero-Table Invariant (Option B)",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Tables in markdown convert to PDF 2D grid cells, scrambling under horizontal ATS coordinate sweeps. All resumes must be single-column with bold labels (**Category:** Skill 1, Skill 2) and ASCII hyphens (-). Tailoring engine uses regex to prioritize JD skills without tables."
+    },
+    {
+      "id": "event_turn_25",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-25",
+      "name": "ATS Parseability Audit & Option B Engine Upgrade",
+      "timestamp": "2026-09-11T20:05:00+05:30"
+    },
+    {
+      "id": "node_sophron_session_init_protocol",
+      "type": "SystemArchitecturePrinciple",
+      "tier": 1,
+      "name": "Sophron Session Auto-Init Protocol (01_sophron_session_init.md)",
+      "description": "Mandatory 6-step session initialization enforced via auto-loaded rule file. Non-negotiable for every AG session."
+    },
+    {
+      "id": "event_turn_26",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-26",
+      "name": "Sophron Automation Diagnosis and Session Init Fix",
+      "timestamp": "2026-09-11T20:15:00+05:30"
+    },
+    {
+      "id": "node_parallel_digital_twin",
+      "type": "DigitalTwinCore",
+      "tier": 1,
+      "name": "Parallel User Digital Twin",
+      "category": "parallel_digital_twin"
+    },
+    {
+      "id": "node_emotional_mood_dynamics",
+      "type": "CognitivePsychology",
+      "tier": 1,
+      "name": "Emotional & Mood Dynamics Model",
+      "category": "parallel_digital_twin"
+    },
+    {
+      "id": "node_predictive_reaction_engine",
+      "type": "AlgorithmicPredictor",
+      "tier": 1,
+      "name": "Neural Behavioral Prediction Matrix",
+      "category": "predictive_reaction_engine"
+    },
+    {
+      "id": "node_permutation_decision_engine",
+      "type": "DecisionOptimizer",
+      "tier": 1,
+      "name": "Permutation & Combination Decision Engine",
+      "category": "predictive_reaction_engine"
+    },
+    {
+      "id": "node_recursive_self_learning_loop",
+      "type": "MetaLearner",
+      "tier": 1,
+      "name": "Recursive Cognitive Self-Learning Loop",
+      "category": "self_learning_loop"
+    },
+    {
+      "id": "node_cross_ai_universal_handshake",
+      "type": "UniversalBridge",
+      "tier": 1,
+      "name": "Cross-AI Universal Handshake Protocol",
+      "category": "self_learning_loop"
+    },
+    {
+      "id": "node_brain_actuator_decoupling",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Brain-Actuator Decoupling",
+      "category": "architecture_axiom"
+    },
+    {
+      "id": "node_ag_brain_talent_strategist",
+      "type": "CognitiveRole",
+      "tier": 1,
+      "name": "AG Brain as Sole Talent Strategist",
+      "category": "decision_engine"
+    },
+    {
+      "id": "node_session_push_start_protocol",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Session Startup Profile Push-Start",
+      "category": "operational_protocol"
+    },
+    {
+      "id": "node_append_only_ai_context",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Append-Only AI Context Headers",
+      "category": "anti_regression"
+    },
+    {
+      "id": "node_career_sophron_isolation",
+      "type": "UniversalRule",
+      "tier": 1,
+      "name": "Career Agent vs Sophron Subsystem Isolation",
+      "category": "system_boundary"
+    },
+    {
+      "id": "event_turn_55",
+      "type": "Event",
+      "tier": 2,
+      "name": "Elimination of Python Heuristic Presets & Elevation of AG Brain Decider",
+      "category": "interaction_event",
+      "timestamp": "2026-09-13T16:53:00+05:30"
+    },
+    {
+      "id": "pattern_architectural_rule_codification",
+      "type": "UserBehavioralPattern",
+      "tier": 1,
+      "name": "Architectural Rule Codification Pattern",
+      "category": "cross_project_behavior",
+      "description": "User consistently responds to any AI rule violation not with a one-time correction but with a permanent structural fix: root-cause analysis -> codify rule in .agents/rules/ -> inject into schema. Seen in: RULE 7 creation (TURN-55), 01_sophron_session_init.md creation (TURN-26), ACTIVE_CONSTRAINT_BLOCK.md creation (this session TURN-61). Pattern frequency: every 3-5 sessions.",
+      "frequency": "high",
+      "projects_observed_in": [
+        "career_agent",
+        "sophron_architecture"
+      ],
+      "insight_links": [
+        "insight_20260913_ag_brain_talent_strategist_decoupling",
+        "insight_20260911_sophron_automation_root_cause_and_session_init_fix"
+      ]
+    },
+    {
+      "id": "pattern_empirical_observation_trigger",
+      "type": "UserBehavioralPattern",
+      "tier": 1,
+      "name": "Empirical Observation Before Intervention Pattern",
+      "category": "cross_project_behavior",
+      "description": "User never prescribes a fix without first observing runtime evidence. Typical sequence: run daemon -> monitor logs -> identify empirical bottleneck (not theoretical one) -> prescribe targeted fix. Seen in: ledger saturation forensics (TURN-60), starvation diagnosis, DOM reverse engineering sessions. Matches Axiom 1: Truth is found in runtime reality.",
+      "frequency": "very_high",
+      "projects_observed_in": [
+        "career_agent",
+        "sophron_architecture",
+        "global"
+      ],
+      "insight_links": [
+        "insight_20260909_temporal_psychology",
+        "insight_20260910_anshika_finance_anti_hallucination_real_roles"
+      ]
+    },
+    {
+      "id": "pattern_brain_actuator_separation_preference",
+      "type": "UserBehavioralPattern",
+      "tier": 1,
+      "name": "Brain-Actuator Strict Separation Preference",
+      "category": "cross_project_behavior",
+      "description": "User consistently pushes intelligence to the boundary: AI brain makes all decisions, mechanical scripts/tools are pure executors. Seen across career agent (Python = browser actuator), Sophron (Python = file I/O scaffold, AI brain writes cognitive distillation), and general philosophy. This is a fundamental architectural axiom, not just a career agent rule.",
+      "frequency": "very_high",
+      "projects_observed_in": [
+        "career_agent",
+        "sophron_architecture",
+        "global"
+      ],
+      "insight_links": [
+        "insight_20260913_ag_brain_talent_strategist_decoupling"
+      ]
+    },
+    {
+      "id": "ws_sophron_architecture",
+      "type": "WorkspaceScope",
+      "tier": 1,
+      "name": "Sophron Architecture Workspace",
+      "description": "Sessions focused on building, upgrading, or debugging the Sophron cognitive memory system itself — distinct from sessions using Sophron as a tool during career agent work.",
+      "uri": "file:///F:/JOB%20AI%20AGENT/Sophron"
+    },
+    {
+      "id": "event_turn_61",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-61",
+      "tier": 2,
+      "name": "Rule Adherence Architecture + Sophron Intelligence Upgrade",
+      "timestamp": "2026-09-14T18:32:00+05:30",
+      "workspace_origin": "sophron_architecture",
+      "data_subject": "AGENT_SOPHRON",
+      "context_switch": "User shifted from career agent monitoring (starvation debugging) to meta-level rule architecture discussion, triggered by observing rule amnesia and Sophron context skip across multiple sessions",
+      "actions_taken": [
+        "Created ACTIVE_CONSTRAINT_BLOCK.md (10 gates, 200 tokens) in .agents/rules/ + global rules",
+        "Created SCAR_TISSUE.md (8 historical violations with exact corrections)",
+        "Created BOOT_SUMMARY.md (fast cold-start orientation file)",
+        "Upgraded 01_sophron_session_init.md with CONTEXT_CLASSIFICATION + CONTEXT_TRANSITION schema v2",
+        "Upgraded TURN reflection schema to v2",
+        "Added MID-SESSION COGNITIVE CHECKPOINT block (every 5 exchanges)",
+        "Added SESSION END: BOOT_SUMMARY UPDATE mandate",
+        "Added UserBehavioralPattern nodes to graph",
+        "Added cross-project edges to graph"
+      ]
+    },
+    {
+      "id": "node_universal_parameter_design",
+      "type": "principle",
+      "tier": 1,
+      "name": "Universal Parameter-Driven Design",
+      "category": "architecture",
+      "description": "Never hardcode profile-specific data (skills, roles, locations) anywhere in core/*.py scripts. All logic, including AI prompt strings, must be dynamically injected via parameterization from the candidate's config sandbox."
+    },
+    {
+      "id": "UserBehavioralPattern:InvestigatoryCuriosity",
+      "type": "PsychologicalPattern",
+      "attributes": {
+        "description": "User rigorously tests edge cases and boundary conditions after AI execution.",
+        "first_observed": "2026-09-15T16:19:44.926Z",
+        "axioms_related": [
+          "Axiom 1",
+          "Axiom 5"
+        ]
+      }
+    }
+  ]
 }

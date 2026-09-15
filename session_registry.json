@@ -20,6 +20,13 @@
       "task_summary": "Enforce strict Senior Java rules, update negative keywords, and dynamically inject target keywords into AI prompts without hardcoding",
       "registered_at": "2026-09-15T14:21:09.273370",
       "last_heartbeat": "2026-09-15T14:21:09.273380"
+    },
+    "b7300ca3-ae77-46a8-b4ce-3211e0ea7e43": {
+      "session_uuid": "b7300ca3-ae77-46a8-b4ce-3211e0ea7e43",
+      "workspace": "global",
+      "task_summary": "Organize downloaded resumes and cover letters into hierarchical folders",
+      "registered_at": "2026-09-15T21:49:44.918788",
+      "last_heartbeat": "2026-09-15T21:49:44.918795"
     }
   },
   "past_sessions": [
