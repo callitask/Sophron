@@ -1,6 +1,6 @@
-{
-  "total_indexed_nodes": 50,
-  "total_indexed_edges": 57,
+﻿{
+  "total_indexed_nodes": 51,
+  "total_indexed_edges": 58,
   "adjacency": {
     "node_zero_assumptions": [
       {
@@ -313,6 +313,12 @@
       {
         "target": "ws_sophron_architecture",
         "relation": "SCOPED_TO_WORKSPACE"
+      }
+    ],
+    "node_universal_parameter_design": [
+      {
+        "target": "Axiom 2",
+        "relation": "REFINES"
       }
     ]
   }

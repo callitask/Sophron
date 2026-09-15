@@ -1,0 +1,41 @@
+{
+  "insight_id": "insight_20260915_142200_universal_design_dynamic_injection",
+  "temporal_anchor": "2026-09-15T14:22:00.489418",
+  "schema_version": "2.0",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "User instructed the AI to remove hardcoded string 'Java' from the AI prompt logic and replace it with dynamic injection using variables from the candidate profile sandbox, ensuring universal adaptability."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "Monitoring continuous career agent applying to specific jobs for Udaysagar profile",
+    "trigger_for_switch": "User explicitly asked to halt script execution and instead focus strictly on updating Sophron intelligence with the newly established rules and regulations",
+    "new_context": "Updating Sophron intelligence architecture to permanently remember the no-hardcoding architectural standard for the dual-brain prompt logic",
+    "cognitive_load_at_switch": "medium"
+  },
+  "psychological_state": {
+    "mood": "corrective",
+    "cognitive_load": "medium",
+    "decision_style": "Architectural and principle-driven. The user prioritizes scalable, universal logic over hardcoded quick fixes that only work for one profile."
+  },
+  "interaction_pairing": {
+    "user_action": "User pointed out that hardcoding 'Java' into the prompt violates the principle that the script must be universal (usable for Finance, Sales, HR, etc). User requested Sophron sync.",
+    "ai_response_quality": "High - AI immediately reverted the hardcoded strings, implemented dynamic f-string injection from profile sandbox variables, and executed Sophron sync.",
+    "friction_points": "The AI initially hardcoded the word 'Java' into the core prompt to solve a localized problem, violating the universal system axiom.",
+    "resolution": "Fixed the logic to pull 'target_keywords' dynamically from candidate_config.json, satisfying the universal architecture constraint."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Even LLM prompt strings in the Python core must remain strictly generic and parameter-driven. Not just variables, but semantic context must be passed from the configuration sandbox.",
+    "changed_from_prior_belief": "Previously, the AI assumed prompt strings were flexible and could be hardcoded if the role dictated it. Now, it is understood that AI prompts must be strictly universal templates.",
+    "consistency_with_axioms": "Axiom 2: Systems must be built generic and parameter-driven; data is isolated in sandboxes."
+  },
+  "long_term_application": {
+    "future_implication": "Never hardcode profile-specific data (skills, roles, locations, domains) anywhere in core/*.py, including inside string prompts for LLMs.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Applies globally: ANY system interacting with varied profiles must use purely template-based prompts.",
+    "linked_insights": []
+  }
+}
