@@ -1,5 +1,5 @@
 {
-  "total_edges": 59,
+  "total_edges": 61,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -295,6 +295,16 @@
       "source": "UserBehavioralPattern:InvestigatoryCuriosity",
       "target": "Axiom 1: Empirical Proof",
       "relation": "ENFORCES"
+    },
+    {
+      "source": "insight_20260915_company_site_apply_multi_fingered_arm_architecture",
+      "target": "node_zero_assumptions",
+      "relation": "APPLIES_PRINCIPLE"
+    },
+    {
+      "source": "insight_20260915_company_site_apply_multi_fingered_arm_architecture",
+      "target": "node_reverse_engineering",
+      "relation": "EVIDENCED_BY"
     }
   ]
 }

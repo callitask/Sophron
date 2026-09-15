@@ -1,6 +1,6 @@
 {
-  "total_indexed_nodes": 52,
-  "total_indexed_edges": 59,
+  "total_indexed_nodes": 53,
+  "total_indexed_edges": 61,
   "adjacency": {
     "node_zero_assumptions": [
       {
@@ -325,6 +325,16 @@
       {
         "target": "Axiom 1: Empirical Proof",
         "relation": "ENFORCES"
+      }
+    ],
+    "insight_20260915_company_site_apply_multi_fingered_arm_architecture": [
+      {
+        "target": "node_zero_assumptions",
+        "relation": "APPLIES_PRINCIPLE"
+      },
+      {
+        "target": "node_reverse_engineering",
+        "relation": "EVIDENCED_BY"
       }
     ]
   }

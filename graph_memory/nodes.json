@@ -1,5 +1,5 @@
 {
-  "total_nodes": 52,
+  "total_nodes": 53,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -453,6 +453,22 @@
         "axioms_related": [
           "Axiom 1",
           "Axiom 5"
+        ]
+      }
+    },
+    {
+      "id": "insight_20260915_company_site_apply_multi_fingered_arm_architecture",
+      "type": "insight",
+      "label": "CompanySiteApply Multi-Fingered ATS Architecture",
+      "timestamp": "2026-09-15T22:34:09.051433",
+      "properties": {
+        "subsystem": "CompanySiteApply",
+        "ats_targets": [
+          "Workday",
+          "Oracle Cloud HCM",
+          "Greenhouse",
+          "Lever",
+          "SmartRecruiters"
         ]
       }
     }

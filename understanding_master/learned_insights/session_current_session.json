@@ -2,19 +2,20 @@
   "id": "INSIGHT-current_session",
   "category": "learned_insights",
   "title": "Learned Insights from Session current_session",
-  "generated_at": "2026-09-15T14:22:00.476957",
+  "generated_at": "2026-09-15T22:28:40.434124",
   "analysis": {
-    "total_user_prompts": 17,
-    "tool_dispatch_frequency": {},
-    "sample_constraints": [
-      "[Step 0] Keyword 'rule': <USER_REQUEST> # UNIVERSAL AUTONOMOUS CAREER AGENT: MASTER INITIALIZATION & LAUNCH DIRECTIVE\r # Version: 2.0 | Upgraded: 2026-09-14 | Key change: Mid-...",
-      "[Step 0] Keyword 'purity': <USER_REQUEST> # UNIVERSAL AUTONOMOUS CAREER AGENT: MASTER INITIALIZATION & LAUNCH DIRECTIVE\r # Version: 2.0 | Upgraded: 2026-09-14 | Key change: Mid-...",
-      "[Step 631] Keyword 'rule': <USER_REQUEST> Sophron sync ensuring followig rules and regualions </USER_REQUEST> <ADDITIONAL_METADATA> The current local time is: 2026-09-15T14:10:0...",
-      "[Step 634] Keyword 'rule': <USER_REQUEST> DO not start the script now.\r We just need to update the Sophron intellegence about me for this session...read all docs in this folder:..."
-    ],
-    "sample_corrections": [
-      "[Step 130] <USER_REQUEST> Check the jobs applied, it is no where connected to the profile. We were looking for the job roles reated to the profile like Java technical lead..."
-    ],
-    "analysis_timestamp": "2026-09-15T14:22:00.476907"
+    "total_user_prompts": 2,
+    "tool_dispatch_frequency": {
+      "/browser": 4,
+      "/chrome-devtools": 3,
+      "/goal": 3,
+      "/flutter-setup-declarative-routing": 1,
+      "/a11y-debugging": 1,
+      "/troubleshooting": 1,
+      "/debug-optimize-lcp": 1
+    },
+    "sample_constraints": [],
+    "sample_corrections": [],
+    "analysis_timestamp": "2026-09-15T22:28:40.434089"
   }
 }

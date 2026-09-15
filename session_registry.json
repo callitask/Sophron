@@ -27,6 +27,13 @@
       "task_summary": "Organize downloaded resumes and cover letters into hierarchical folders",
       "registered_at": "2026-09-15T21:49:44.918788",
       "last_heartbeat": "2026-09-15T21:49:44.918795"
+    },
+    "2a162ccc-2591-4ddf-b6c3-06c60e6c1625": {
+      "session_uuid": "2a162ccc-2591-4ddf-b6c3-06c60e6c1625",
+      "workspace": "career_agent",
+      "task_summary": "CompanySiteApply ATS Form Engine Design & Inspection",
+      "registered_at": "2026-09-15T22:27:20.136928",
+      "last_heartbeat": "2026-09-15T22:27:20.136936"
     }
   },
   "past_sessions": [

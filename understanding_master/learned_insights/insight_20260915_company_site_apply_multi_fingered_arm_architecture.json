@@ -1,0 +1,44 @@
+{
+  "insight_id": "insight_20260915_company_site_apply_multi_fingered_arm_architecture",
+  "temporal_anchor": "2026-09-15T22:34:09.051433",
+  "schema_version": "2.0",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": true,
+    "context_at_time_of_insight": "Architecting the CompanySiteApply enterprise ATS application subsystem as an isolated, multi-fingered extensible arm to handle Workday, Oracle Cloud HCM, Greenhouse, Lever, etc."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": true,
+    "previous_context": "Portal-level automation on Naukri & LinkedIn and Sophron cognitive synchronization",
+    "trigger_for_switch": "User initiated expansion into direct company website / ATS applications with live Oracle Cloud HCM session open on CDP",
+    "new_context": "Design and implementation plan for CompanySiteApply subsystem with page-by-page manual inspection, resume parser anomaly healing, and 100-day extensible finger architecture",
+    "cognitive_load_at_switch": "high"
+  },
+  "psychological_state": {
+    "mood": "visionary_and_empirical",
+    "cognitive_load": "high",
+    "decision_style": "Rigorous empirical reverse-engineering. Demands manual page-by-page inspection, active live browser testing, honeypot detection, parser anomaly fixing, and pristine architectural isolation from core/"
+  },
+  "interaction_pairing": {
+    "user_action": "Requested deep architectural plan for company career site apply agent, emphasizing isolated CompanySiteApply folder, multi-fingered ATS detection, manual trigger mode, resume parser healing (line breaks & college data), and live inspection of open Oracle Cloud tab.",
+    "ai_response_quality": "Conducting deep research, inspecting live Oracle Cloud DOM on CDP port 9222, identifying honeypot traps, syncing Sophron, and formulating exhaustive Implementation Plan.",
+    "friction_points": "None. The vision is clear: enterprise ATSs have distinct quirks (Workday line breaks, Oracle JET honeypots), requiring modular finger plugins rather than monolithic scripts.",
+    "resolution": "Isolated CompanySiteApply subsystem with modular fingers, live inspection mode, parser healing doctor, and comprehensive 100-day edit documentation."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "User conceptualizes complex automation as an anatomical arm with distinct fingers for each platform/parser. Emphasizes long-term maintenance (the 100-day rule) ensuring any developer or AI can pick up and add a new site without architectural debt.",
+    "changed_from_prior_belief": "Direct company applications cannot be treated as a single uniform scraper; ATS diversity requires decoupled platform-specific fingers with common dispatch and parser-healing layers.",
+    "consistency_with_axioms": "Directly demonstrates Axiom 1 (runtime reality over assumptions), Axiom 2 (generic, parameter-driven architecture), Axiom 3 (microscopic DOM reverse-engineering), and Axiom 4 (analytical investigator reporting to principal authority)."
+  },
+  "long_term_application": {
+    "future_implication": "CompanySiteApply lives strictly in CompanySiteApply/ decoupled from core/. Scripts are triggered on-demand, never running as an uncontrolled background daemon. All ATS quirks (honeypots, soft wraps, custom selects) are documented in platform finger cards.",
+    "workspace_scope": "universal_autonomous_career_agent",
+    "cross_project_note": "The multi-finger plugin pattern with contract-enforced adapters is applicable across all external integration projects.",
+    "linked_insights": [
+      "insight_20260914_rule_adherence_architecture_and_sophron_intelligence_upgrade",
+      "insight_20260915_token_conservation_and_stream_stability"
+    ]
+  }
+}
