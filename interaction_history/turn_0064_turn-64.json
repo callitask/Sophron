@@ -1,0 +1,59 @@
+{
+  "turn_id": "turn_0064",
+  "label": "TURN-64",
+  "timestamp": "2026-09-15T15:23:43.377751",
+  "type": "MILESTONE",
+  "tags": [
+    "bugfix",
+    "disability_gate",
+    "senior_role_matching",
+    "config_tightening",
+    "purity_confirmed"
+  ],
+  "summary": "Dual bugfix: (1) Disability screening heuristic gate added. (2) Senior-role over-matching tightened via config-driven experience gap and raised match_threshold.",
+  "details": {
+    "fix_A_disability_gate": {
+      "file": "core/ai_client.py",
+      "location": "_heuristic_screening_answer() section 6b",
+      "entry": "ENTRY #015",
+      "root_cause": "No disability/PWD keyword handler existed. Final blind fallback `if options: return options[0]` selected 'I have a disability' because it was options[0] in the chatbot list. Triggered on a live Naukri chatbot application.",
+      "fix": "Inserted explicit disability/PWD detector before section 7 (Boolean fallback) and section 8 (options[0] safe default). Reads cand.get('has_disability', False). Field absent in config = False = No disability. Three-tier matching: (1) explicit no-disability markers, (2) option without 'have a disability'/'yes', (3) options[-1] as last resort. Numeric fields return '0'.",
+      "user_directive": "AG brain should select NO for health/identity questions not answerable from profile with certainty."
+    },
+    "fix_B_config_threshold": {
+      "file": "profiles/anshika_garg/candidate_config.json",
+      "changes": {
+        "match_threshold": {
+          "old": 40,
+          "new": 65
+        },
+        "max_experience_gap_years": {
+          "old": null,
+          "new": 2
+        }
+      },
+      "rationale": "match_threshold 40 allowed borderline keyword-overlap matches (CFO, Finance Manager, Regional Commercial Manager 12-15 yrs) to get applied. Raised to 65 aligns with ENTRY #002 60% cutoff with small buffer. max_experience_gap_years:2 exposes configurable band for Fix C."
+    },
+    "fix_C_experience_gap": {
+      "file": "core/ai_client.py",
+      "location": "evaluate_job_match() exp band gate",
+      "entry": "ENTRY #015",
+      "root_cause": "Hardcoded cand_exp+3 tolerance. For fresher (cand_exp=0.5), this allowed roles requiring up to 3.5 years through Stage 1 hard gate. Combined with 40% match_threshold, CFO/Finance Manager/Senior Accountant all received APPLIED status.",
+      "fix": "Replaced with dynamic _max_gap from config target_jobs.max_experience_gap_years (default 2). For Anshika: hard-reject threshold now 2.5 years. Roles requiring more than 2.5 years are rejected at Stage 1 with zero score.",
+      "zero_hardcoding": true
+    },
+    "purity_check": "Pure: True [] -- confirmed after all edits",
+    "profile": "anshika_garg",
+    "candidate_context": "Fresher, 0.5 years total experience. B.Com Hons Hansraj. Internships in Finance/Marketing/Campus. Target: Internal Auditor, Financial Analyst, Audit Associate, FP&A Analyst etc."
+  },
+  "user_corrections_recorded": [
+    "Disability: AI should default to No for health questions not answerable from profile",
+    "Senior roles: Fresher profile should not match CFO/Finance Manager/Regional Commercial Manager",
+    "No hardcoding in core/*.py -- all values must resolve from candidate_config.json"
+  ],
+  "next_actions": [
+    "restart_daemon",
+    "monitor_disability_gate_on_next_chatbot",
+    "verify_senior_role_rejection_in_logs"
+  ]
+}
