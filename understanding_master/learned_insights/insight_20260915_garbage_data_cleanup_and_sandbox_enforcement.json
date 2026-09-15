@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "insight_id": "insight_20260915_garbage_data_cleanup_and_sandbox_enforcement",
+  "temporal_anchor": "2026-09-15T16:21:24.278799",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "WORKSPACE_INTEGRITY",
+    "workspace_origin": "career_agent_core",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": true,
+    "context_at_time_of_insight": "User requested cleanup of garbage and waste data to ensure the agent is pure and functional for new profiles."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": true,
+    "cognitive_load_at_switch": "low",
+    "previous_context": "Codebase purity audit and refactoring.",
+    "trigger_for_switch": "User explicitly asked to perform cleanup of garbage and waste data.",
+    "new_context": "Workspace garbage collection and sandbox enforcement."
+  },
+  "psychological_state": {
+    "mood": "tidy",
+    "cognitive_load": "low",
+    "decision_style": "Systematic deletion of non-essential cache files and enforcement of Rule 2 sandbox boundaries."
+  },
+  "interaction_pairing": {
+    "user_action": "User commanded cleanup of garbage and waste data.",
+    "ai_response_quality": "Identified and removed stray profile output folder ('anshika_garg') at the workspace root, as well as all Python __pycache__ directories.",
+    "friction_points": "None.",
+    "resolution": "Workspace is now pristine. All candidate data is strictly contained within profiles/."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Stray output folders can be generated at the workspace root if a script is run with a relative path or missing 'profiles/' prefix. These violate Rule 2 (Dynamic Profile Sandbox Boundaries).",
+    "changed_from_prior_belief": "N/A",
+    "consistency_with_axioms": "Rule 2 (Dynamic Profile Sandbox Boundaries)."
+  },
+  "long_term_application": {
+    "future_implication": "Regularly audit the workspace root for stray profile output folders and delete them. Ensure all scripts resolve candidate paths strictly within 'profiles/'.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Sandbox enforcement is a universal requirement for multi-profile agents.",
+    "linked_insights": [
+      "insight_20260915_rule_5_zero_trust_codebase_purity_remediation"
+    ]
+  }
+}
