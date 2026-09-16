@@ -1,0 +1,22 @@
+{
+  "insight_id": "oracle_hcm_form_and_skills_precision_20260916",
+  "temporal_anchor": {
+    "timestamp": "2026-09-16T11:51:00+05:30",
+    "task_context": "Bristlecone Oracle Cloud HCM Application Section 4 Deep Automation & Form Reverse Engineering"
+  },
+  "psychological_state": {
+    "user_mood_and_tone": "Direct, Detail-Oriented, High Standards, Highly Strategic",
+    "cognitive_phase": "Systemic Architecture & Verification (Eliminating Edge Case Hallucinations)",
+    "behavioral_observations": "User possesses deep architectural discernment regarding ATS portal mechanics and expects zero assumptions, exact input-to-field matching, career-aligned experience dates, and permanent engineering documentation."
+  },
+  "interaction_pairing": {
+    "ai_stimulus": "AI previously used a generic fallback selector for skill name which picked the Month input, causing skill text to land in the date field and creating Unnamed Skill draft tiles.",
+    "user_reaction": "User immediately flagged: 'you are adding skills in the wrong form... currently you fill skill name in month tab... ensure to fix. Cor java is since last 9 years, senior skills since last 6 years, team management since last 6, job specific skills from job start time to today.'"
+  },
+  "cognitive_evolution": {
+    "previous_paradigm": "Naive DOM query fallbacks on complex forms like Oracle JET lead to field misattribution (e.g. Month combobox being selected as text input). Uniform static years for all skills.",
+    "new_paradigm": "Explicit element name targeting (input[name='skills']) with Playwright native fill() to trigger full event bubbling. Nuanced, career-aligned achievement years: Core/Advanced Java (9+ yrs -> 2015), Senior/Architecture & Leadership (6+ yrs -> 2018), Domain & Tools (2017/2018). Immediate cleanup of orphaned draft tiles via tile delete icon.",
+    "reason_for_shift": "User enforced exact career timeline authenticity and zero tolerance for field misdirection."
+  },
+  "long_term_application": "In all future Oracle Cloud HCM portals and multi-step ATS systems, never use generic fallback text selectors. Always identify the exact Knockout element name. Assign skill achievement dates proportionally according to career milestones: College/Foundations = 9+ yrs, Architecture/Leadership = 6+ yrs, Tools/Domains = tenure-aligned."
+}
