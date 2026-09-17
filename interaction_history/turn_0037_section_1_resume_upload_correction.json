@@ -1,0 +1,11 @@
+{
+  "turn_number": 37,
+  "session_uuid": "883d1cba-b9f9-46c9-b4b8-762d80b034f3",
+  "timestamp": "2026-09-17T14:30:00+05:30",
+  "data_subject": "AGENT_CAREER",
+  "rule_tier": "WORKSPACE_RULE",
+  "context_at_time_of_insight": "User correction: Mandatory Section 1 tailored resume upload & auto-parse verification before advance.",
+  "was_there_a_context_switch": false,
+  "task_summary": "Auditing Section 1 through Section 4 for JPMC Requisition 210789874, healing broken fields, and codifying Section 1 resume upload protocol into system architecture and documentation.",
+  "outcome": "Ingested user correction into Sophron memory, planned documentation updates, and initiating end-to-end page-by-page audit."
+}

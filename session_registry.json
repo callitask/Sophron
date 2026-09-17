@@ -58,6 +58,16 @@
       "session_uuid": "883d1cba-b9f9-46c9-b4b8-762d80b034f3",
       "workspace": "career_agent",
       "ended_at": "2026-09-17T13:58:54.850179"
+    },
+    {
+      "session_uuid": "883d1cba-b9f9-46c9-b4b8-762d80b034f3",
+      "workspace": "career_agent",
+      "ended_at": "2026-09-17T14:10:23.903554"
+    },
+    {
+      "session_uuid": "883d1cba-b9f9-46c9-b4b8-762d80b034f3",
+      "workspace": "career_agent",
+      "ended_at": "2026-09-17T14:30:00.077260"
     }
   ]
 }

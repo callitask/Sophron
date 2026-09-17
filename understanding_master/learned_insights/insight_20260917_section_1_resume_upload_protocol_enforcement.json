@@ -1,0 +1,10 @@
+{
+  "insight_id": "insight_20260917_section_1_resume_upload_protocol_enforcement",
+  "timestamp": "2026-09-17T14:30:00+05:30",
+  "data_subject": "AGENT_CAREER",
+  "rule_tier": "WORKSPACE_RULE",
+  "context_at_time_of_insight": "User correction on JPMC application: Section 1 resume upload protocol was skipped and caused cascaded experience review desynchronization.",
+  "was_there_a_context_switch": false,
+  "core_learning": "In all Oracle Cloud HCM / Enterprise ATS workflows, the FIRST action on Section 1 must ALWAYS be uploading the tailored resume PDF to input.apply-flow-profile-import-awli__file-upload, waiting for auto-parse (Profile successfully imported), and verifying auto-populated fields before advancing.",
+  "actionable_enforcement": "1. Codify in docs/ORACLE_HCM_ATS_DEEP_DIVE.md and docs/COMPANY_ATS_KNOWLEDGE.md. 2. Implement mandatory resume upload check in CompanySiteApply/fingers/oracle_cloud_finger.py. 3. Ensure sequential page-by-page audit and healing."
+}
