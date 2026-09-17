@@ -1,5 +1,5 @@
 {
-  "total_reflections": 57,
+  "total_reflections": 58,
   "analyzed_turns": [
     "TURN-01",
     "TURN-08",
@@ -57,7 +57,8 @@
     "TURN-65",
     "TURN-65",
     "TURN-43",
-    "TURN-66"
+    "TURN-66",
+    "TURN-67"
   ],
   "reflection_schema": [
     "user_intent",
@@ -68,6 +69,6 @@
     "was_work_done_exactly_as_asked",
     "evolutionary_takeaways"
   ],
-  "last_updated": "2026-09-17T13:55:27.139410",
-  "last_turn_file": "insight_20260917_jpmc_resume_strategy_overhaul.json"
+  "last_updated": "2026-09-17T15:36:03.906865",
+  "last_turn_file": "insight_20260917_jpmc_lead_engineer_submitted.json"
 }

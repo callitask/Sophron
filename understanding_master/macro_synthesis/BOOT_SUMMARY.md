@@ -67,3 +67,10 @@
 - **Resume Architecture**: Implemented dual-identity tailoring (Leadership + Hands-on AI velocity) to prevent data loss or truncation. Strictly bounded to 2-page PDF via css margins.
 - **JPMC Application**: Successfully applied for Senior Lead Software Engineer with updated PDF and Cover Letter. Standalone prompt established.
 - **Rules Enforced**: Added STRATEGIC_RESUME_TAILORING.md and Workspace Rule 14. Never delete prior depth when tailoring.
+
+## Session 2026-09-17 Addendum (15:36 IST)
+
+### Application Submission & Single-Line Header Standard (ENTRY #017)
+- **JPMC Application Submitted**: Lead Software Engineer - JAVA BACKEND (Req 210789874) confirmed Under Consideration on /my-profile. Artifacts (confirmation screenshot, answers.json, tailored 2-page PDF, cover letter) archived.
+- **Contact Header Architecture**: Standardized candidate header to a single unified line (Phone | Email | Location | LinkedIn) to prevent multi-line clutter and preserve 2-page A4 vertical budget.
+- **Rules Enforced**: Added Rule 15 to WORKSPACE_RULES.md. Anchored Section 1 resume upload hard gate.

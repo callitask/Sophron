@@ -1,0 +1,21 @@
+{
+  "card_type": "milestone_insight",
+  "card_id": "milestone_20260917_153603",
+  "temporal_anchor": "2026-09-17T15:36:03.898567",
+  "context_classification": {
+    "type": "task_completion_and_protocol_enforcement",
+    "trigger": "user_submission_and_contact_header_feedback",
+    "previous_context": "Auditing Section 3 & 4 on JPMC Oracle HCM portal",
+    "new_context": "Application Submitted, Confirmation Archived, Single-Line Header Codified",
+    "cognitive_load": "low"
+  },
+  "event_summary": "Completed JPMC Lead Software Engineer - JAVA BACKEND (Req 210789874) application. Confirmed on /my-profile, archived submission_confirmation.png and answers.json. Enforced single-line contact header across all resumes and HTML_WRAPPER. Codified Section 1 resume upload protocol into ORACLE_HCM_ATS_DEEP_DIVE.md, COMPANY_ATS_KNOWLEDGE.md, and WORKSPACE_RULES.md (Rule 15). Cleaned up all temporary root scripts.",
+  "learned_rules": [
+    "Section 1 Resume Upload Gate: Never bypass Section 1 without uploading tailored resume PDF and awaiting Profile successfully imported banner.",
+    "Single-Line Contact Header Standard: Phone, Email, Location, and LinkedIn must be on a single line in resume markdown and CSS (white-space: nowrap, 8.0pt) to preserve vertical space.",
+    "Strict 2-Page Budget: Margin must be 6mm top/bottom, 10mm sides with 8.3pt font and 1.26 line height for exact 2-page A4 PDFs.",
+    "Browser Tab Downloader Isolation: In Oracle HCM, never query pages[0] blindly because a hidden downloader tab occupies index 0; always filter for /my-profile or /apply/."
+  ],
+  "action_taken": "Captured submission_confirmation.png on /my-profile, updated answers.json, updated resume.md files to single-line contact header, re-compiled all PDFs to exact 2-page count, updated core/generate_factual_tailored.py, updated docs/WORKSPACE_RULES.md, docs/STRATEGIC_RESUME_TAILORING.md, docs/COMPANY_ATS_KNOWLEDGE.md, docs/ORACLE_HCM_ATS_DEEP_DIVE.md, and purged root inspection scripts.",
+  "_dedup_fingerprint": "dc5c2282eaed"
+}
