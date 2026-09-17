@@ -41,13 +41,6 @@
       "task_summary": "Launch udaysagar_kandpal profile daemon",
       "registered_at": "2026-09-16T18:45:52.189337",
       "last_heartbeat": "2026-09-16T18:45:52.189343"
-    },
-    "fc234fa6-a308-49d6-8ee1-de3f9a923ccc": {
-      "session_uuid": "fc234fa6-a308-49d6-8ee1-de3f9a923ccc",
-      "workspace": "career_agent",
-      "task_summary": "Sync Sophron: JPMC application and resume strategy overhaul",
-      "registered_at": "2026-09-17T13:55:27.120701",
-      "last_heartbeat": "2026-09-17T13:55:27.120710"
     }
   },
   "past_sessions": [
@@ -55,6 +48,16 @@
       "session_uuid": "ag-config-fix-20260914-v2",
       "workspace": "career_agent",
       "ended_at": "2026-09-14T22:06:45.528765"
+    },
+    {
+      "session_uuid": "fc234fa6-a308-49d6-8ee1-de3f9a923ccc",
+      "workspace": "career_agent",
+      "ended_at": "2026-09-17T13:55:32.285710"
+    },
+    {
+      "session_uuid": "883d1cba-b9f9-46c9-b4b8-762d80b034f3",
+      "workspace": "career_agent",
+      "ended_at": "2026-09-17T13:58:54.850179"
     }
   ]
 }

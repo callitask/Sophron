@@ -1,0 +1,15 @@
+{
+  "turn_number": 35,
+  "session_uuid": "883d1cba-b9f9-46c9-b4b8-762d80b034f3",
+  "timestamp": "2026-09-17T13:58:00+05:30",
+  "data_subject": "PROFILE_UDAYSAGAR",
+  "rule_tier": "WORKSPACE_RULE",
+  "context_at_time_of_insight": "JPMC direct enterprise ATS application pipeline verification and artifact synchronization",
+  "was_there_a_context_switch": true,
+  "previous_context": "Macro agent architecture orientation and continuous career agent overview",
+  "trigger_for_switch": "User task directive for JPMC direct career portal execution",
+  "new_context": "Direct ATS application execution and verification on Oracle Cloud HCM",
+  "cognitive_load_at_switch": "Moderate (verification of live portal state vs automation runbook)",
+  "task_summary": "Verified JPMC Requisition 210785498 is under active consideration with full dual-identity tailored 2-page resume and cover letter.",
+  "outcome": "Verified application status on candidate dashboard (Applied on 09/17/2026, Status: Under Consideration). Completed localized artifact archiving (Job_Description.md, answers.json, submission_confirmation.png, 2-page tailored PDF)."
+}
