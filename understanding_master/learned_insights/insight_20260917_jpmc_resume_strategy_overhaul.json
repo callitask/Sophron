@@ -1,0 +1,20 @@
+{
+  "card_type": "milestone_insight",
+  "card_id": "milestone_20260917_135527",
+  "temporal_anchor": "2026-09-17T13:55:27.127826",
+  "context_classification": {
+    "type": "strategy_update",
+    "trigger": "user_correction_on_resume_tailoring",
+    "previous_context": "JPMC Application form automation",
+    "new_context": "Resume Dual-Identity Tailoring Architecture",
+    "cognitive_load": "medium"
+  },
+  "event_summary": "Completed JPMC Senior Lead Software Engineer application. Overhauled resume tailoring strategy to maintain dual-identity (Leadership metrics + AI tooling) without truncating older history. Strict 2-page margin boundaries implemented for PDF generation.",
+  "learned_rules": [
+    "Never truncate important data points or work experience descriptions during tailoring.",
+    "Resume must balance leadership metrics with targeted skills rather than replacing one with another.",
+    "Always update resume.md and strategic documentation (STRATEGIC_RESUME_TAILORING.md, COMPANY_ATS_KNOWLEDGE.md) before applying."
+  ],
+  "action_taken": "Updated resume.md, generated 2-page PDF, completed JPMC attachment upload. Created docs/STRATEGIC_RESUME_TAILORING.md and updated WORKSPACE_RULES.md with Rule 14. Extracted JPMC prompt into clean standalone.",
+  "_dedup_fingerprint": "893262f402d6"
+}

@@ -60,3 +60,10 @@
 - **Identity/health questions** (disability, PWD, criminal record, medical): ALWAYS handled by explicit gate. NEVER let options[0] fallback answer them.
 - **Fresher profile calibration**: match_threshold ≥ 65, experience_gap ≤ 2 — set in config, not code.
 - **Internship-as-experience**: numeric chatbot fields → actual months→years (honest). Text fields → factual resume narrative. Never fabricate.
+
+## Session 2026-09-17 Addendum (13:55 IST)
+
+### Strategic Tailoring & Application Milestones (ENTRY #016)
+- **Resume Architecture**: Implemented dual-identity tailoring (Leadership + Hands-on AI velocity) to prevent data loss or truncation. Strictly bounded to 2-page PDF via css margins.
+- **JPMC Application**: Successfully applied for Senior Lead Software Engineer with updated PDF and Cover Letter. Standalone prompt established.
+- **Rules Enforced**: Added STRATEGIC_RESUME_TAILORING.md and Workspace Rule 14. Never delete prior depth when tailoring.
