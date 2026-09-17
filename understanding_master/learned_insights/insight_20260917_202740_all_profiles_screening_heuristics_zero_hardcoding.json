@@ -1,0 +1,43 @@
+{
+  "insight_id": "insight_20260917_202740_all_profiles_screening_heuristics_zero_hardcoding",
+  "temporal_anchor": "2026-09-17T20:27:40+05:30",
+  "schema_version": "2.0",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "Zero-hardcoding purge completed in ai_client.py. All 4 real candidate profiles updated with screening_heuristics and missing target_jobs fields. All JSONs verified valid."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "false",
+    "previous_context": null,
+    "trigger_for_switch": null,
+    "new_context": null,
+    "cognitive_load_at_switch": null
+  },
+  "psychological_state": {
+    "mood": "corrective",
+    "cognitive_load": "medium",
+    "decision_style": "User enforces structural completeness across all profiles — no partial implementation accepted. Demanded confirmation of every file touched before moving on."
+  },
+  "interaction_pairing": {
+    "user_action": "Requested all profile configs be checked/updated to match agent requirements without mixing data across profiles. Also asked for .agents/rules confirmation.",
+    "ai_response_quality": "Found and fixed 3 profiles missing screening_heuristics; fixed bharat_pandey also missing 3 target_jobs keys. All validated with Python json.load() — zero invalid JSON.",
+    "friction_points": "bharat_pandey had literal \\r corruption from replace_file_content tool when using \\r\\n escape sequences — fixed via regex strip in Python.",
+    "resolution": "All 5 profiles (including default_user) validated OK. All rules files confirmed present and dated."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "User verifies work via explicit confirmation questions before accepting completion — never assumes done without checking. Asks for layman explanation of changes.",
+    "changed_from_prior_belief": "None",
+    "consistency_with_axioms": "Axiom 2 (Zero Hardcoding). Axiom 3 (Profile Isolation — no mixing). Axiom 5 (Verify before claiming done)."
+  },
+  "long_term_application": {
+    "future_implication": "Every new profile must be validated for BOTH screening_heuristics AND target_jobs completeness before being committed. Use the Python audit script.",
+    "workspace_scope": "career_agent — all profiles",
+    "cross_project_note": "Profile isolation pattern (no data mixing across users) is a universal rule applicable to any multi-tenant agent system.",
+    "linked_insights": [
+      "insight_20260917_section_1_resume_upload_protocol_enforcement.json"
+    ]
+  }
+}
