@@ -7,14 +7,15 @@
 ---
 
 ## LAST KNOWN STATE
-- **Active candidate profile**: `suresh_chaudhary` (Talent Acquisition Specialist, HR Coordinator, Recruiter | Strictly locked to Mumbai)
-- **CDP port registry**: 9222 = active authenticated session for `suresh_chaudhary`
-- **Total ledger applications**: 879+ entries in applications_tracker.csv
-- **Current session applications confirmed**: 37 verified Mumbai portal submissions (1-click and chatbot solved)
-- **Daemon status**: Explicitly stopped per user command to perform Sophron intelligence sync and update.
-- **Last Sophron sync**: 2026-09-15 14:30 IST (Token conservation, stream stability, and decoupled terminal vs chat observability codification)
+**As of 2026-09-17 20:48 IST | Session 7d2413a1**
 
----
+- **ai_client.py**: FULLY PURGED — 14 hardcoded keyword violations eliminated. [ENTRY #018] logged. Zero-hardcoding in force.
+- **screening_heuristics**: Added to ALL 4 candidate profiles + default_user template. All 5 JSONs validated clean.
+- **Profile status**: anshika_garg OK | bharat_pandey OK | suresh_chaudhary OK | udaysagar_kandpal OK | default_user OK
+- **Docs**: ARCHITECTURE_REFERENCE.md v4.0 | WORKSPACE_RULES.md v3.2 | SCAR_TISSUE.md (+2) | ACTIVE_CONSTRAINT_BLOCK.md v1.1
+- **Active candidate**: udaysagar_kandpal | Salary floor: 25 LPA+ | Target: Senior Java Developer
+- **Sophron**: TURN-63 | 54 graph nodes | 62 edges | 37 insight cards | 59 total reflections
+- **Git**: All changes committed and pushed to origin/main
 
 ## TOP OPEN ISSUES & USER DIRECTIVES
 1. **Chat Signal-to-Noise Ratio (Critical User Mandate)**:

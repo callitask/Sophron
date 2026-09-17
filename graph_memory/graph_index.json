@@ -1,6 +1,6 @@
 {
-  "total_indexed_nodes": 53,
-  "total_indexed_edges": 61,
+  "total_indexed_nodes": 54,
+  "total_indexed_edges": 62,
   "adjacency": {
     "node_zero_assumptions": [
       {
@@ -335,6 +335,12 @@
       {
         "target": "node_reverse_engineering",
         "relation": "EVIDENCED_BY"
+      }
+    ],
+    "insight_20260917_204821_all_profiles_screening_heuristics_zero_hardcoding": [
+      {
+        "target": "insight_20260917_section_1_resume_upload_protocol_enforcement",
+        "relation": "REFINES"
       }
     ]
   }

@@ -1,0 +1,43 @@
+{
+  "insight_id": "insight_20260917_204821_all_profiles_screening_heuristics_zero_hardcoding",
+  "temporal_anchor": "2026-09-17T20:48:21+05:30",
+  "schema_version": "2.0",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "Zero-hardcoding purge complete in ai_client.py. All 4 candidate profiles updated with screening_heuristics and missing target_jobs fields. All JSONs validated."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "false",
+    "previous_context": null,
+    "trigger_for_switch": null,
+    "new_context": null,
+    "cognitive_load_at_switch": null
+  },
+  "psychological_state": {
+    "mood": "corrective",
+    "cognitive_load": "medium",
+    "decision_style": "User enforces structural completeness across all profiles — no partial implementation accepted."
+  },
+  "interaction_pairing": {
+    "user_action": "Requested all profile configs be checked/updated to match agent requirements without mixing data across profiles.",
+    "ai_response_quality": "Found and fixed 3 profiles missing screening_heuristics; bharat_pandey also missing 3 target_jobs keys. All validated.",
+    "friction_points": "bharat_pandey had literal backslash-r corruption from replace_file_content tool — fixed via regex in Python.",
+    "resolution": "All 5 profiles validated OK. All rules files confirmed present."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "User verifies work via explicit confirmation before accepting. Asks for layman explanation.",
+    "changed_from_prior_belief": "None",
+    "consistency_with_axioms": "Axiom 2 (Zero Hardcoding). Axiom 3 (Profile Isolation). Axiom 5 (Verify before done)."
+  },
+  "long_term_application": {
+    "future_implication": "Every new profile must pass Python audit (screening_heuristics + target_jobs completeness) before commit.",
+    "workspace_scope": "career_agent — all profiles",
+    "cross_project_note": "Profile isolation is universal in any multi-tenant agent system.",
+    "linked_insights": [
+      "insight_20260917_section_1_resume_upload_protocol_enforcement"
+    ]
+  }
+}

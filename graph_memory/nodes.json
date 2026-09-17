@@ -1,5 +1,5 @@
 {
-  "total_nodes": 53,
+  "total_nodes": 54,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -471,6 +471,14 @@
           "SmartRecruiters"
         ]
       }
+    },
+    {
+      "id": "insight_20260917_204821_all_profiles_screening_heuristics_zero_hardcoding",
+      "type": "insight",
+      "label": "All Profiles screening_heuristics Upgrade",
+      "timestamp": "2026-09-17T20:48:21+05:30",
+      "workspace": "career_agent",
+      "summary": "All 4 candidate profiles upgraded with screening_heuristics + missing target_jobs keys."
     }
   ]
 }

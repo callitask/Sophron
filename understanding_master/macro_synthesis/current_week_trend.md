@@ -37,3 +37,5 @@
 - [2026-09-15 22:35 IST] [insight_20260915_company_site_apply_multi_fingered_arm_architecture]: Initiated CompanySiteApply architecture - modular multi-fingered ATS application subsystem isolated from core/, with resume parser healing and 100-day extensibility.
 
 - [2026-09-17 20:27 IST] [insight_20260917_202740_all_profiles_screening_heuristics_zero_hardcoding]: All 4 candidate profiles upgraded with screening_heuristics section + missing target_jobs keys; bharat_pandey JSON corruption fixed; all profiles validated valid. Zero-hardcoding architectural constraint extended to all profiles.
+
+- [2026-09-17 20:48 IST] [insight_20260917_204821_all_profiles_screening_heuristics_zero_hardcoding]: All 4 candidate profiles upgraded with screening_heuristics + missing target_jobs keys. JSON corruption fixed in bharat_pandey. Zero-hardcoding extended to all profiles.
