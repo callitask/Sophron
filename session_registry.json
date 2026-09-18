@@ -41,6 +41,13 @@
       "task_summary": "Launch udaysagar_kandpal profile daemon",
       "registered_at": "2026-09-16T18:45:52.189337",
       "last_heartbeat": "2026-09-16T18:45:52.189343"
+    },
+    "0410a147-5476-4d31-8e39-c1d51d3a6864": {
+      "session_uuid": "0410a147-5476-4d31-8e39-c1d51d3a6864",
+      "workspace": "career_agent",
+      "task_summary": "Autonomous career agent launch for Anshika Garg with strict seniority matching and JD analysis",
+      "registered_at": "2026-09-18T23:04:48.869073",
+      "last_heartbeat": "2026-09-18T23:04:48.869084"
     }
   },
   "past_sessions": [

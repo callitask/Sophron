@@ -1,5 +1,5 @@
 {
-  "total_edges": 62,
+  "total_edges": 63,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -311,6 +311,11 @@
       "target": "insight_20260917_section_1_resume_upload_protocol_enforcement",
       "relation": "REFINES",
       "label": "Extends zero-hardcoding enforcement to all profiles"
+    },
+    {
+      "source": "insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion",
+      "target": "insight_20260915_fresher_senior_role_overmatch_experience_gate",
+      "relation": "REFINES"
     }
   ]
 }

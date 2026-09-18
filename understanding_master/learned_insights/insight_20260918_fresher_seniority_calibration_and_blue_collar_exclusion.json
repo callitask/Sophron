@@ -1,0 +1,43 @@
+{
+  "insight_id": "insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion",
+  "temporal_anchor": "2026-09-18T23:07:32.684917",
+  "schema_version": "2.0",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "PROFILE_ANSHIKA",
+    "workspace_origin": "career_agent",
+    "rule_tier": "PROFILE_SPECIFIC",
+    "is_cross_project_applicable": false,
+    "context_at_time_of_insight": "User corrected Career Agent for applying to senior roles (Accountant Head, Senior Audit Manager) and blue-collar/loan agent roles for fresher profile (0.5 yrs exp)."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": true,
+    "previous_context": "Session 7d2413a1 completed udaysagar_kandpal Java Backend JPMC application and screening heuristics purge.",
+    "trigger_for_switch": "User initiated Master Initialization v3.0 switching target profile to anshika_garg with strict directive on seniority and JD analysis.",
+    "new_context": "Multi-daemon pipeline launch for anshika_garg with zero-hardcoding config push-start, senior/loan role exclusion, and IPC monitoring.",
+    "cognitive_load_at_switch": "high"
+  },
+  "psychological_state": {
+    "mood": "corrective",
+    "cognitive_load": "high",
+    "decision_style": "Empirical, quality-driven, zero-tolerance for irrelevant or out-of-seniority applications."
+  },
+  "interaction_pairing": {
+    "user_action": "User commanded launch of 3-daemon pipeline for anshika_garg and explicitly highlighted prior bad applications (blue-collar loan agent, Accountant Head, Senior Audit Manager) demanding deep JD and seniority analysis.",
+    "ai_response_quality": "Deep diagnosis performed: identified lack of manager/head negative keywords in candidate config, loose word overlap in duties, and poisoned auto-learned truths. Configured negative keywords, cleaned truths, smart-reset saturated ledger (8653 -> 1998), and prepared 3-daemon launch.",
+    "friction_points": "Prior session had applied to senior/manager roles due to generic stopwords stripping hierarchy terms and JD experience patterns missing header-level years.",
+    "resolution": "Enforced config-driven gating: added Manager, Head, Director, Lead, Blue Collar, and Loan Agent to negative_keywords; cleaned auto_learned_truths; aligned search cycles to entry-level associate roles."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Fresher profiles (<1 yr exp) must categorically include management/leadership terms (Manager, Head, Lead, Director, VP) in negative_keywords unless explicitly targeted as assistant/trainee roles.",
+    "changed_from_prior_belief": "Prior belief relied on experience band gap alone, but JD experience is frequently placed in portal headers outside the body, bypassing regex filters. Title negative keywords are an absolute hard gate that never fails.",
+    "consistency_with_axioms": "Axiom 1 (runtime reality over static assumptions), Axiom 2 (generic parameter-driven config in sandboxes)."
+  },
+  "long_term_application": {
+    "future_implication": "Always audit candidate config negative_keywords against candidate seniority before launching daemons. Entry-level profiles must have explicit senior role exclusions.",
+    "workspace_scope": "F:\\JOB AI AGENT",
+    "cross_project_note": null,
+    "linked_insights": [
+      "insight_20260915_fresher_senior_role_overmatch_experience_gate"
+    ]
+  }
+}

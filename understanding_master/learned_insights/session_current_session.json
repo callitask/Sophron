@@ -2,20 +2,15 @@
   "id": "INSIGHT-current_session",
   "category": "learned_insights",
   "title": "Learned Insights from Session current_session",
-  "generated_at": "2026-09-15T22:28:40.434124",
+  "generated_at": "2026-09-18T23:04:53.416234",
   "analysis": {
-    "total_user_prompts": 2,
-    "tool_dispatch_frequency": {
-      "/browser": 4,
-      "/chrome-devtools": 3,
-      "/goal": 3,
-      "/flutter-setup-declarative-routing": 1,
-      "/a11y-debugging": 1,
-      "/troubleshooting": 1,
-      "/debug-optimize-lcp": 1
-    },
-    "sample_constraints": [],
+    "total_user_prompts": 1,
+    "tool_dispatch_frequency": {},
+    "sample_constraints": [
+      "[Step 0] Keyword 'rule': <USER_REQUEST> # UNIVERSAL AUTONOMOUS CAREER AGENT — MASTER INITIALIZATION & LAUNCH DIRECTIVE\r # Version: 3.0 | Updated: 2026-09-18 | Key change: Mult...",
+      "[Step 0] Keyword 'purity': <USER_REQUEST> # UNIVERSAL AUTONOMOUS CAREER AGENT — MASTER INITIALIZATION & LAUNCH DIRECTIVE\r # Version: 3.0 | Updated: 2026-09-18 | Key change: Mult..."
+    ],
     "sample_corrections": [],
-    "analysis_timestamp": "2026-09-15T22:28:40.434089"
+    "analysis_timestamp": "2026-09-18T23:04:53.416197"
   }
 }

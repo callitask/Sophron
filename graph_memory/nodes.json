@@ -1,5 +1,5 @@
 {
-  "total_nodes": 54,
+  "total_nodes": 55,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -479,6 +479,14 @@
       "timestamp": "2026-09-17T20:48:21+05:30",
       "workspace": "career_agent",
       "summary": "All 4 candidate profiles upgraded with screening_heuristics + missing target_jobs keys."
+    },
+    {
+      "id": "insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion",
+      "type": "insight",
+      "title": "Fresher Seniority Calibration & Negative Role Hard-Gating",
+      "domain": "career_agent",
+      "timestamp": "2026-09-18T23:07:32.684917",
+      "summary": "Candidate config negative keywords must hard-gate Manager, Head, and Lead roles for fresher profiles to prevent senior role over-matching."
     }
   ]
 }
