@@ -1,0 +1,23 @@
+{
+  "insight_id": "insight_20260918_job_highlights_early_gating_ca_intermediate",
+  "timestamp": "2026-09-18T23:12:30+05:30",
+  "category": "ARCHITECTURAL_DEFECT_ANALYSIS",
+  "candidate": "anshika_garg",
+  "target_domain": "Finance / Internal Audit / Risk Advisory (Pursuing US CPA)",
+  "incident_summary": "SIS Industrial Trainee role passed Stage 1 and Stage 2 matching despite Job Highlights explicitly requiring Passed both groups of CA Intermediate and registered for ICAI industrial training.",
+  "root_causes": [
+    {
+      "component": "core/04_job_discovery.py (lines 1283-1285)",
+      "defect": "Scraper extracted highlights_list from DOM but performed zero early filtering or negative keyword validation."
+    },
+    {
+      "component": "core/ai_client.py (lines 1016-1053)",
+      "defect": "Stage 1 Gatekeeper negative keyword checks on JD body were gated behind overly restrictive prefix regexes."
+    },
+    {
+      "component": "core/ai_client.py (lines 1098-1110 & 860)",
+      "defect": "Title Industrial Trainee fell back to transferable capability matching. Line 860 treated job highlights as duties header."
+    }
+  ],
+  "compliance_status": "Awaiting User Approval under Gate 3."
+}
