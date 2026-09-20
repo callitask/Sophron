@@ -43,3 +43,5 @@
 - [2026-09-18 23:07 IST] [insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion]: Configured strict senior management & blue-collar negative keywords for anshika_garg (0.5 yr exp), purged poisoned truths, smart-reset 8.6k ledger entries, and initiated 3-daemon autonomous pipeline.
 - [2026-09-18 23:07 IST] [insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion]: Configured strict senior management & blue-collar negative keywords for anshika_garg (0.5 yr exp), purged poisoned truths, smart-reset 8.6k ledger entries, and initiated 3-daemon autonomous pipeline.
 - [2026-09-20 21:11 IST] [insight_20260920_batch_v2_and_page_serialization_discovery]: Batch v2 triage operational; diagnosed Page serialization bug at line 1444 of 04_job_discovery.py.
+
+- 2026-09-20: User ordered critical optimization of IPC flow. Implemented Batch Architecture v2.0 (ARM->BRAIN->EXECUTE) to eliminate pipeline stalling and reduce token consumption.

@@ -487,6 +487,28 @@
       "domain": "career_agent",
       "timestamp": "2026-09-18T23:07:32.684917",
       "summary": "Candidate config negative keywords must hard-gate Manager, Head, and Lead roles for fresher profiles to prevent senior role over-matching."
+    },
+    {
+      "id": "node_deprecated_systems_ledger",
+      "type": "SystemKnowledge",
+      "tier": 2,
+      "name": "Deprecated Systems & Changelog Memory",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Establishes a mandatory ledger for deprecated systems to ensure AI developers do not rebuild discarded architectures (e.g., blocking terminal I/O, greedy naukri selectors, is_title_allowed). Documented in DEPRECATED_SYSTEMS_CHANGELOG.md."
+    },
+    {
+      "id": "event_turn_audit_cleanup",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-AUDIT",
+      "name": "Full Documentation Emoji Purge & Dead Code Removal",
+      "timestamp": "2026-09-20T21:55:00+05:30",
+      "actions_taken": [
+        "Removed emojis from all workspace rules, replacing with professional text tags",
+        "Removed deprecated is_title_allowed dead code from 04_job_discovery.py",
+        "Created DEPRECATED_SYSTEMS_CHANGELOG.md",
+        "Created KNOWLEDGE_GRAPH_CHANGELOG.md",
+        "Updated UNIVERSAL_AGENT_PROMPT_v2.md Step 0e to force ledger read on boot"
+      ]
     }
   ]
 }

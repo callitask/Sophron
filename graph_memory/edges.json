@@ -316,6 +316,21 @@
       "source": "insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion",
       "target": "insight_20260915_fresher_senior_role_overmatch_experience_gate",
       "relation": "REFINES"
+    },
+    {
+      "source": "event_turn_audit_cleanup",
+      "target": "node_deprecated_systems_ledger",
+      "relation": "CREATES"
+    },
+    {
+      "source": "event_turn_audit_cleanup",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "event_turn_audit_cleanup",
+      "target": "node_guardrail_p1_purity",
+      "relation": "ENFORCES"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "insight_id": "insight_20260920_batch_architecture_v2_ipc_upgrade",
+  "temporal_anchor": "2026-09-20T16:10:10.531398Z",
+  "schema_version": "2.0",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "false",
+    "context_at_time_of_insight": "User required a proper architectural and optimized solution to eliminate IPC stalling and token waste during job discovery."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "false",
+    "previous_context": "null",
+    "trigger_for_switch": "null",
+    "new_context": "null",
+    "cognitive_load_at_switch": "null"
+  },
+  "psychological_state": {
+    "mood": "corrective",
+    "cognitive_load": "high",
+    "decision_style": "User demanded an optimized system architecture where the scripts act only as arms, gathering data and returning it in a single batch to the brain to save tokens and time."
+  },
+  "interaction_pairing": {
+    "user_action": "Reported that the agent stalled, finding 0 applications in 4 hours due to serial IPC blocking.",
+    "ai_response_quality": "High. Successfully implemented Batch Architecture v2.0 (ARM->BRAIN->EXECUTE).",
+    "friction_points": "Legacy DAEMON_MODE logic completely bypassed AI evaluation. Scripts were polling per-card.",
+    "resolution": "Decoupled scraping from evaluation. Evaluates 50 cards at once via batch_question.json."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "The agent must now evaluate all job cards in a single batch file (batch_question.json) rather than serially (pending_question.json).",
+    "changed_from_prior_belief": "Serial 90-second wait per card is an anti-pattern. Batch processing is the standard.",
+    "consistency_with_axioms": "Agent must act as the primary intelligence (brain) while scripts act merely as sensory appendages (arms)."
+  },
+  "long_term_application": {
+    "future_implication": "All future discovery logic must use the SearchStateManager rotation engine and Batch IPC to maintain pipeline flow without starvation.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Batch evaluation over serial evaluation is a universal optimization for autonomous loops.",
+    "linked_insights": []
+  }
+}
