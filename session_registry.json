@@ -48,6 +48,13 @@
       "task_summary": "Autonomous career agent launch for Anshika Garg with strict seniority matching and JD analysis",
       "registered_at": "2026-09-18T23:04:48.869073",
       "last_heartbeat": "2026-09-18T23:04:48.869084"
+    },
+    "3b747cba-b636-43d9-82c5-90aab9d7c4c4": {
+      "session_uuid": "3b747cba-b636-43d9-82c5-90aab9d7c4c4",
+      "workspace": "career_agent",
+      "task_summary": "Universal Autonomous Career Agent Master Launch: udaysagar_kandpal",
+      "registered_at": "2026-09-20T21:03:37.487176",
+      "last_heartbeat": "2026-09-20T21:03:37.487186"
     }
   },
   "past_sessions": [

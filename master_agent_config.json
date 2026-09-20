@@ -1,5 +1,5 @@
 {
-  "_comment": "Master Persona Agent Configuration \u00e2\u20ac\u201d Independent Parallel Cognitive Engine",
+  "_comment": "Master Persona Agent Configuration â€” Independent Parallel Cognitive Engine",
   "agent_name": "MasterArchitectPersona",
   "version": "1.0.0",
   "persona": {
@@ -10,7 +10,7 @@
     "understanding_master_dir": "understanding_master",
     "core_dir": "core",
     "output_dir": "output",
-    "transcript_path": "C:\\\\Users\\\\7303150607\\\\.gemini\\\\antigravity\\\\brain\\\\0410a147-5476-4d31-8e39-c1d51d3a6864\\\\.system_generated\\\\logs\\\\transcript.jsonl"
+    "transcript_path": "C:\\Users\\7303150607\\.gemini\\antigravity\\brain\\3b747cba-b636-43d9-82c5-90aab9d7c4c4\\.system_generated\\logs\\transcript.jsonl"
   },
   "learning_engine": {
     "auto_learn_on_startup": true,
