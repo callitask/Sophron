@@ -13,7 +13,7 @@ Engineered with **Dual-Tier Memory Isolation** and **Semantic Graph Memory**, th
   - **Tier 1 (Universal Meta-Cognition)**: High-level axioms, empirical proof standards, gatekeeping, and communication styles. Universal across all projects.
   - **Tier 2 (Workspace Episodic Memory)**: Low-level DOM schemas, platform decoupling contracts, and project milestones. Strictly scoped to `workspaces/<workspace_slug>/`. Workspace A facts are cryptographically/URI-blocked from ever bleeding into Workspace B.
 - **Deep Cognitive Reflection Engine**: Chronological turn-by-turn analysis explaining *why* the user thought this way, *why* instructions were formatted as such, user satisfaction levels, AI comprehension audits, and permanent evolutionary takeaways.
-- **Semantic Graph Memory**: Directed property graph (`nodes.json`, `edges.json`, `graph_index.json`) mapping principles, rules, events, and workspace scopes for sub-millisecond retrieval without token bloat.
+- **Semantic Graph Memory**: Directed property graph (`nodes.json`, `edges.json`, `graph_index.json`) mapping principles, rules, events, and workspace scopes for fast traversal. Standalone repo at `F:\Sophron` (remote `callitask/Sophron.git`), sibling to the JOB AI AGENT — never nested. Model-agnostic: every session (Antigravity, Muse, Claude, any coding agent) logs `agent_model` + `software` with correct workspace context.
 - **Antigravity Zero-Prompt Auto-Load**: Includes pre-compiled token-dense system prompt injections (`SYSTEM_PROMPT_INJECTION.md`) and drop-in rule files (`integration/00_user_cognitive_os.md`) for `.agents/rules/`.
 
 ---

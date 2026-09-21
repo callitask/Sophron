@@ -179,7 +179,7 @@ class TestMasterPersonaAgent(unittest.TestCase):
             from Sophron.core.workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
         except ImportError:
             from workspace_guard import WorkspaceGuard, CrossWorkspaceContaminationError
-        guard = WorkspaceGuard(current_workspace_uri=MASTER_DIR.parent.as_uri())
+        guard = WorkspaceGuard(current_workspace_uri="file:///F:/JOB%20AI%20AGENT")
 
         # Tier 1 global memory: Allowed
         t1_allowed = guard.filter_memory_access({"id": "m1", "tier": "TIER_1_UNIVERSAL"})
