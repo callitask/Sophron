@@ -21,7 +21,7 @@ Engineered with **Dual-Tier Memory Isolation** and **Semantic Graph Memory**, th
 ## 2. Directory Layout
 
 ```
-master_agent/                                      <-- Standalone Git Repository (Private)
+Sophron/                                           <-- Standalone Git Repository (Private)
 ├── .gitignore                                     <-- Local gitignore (excludes OS/temp caches)
 ├── README.md                                      <-- Complete Architecture & Usage Specification
 ├── master_agent_config.json                       <-- Path, transcript & workspace settings
@@ -51,10 +51,10 @@ master_agent/                                      <-- Standalone Git Repository
 │   ├── turn_1607_turn-19.json                     <-- Step 1607: Master agent alter-ego creation
 │   └── turn_1618_turn-20.json                     <-- Step 1618: Distributed Git & Graph Memory mandate
 │
-├── graph_memory/                                  <-- SEMANTIC GRAPH MEMORY ENGINE
-│   ├── nodes.json                                 <-- 21 Cognitive nodes (Principles, Axioms, Events)
-│   ├── edges.json                                 <-- 14 Semantic directed edges with relation types
-│   └── graph_index.json                           <-- Adjacency list index for sub-millisecond lookup
+├── graph_memory/                                  <-- JSON GRAPH MEMORY (Graph Traversal, No Vector DB)
+│   ├── nodes.json                                 <-- Cognitive nodes (Principles, Axioms, Events)
+│   ├── edges.json                                 <-- Semantic directed edges with relation types
+│   └── graph_index.json                           <-- Adjacency list index for fast traversal
 │
 ├── core/                                          <-- Master Cognitive Engine
 │   ├── __init__.py                                <-- Package exports
@@ -65,6 +65,8 @@ master_agent/                                      <-- Standalone Git Repository
 │   ├── decision_emulator.py                       <-- 'Acts as me': Rule verification & simulated voice
 │   ├── self_healing_advisor.py                    <-- Diagnostic directives in authentic user voice
 │   ├── antigravity_context_bridge.py              <-- Auto-compiles system prompt injections
+│   ├── sophron_write_guard.py                     <-- Atomic file write locking & concurrency guard
+│   ├── sync_brain.py                              <-- Git sync utility (executes git add/commit/push on Repo B)
 │   └── run_master_agent.py                        <-- Unified CLI entry point
 │
 ├── tests/                                         <-- Automated Verification Suite

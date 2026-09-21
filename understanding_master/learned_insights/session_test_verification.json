@@ -2,20 +2,15 @@
   "id": "INSIGHT-test_verification",
   "category": "learned_insights",
   "title": "Learned Insights from Session test_verification",
-  "generated_at": "2026-09-13T16:54:21.626442",
+  "generated_at": "2026-09-21T20:06:21.194052",
   "analysis": {
-    "total_user_prompts": 7,
+    "total_user_prompts": 2,
     "tool_dispatch_frequency": {},
     "sample_constraints": [
-      "[Step 0] Keyword 'rule': <USER_REQUEST> I want you to first go through the docs: F:\\JOB AI AGENT\\docs.  I want you do an Implementations:  1. Whenever this agaent is started, ...",
-      "[Step 0] Keyword 'restriction': <USER_REQUEST> I want you to first go through the docs: F:\\JOB AI AGENT\\docs.  I want you do an Implementations:  1. Whenever this agaent is started, ...",
-      "[Step 547] Keyword 'rule': <USER_REQUEST> In ai client files i see that the designation and roles according to the experience is pre-set. I already said not evern a inle value n..."
+      "[Step 0] Keyword 'rule': <USER_REQUEST> # UNIVERSAL AUTONOMOUS CAREER AGENT — MASTER INITIALIZATION & LAUNCH DIRECTIVE\r # Version: 3.0 | Updated: 2026-09-18 | Key change: Mult...",
+      "[Step 0] Keyword 'purity': <USER_REQUEST> # UNIVERSAL AUTONOMOUS CAREER AGENT — MASTER INITIALIZATION & LAUNCH DIRECTIVE\r # Version: 3.0 | Updated: 2026-09-18 | Key change: Mult..."
     ],
-    "sample_corrections": [
-      "[Step 0] <USER_REQUEST> I want you to first go through the docs: F:\\JOB AI AGENT\\docs.  I want you do an Implementations:  1. Whenever this agaent is started, any comman...",
-      "[Step 373] <USER_REQUEST> Simply search the py scripts if any value is hardcoded or not, it should be zero trust that is not value ahrdcoded variables etc and all the valu...",
-      "[Step 507] <USER_REQUEST> Make a ai context file in each of the py files so that whenever they are aalysed and edited then the ai context are first read(but these should b..."
-    ],
-    "analysis_timestamp": "2026-09-13T16:54:21.626422"
+    "sample_corrections": [],
+    "analysis_timestamp": "2026-09-21T20:06:21.194030"
   }
 }

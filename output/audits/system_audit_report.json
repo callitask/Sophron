@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-09-13T16:54:21.614924",
+  "timestamp": "2026-09-21T20:06:21.186063",
   "tests_run": 9,
   "tests_passed": 9,
   "details": [
     {
       "test_name": "test_01_persona_loader_card_counts",
       "passed": true,
-      "notes": "Loaded 57 cards across 12 categories"
+      "notes": "Loaded 82 cards across 13 categories"
     },
     {
       "test_name": "test_02_transcript_learning_engine",
       "passed": true,
-      "notes": "Parsed 7 turns and saved session_test_verification.json"
+      "notes": "Parsed 2 turns and saved session_test_verification.json"
     },
     {
       "test_name": "test_03_decision_emulator_rejections",
@@ -41,7 +41,7 @@
     {
       "test_name": "test_08_semantic_graph_memory",
       "passed": true,
-      "notes": "Graph traversed: 45 nodes, 42 edges"
+      "notes": "Graph traversed: 57 nodes, 66 edges"
     },
     {
       "test_name": "test_09_context_bridge_prompt_export",
