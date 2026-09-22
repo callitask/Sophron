@@ -1,5 +1,5 @@
 {
-  "total_edges": 63,
+  "total_edges": 68,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -331,6 +331,16 @@
       "source": "event_turn_audit_cleanup",
       "target": "node_guardrail_p1_purity",
       "relation": "ENFORCES"
+    },
+    {
+      "source": "insight_20260923_multi_key_gemini_rotation_and_agent_integrity",
+      "target": "insight_20260917_zero_hardcoding_in_ai_client",
+      "relation": "REFINES"
+    },
+    {
+      "source": "insight_20260923_multi_key_gemini_rotation_and_agent_integrity",
+      "target": "insight_20260913_factual_grounding_over_hallucination",
+      "relation": "CO_OCCURS_WITH"
     }
   ]
 }

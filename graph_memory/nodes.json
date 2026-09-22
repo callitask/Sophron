@@ -1,5 +1,5 @@
 {
-  "total_nodes": 55,
+  "total_nodes": 58,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -509,6 +509,13 @@
         "Created KNOWLEDGE_GRAPH_CHANGELOG.md",
         "Updated UNIVERSAL_AGENT_PROMPT_v2.md Step 0e to force ledger read on boot"
       ]
+    },
+    {
+      "id": "insight_20260923_multi_key_gemini_rotation_and_agent_integrity",
+      "type": "insight",
+      "label": "Multi-key Gemini rotation + @property regression + minimal footprint user constraint",
+      "timestamp": "2026-09-23T00:13:58.008506+05:30",
+      "workspace": "career_agent"
     }
   ]
 }

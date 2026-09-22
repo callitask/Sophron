@@ -1,0 +1,44 @@
+{
+  "insight_id": "insight_20260923_multi_key_gemini_rotation_and_agent_integrity",
+  "temporal_anchor": "2026-09-23T00:13:58.008506+05:30",
+  "schema_version": "2.0",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "Session focused on fixing ai_client.py structural regression (colab_client AttributeError, Colab init block misplaced in _rotate_gemini_client), updating target role config for mid-senior Java roles, and completing git push + Sophron sync."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "Running the agent and hitting 0-batch results due to irrelevant Architect-level roles",
+    "trigger_for_switch": "AttributeError: 'AIClient' object has no attribute 'colab_client' during resume tailoring triggered a deep code audit",
+    "new_context": "Structural repair of AIClient + docs + git push + Sophron sync",
+    "cognitive_load_at_switch": "high"
+  },
+  "psychological_state": {
+    "mood": "corrective",
+    "cognitive_load": "high",
+    "decision_style": "User was precise and focused — immediately called out every code smell (throwaway scripts, unnecessary py file edits) while keeping the goal in sight"
+  },
+  "interaction_pairing": {
+    "user_action": "User ran the agent, hit AttributeError, questioned each AI action (why a .py script was created for a config edit, why ai_client.py was touched), and insisted on verification that no useful code was removed",
+    "ai_response_quality": "AI performed deep git diff inspection and structural repair but introduced the regression initially — user caught it via asking 'check once if you did not remove anything else'",
+    "friction_points": "1) AI created a throwaway Python script for a JSON edit instead of editing directly. 2) AI's round-robin refactor displaced the Colab init block into _rotate_gemini_client(). 3) Duplicate self.colab_client assignment introduced.",
+    "resolution": "All structural issues repaired. SCAR_TISSUE updated with both anti-patterns. Architecture docs updated. Git pushed clean."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "User has a strong preference for surgically minimal changes — any side-effect (new file created, extra method added) is immediately questioned. Principle of least surprise is a first-class constraint for this user.",
+    "changed_from_prior_belief": "Previously assumed creating a helper script for complex JSON manipulation was acceptable. User made clear: config JSON files are directly editable data, never script-mediated.",
+    "consistency_with_axioms": "Axiom 2 (Zero Hardcoding) — confirmed. Axiom 4 (Factual Grounding) — agent self-correction validated by git diff. Axiom 5 (Minimal Footprint) — throwaway script was a violation caught and corrected."
+  },
+  "long_term_application": {
+    "future_implication": "1) Never create a named .py file to mutate a config JSON — use replace_file_content or direct Python one-liner. 2) After any AIClient refactor, always run git diff to verify no init-time code was displaced. 3) self.gemini_client is permanently a @property — never assign to it.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "The 'minimal footprint' preference is a universal user trait — applies in any workspace. Never create intermediate files unless the user explicitly requests them.",
+    "linked_insights": [
+      "insight_20260913_factual_grounding_over_hallucination",
+      "insight_20260917_zero_hardcoding_in_ai_client"
+    ]
+  }
+}

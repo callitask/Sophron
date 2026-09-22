@@ -45,3 +45,6 @@
 - [2026-09-20 21:11 IST] [insight_20260920_batch_v2_and_page_serialization_discovery]: Batch v2 triage operational; diagnosed Page serialization bug at line 1444 of 04_job_discovery.py.
 
 - 2026-09-20: User ordered critical optimization of IPC flow. Implemented Batch Architecture v2.0 (ARM->BRAIN->EXECUTE) to eliminate pipeline stalling and reduce token consumption.
+- [2026-09-23 00:10 IST] [insight_20260923_multi_key_gemini_rotation_and_agent_integrity]: Multi-key Gemini rotation shipped; AIClient @property regression caught and repaired; user enforced direct JSON edit over throwaway scripts; ARCH_REF bumped to v5.3; git pushed clean.
+
+- [2026-09-23 00:10 IST] [insight_20260923_multi_key_gemini_rotation_and_agent_integrity]: Multi-key Gemini rotation shipped; AIClient @property regression caught and repaired; user enforced direct JSON edit over throwaway scripts; ARCH_REF bumped to v5.3; git pushed clean.
