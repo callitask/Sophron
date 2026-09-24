@@ -1,5 +1,5 @@
 {
-  "total_nodes": 58,
+  "total_nodes": 62,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -516,6 +516,49 @@
       "label": "Multi-key Gemini rotation + @property regression + minimal footprint user constraint",
       "timestamp": "2026-09-23T00:13:58.008506+05:30",
       "workspace": "career_agent"
+    },
+    {
+      "id": "node_shared_lib_extraction",
+      "type": "WorkspaceRule",
+      "tier": 2,
+      "name": "Shared-Lib Extraction Over God-File Growth",
+      "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
+      "description": "Evolved minimal-footprint doctrine (TURN-69): collapse duplicated inline logic into importable micro-libs (sanitize/url_filters/apply_status/config_resolver) without splitting engine contracts."
+    },
+    {
+      "id": "event_turn_69",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-69",
+      "name": "Enterprise Audit, Verification-First Hardening, Secrets Hygiene",
+      "timestamp": "2026-09-23T20:00:00+05:30",
+      "actions_taken": [
+        "Verified prior audit claim-by-claim with file:line evidence",
+        "Extracted 4 shared micro-libs + requirements.txt",
+        "Fixed keyword-schema, premature success, whitelist, honeypot, CDP cache, ledger batch, prompt guard",
+        "Untracked inspections + knowledge artifacts; rebuilt index FRESH",
+        "Synced Sophron append-only"
+      ]
+    },
+    {
+      "id": "node_forensics_first",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Forensics-First Operations",
+      "category": "thinking_pattern",
+      "description": "TURN-70: on dry spells, scan the outcome ledger before re-reading logs; audit exclusion lists against the blueprint set; ledger forensics over 800 entries found two bug classes logs only hinted at."
+    },
+    {
+      "id": "event_turn_70",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-70",
+      "name": "15 Judged Live Cycles, Funnel Remediation, Keyword Tuning",
+      "timestamp": "2026-09-24T14:00:00+05:30",
+      "actions_taken": [
+        "Word-boundary company gate (Nous false-kill fix)",
+        "Bare Support removal + full-list exclusion arming",
+        "C23 keyword swaps with rotation parked on new terms",
+        "Expian 85% applied live; chatbot 0/3 vs 1-click 5/5 diagnosed"
+      ]
     }
   ]
 }

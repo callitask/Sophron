@@ -1,0 +1,52 @@
+{
+  "insight_id": "insight_20260924_live15_funnel_remediation_and_batch_arbitration_truth",
+  "temporal_anchor": "2026-09-24T14:00:00+05:30",
+  "schema_version": "2.0",
+  "agent_model": "muse-spark",
+  "software": "opencode",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "Owner ordered 15+ monitored live cycles with keyword tuning and self-healing after a 4-hour dry spell. Funnel forensics over 800 ledger entries plus live judging of every cycle."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "TURN-69 audit doctrine (verify-first, shared libs)",
+    "trigger_for_switch": "Live 0-match evidence demanding operations, not more review",
+    "new_context": "Forensic remediation under live fire",
+    "cognitive_load_at_switch": "high"
+  },
+  "psychological_state": {
+    "mood": "authoritative",
+    "cognitive_load": "high",
+    "decision_style": "Owner keeps what is deliberate (employer blacklist with employment rationale, new-tech exclusions) and deletes what is accidental (domain terms in negative lists, substring company matches) — intent vs accident is the ruling distinction."
+  },
+  "interaction_pairing": {
+    "user_action": "Confirmed blacklist retention, affirmed match-by-major-stack principle, ordered seniority fix, full-list arming, keyword tuning, 15-20 judged cycles, self-healing within rules, full report plus Sophron sync.",
+    "ai_response_quality": "Ledger audit proved 2 false-kill classes (Nous substring, bare Support); C23 swaps replaced 3 proven-dead designations with resume-grounded terms (backups kept); 15 cycles judged live with 1 application committed (Expian 85%) and 2 forensically diagnosed chatbot failures; rotation parked on new terms to test them in budget.",
+    "friction_points": "1) [:30] truncation silently neutered exclusion arming for ~80% of terms (azure idx 101). 2) Rotation list flaps 18-24 as cognitive cycles and search-state disagree — deferred, not destabilized mid-run. 3) Chatbot path 0/3 while 1-click 5/5 — portal friction is the binding constraint.",
+    "resolution": "Word-boundary company gate, full-list arming, lite-first order, intra-batch dedupe, IPC gate aligned to documented 40-65 window, Tekshapers + 13-entry ledger resets. Compile green, purity True, index FRESH."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "In API mode the Gemini verdict IS the borderline arbitration — the file-IPC gate only covers LLM failure (early return at evaluate path). Docs describing universal 40-65 IPC arbitration describe no-API mode. Chasing IPC rescue of Gemini 45s misunderstands the architecture; the 45s are rubric verdicts, and without Daemons 2/3 running, file IPC would only add 25s timeouts.",
+    "changed_from_prior_belief": "Previously assumed any sub-60 non-C6 reject was a candidate for IPC rescue. Now: rescue applies to LLM-failure fallback only; Gemini-scored borderlines need Daemons 2/3 plus an explicit route-Gemini-borderlines decision, proposed not implemented.",
+    "consistency_with_axioms": "Axiom 1 (ledger forensics over log impressions — 800-entry scan beat hours of log reading). Axiom 2 (config-driven tuning with backups, zero hardcoding). Axiom 4 (forensic separation of failure classes before prescribing)."
+  },
+  "long_term_application": {
+    "future_implication": "1) Audit exclusion lists against the 4-term blueprint whenever matches dry up — bulk appends rot toward self-sabotage. 2) Any list sliced for prompts must be passed whole or explicitly prioritized; silent [:30] truncations are a recurring bug class. 3) Company identity matching must always be word-boundary. 4) Judge chatbot vs 1-click success separately — they are different funnels with different binding constraints. 5) Park rotation on new terms to test keyword swaps within a cycle budget.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Forensics-first (scan the outcome ledger before re-reading logs) and intent-vs-accident triage of inherited config apply in any workspace with silent-filter pipelines.",
+    "linked_insights": [
+      "insight_20260923_enterprise_audit_shared_libs_and_verification_discipline",
+      "insight_20260915_rule_5_zero_trust_codebase_purity_remediation",
+      "insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion"
+    ],
+    "evolved_thinking_refs": {
+      "TURN-69": "Shared-lib doctrine extended with audit-then-tune operations discipline (this card).",
+      "insight_20260918_fresher_seniority_calibration": "Seniority calibration refined from fresher-gating to Senior/Lead band admission — same lever, opposite direction.",
+      "Fix #8 lineage": "IPC gate widened 50 to 40 then scoped by evidence to LLM-failure fallback — docs-vs-code tension resolved by reading the early return, not by widening further."
+    }
+  }
+}

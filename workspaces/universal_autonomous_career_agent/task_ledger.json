@@ -1,6 +1,6 @@
 {
   "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-  "last_updated": "2026-09-10T12:20:00+05:30",
+  "last_updated": "2026-09-24T14:00:00+05:30",
   "completed_milestones": [
     {
       "milestone": "Dynamic Startup & Guardrail P1 Codebase Purity Enforcer",
@@ -23,12 +23,12 @@
       "status": "VERIFIED"
     },
     {
-      "milestone": "IPC Cognitive Architecture (pending_question.json) — STARVATION_EXPANSION & RESUME_TAILORING Flows",
+      "milestone": "IPC Cognitive Architecture (pending_question.json) \u2014 STARVATION_EXPANSION & RESUME_TAILORING Flows",
       "status": "VERIFIED",
       "notes": "25+ IPC rounds resolved this session. 75s timeout, 10s heartbeat pattern understood and operational."
     },
     {
-      "milestone": "Anshika Garg Profile Run — Finance/Audit/Assurance 8LPA Target",
+      "milestone": "Anshika Garg Profile Run \u2014 Finance/Audit/Assurance 8LPA Target",
       "status": "IN_PROGRESS",
       "applications_committed": [
         "PwC - Internal Audit Associate (APPLIED_CHATBOT)",
@@ -37,18 +37,45 @@
       "session": "2026-09-10"
     },
     {
-      "milestone": "Sophron Cognitive Memory Sync — TURN-23 Backfill",
+      "milestone": "Sophron Cognitive Memory Sync \u2014 TURN-23 Backfill",
       "status": "VERIFIED",
       "notes": "Session-23 memory written to turn_0001_turn-23.json. nodes.json +6 nodes, edges.json +8 edges, reflections_index.json updated to 11 turns."
+    },
+    {
+      "milestone": "Enterprise Audit + Verification-First Hardening (TURN-69)",
+      "status": "VERIFIED",
+      "notes": "Shared micro-libs (sanitize/url_filters/apply_status/config_resolver); keyword-schema, premature-success, whitelist, honeypot, CDP-cache, ledger-batch, prompt-guard fixes; inspections+knowledge untracked; index FRESH; purity True[]; parser 7/7; knowledge 10/10."
+    },
+    {
+      "milestone": "Live 15-Cycle Verification + Funnel Remediation (TURN-70)",
+      "status": "VERIFIED",
+      "notes": "Word-boundary company gate; Support removal; full-list arming; lite-first; intra-batch dedupe; C23 keyword swaps; Expian 85% applied live; chatbot vs 1-click funnels separated; Gemini verdicts confirmed as borderline arbitration in API mode."
     }
   ],
   "active_candidate_sessions": [
     {
       "profile": "anshika_garg",
       "salary_target_lpa": 8,
-      "city": ["Bengaluru, Karnataka", "Delhi NCR"],
-      "allowed_domains": ["Finance", "Audit", "Assurance", "Valuation", "Deals", "Due Diligence", "BFSI Research"],
-      "blocked_domains": ["CA Articleship", "Customer Service", "Warehouse", "Retail Banking", "Legal"],
+      "city": [
+        "Bengaluru, Karnataka",
+        "Delhi NCR"
+      ],
+      "allowed_domains": [
+        "Finance",
+        "Audit",
+        "Assurance",
+        "Valuation",
+        "Deals",
+        "Due Diligence",
+        "BFSI Research"
+      ],
+      "blocked_domains": [
+        "CA Articleship",
+        "Customer Service",
+        "Warehouse",
+        "Retail Banking",
+        "Legal"
+      ],
       "last_run_status": "AGENT_STOPPED",
       "last_ipc_resolution": "2026-09-10T12:00:00+05:30"
     },
@@ -56,10 +83,30 @@
       "profile": "udaysagar_kandpal",
       "salary_target_lpa": 38.0,
       "salary_bracket": "25to60",
-      "city": ["Bangalore, Karnataka"],
-      "allowed_domains": ["Java Architecture", "Technical Leadership", "Microservices", "High-Performance Distributed Systems", "Enterprise Integration"],
-      "blocked_domains": ["Python-only", "C++", "Frontend/UI", "Fresher", "Sales", "BPO"],
-      "blocked_companies": ["Cognizant", "Infosys", "TCS", "EdgeVerve"],
+      "city": [
+        "Bangalore, Karnataka"
+      ],
+      "allowed_domains": [
+        "Java Architecture",
+        "Technical Leadership",
+        "Microservices",
+        "High-Performance Distributed Systems",
+        "Enterprise Integration"
+      ],
+      "blocked_domains": [
+        "Python-only",
+        "C++",
+        "Frontend/UI",
+        "Fresher",
+        "Sales",
+        "BPO"
+      ],
+      "blocked_companies": [
+        "Cognizant",
+        "Infosys",
+        "TCS",
+        "EdgeVerve"
+      ],
       "cdp_port": 9223,
       "user_data_dir": "C:\\chrome-dev-session-2",
       "last_run_status": "STARTING_DAEMON",

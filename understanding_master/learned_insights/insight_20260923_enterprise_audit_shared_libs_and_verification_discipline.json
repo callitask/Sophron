@@ -1,0 +1,53 @@
+{
+  "insight_id": "insight_20260923_enterprise_audit_shared_libs_and_verification_discipline",
+  "temporal_anchor": "2026-09-23T20:00:00+05:30",
+  "schema_version": "2.0",
+  "agent_model": "muse-spark",
+  "software": "opencode",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "Enterprise hardening session: prior read-only audit supplied as unverified claims; working tree already contained staged-but-uncommitted partial fixes; owner demanded MD-first comprehension, per-claim verification with file:line evidence, dual-engine preservation, short library-style code organised by apply channel, zero hardcoding, secrets hygiene, and docs sync."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "TURN-68 minimal-footprint + @property-invariant discipline",
+    "trigger_for_switch": "Owner's verify-list-strategise-implement-verify-docs mandate with two-engine non-removal constraint",
+    "new_context": "Verification-first enterprise audit with shared-lib extraction",
+    "cognitive_load_at_switch": "high"
+  },
+  "psychological_state": {
+    "mood": "authoritative",
+    "cognitive_load": "high",
+    "decision_style": "Owner thinks in evolution chains, not snapshots: never rewrite past entries, append evolved thinking with references so future AI reasons through the whole trail and learns to think like the owner (debug, cleanup, strategise, rule-scope per project)."
+  },
+  "interaction_pairing": {
+    "user_action": "Ordered: read all MDs first (profiles/ forbidden except default_user blueprint), map Integrity 2.0 vs API engines, verify supplied audit claim-by-claim, fix hardcoded values, shorten long code via libraries, keep company-direct vs LinkedIn vs Naukri organised, update docs, keep secrets out of git, then sync Sophron append-only.",
+    "ai_response_quality": "AI produced diff-first verification (prior-pass fixes confirmed, gaps closed), created 4 micro-libs plus requirements.txt, collapsed 60-line identical CTC/WFH branches into 3 calls, gated premature APPLIED_CHATBOT on DOM evidence, made whitelist/honeypot/CDP/ledger/batch fixes, untracked inspections + knowledge artifacts, rebuilt index to FRESH, and kept all suites green.",
+    "friction_points": "1) target_keywords property read wrong schema keys (search_keywords/designations) while blueprint uses keywords — scrapers silently got []. 2) Isolation test asserted Repo_B text must not name historic sessions — over-strict; scoped to Repo_A. 3) SCAR_TISSUE held a live profile path — redacted to placeholder, history preserved.",
+    "resolution": "All closed with file:line evidence; purity (True, []), parser 7/7, knowledge 10/10, index FRESH."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Shared micro-lib extraction (sanitize/url_filters/apply_status/config_resolver) is the evolved form of the minimal-footprint rule: instead of forbidding code, it forbids duplication — one importable helper, zero inline repeats, engine contracts untouched.",
+    "changed_from_prior_belief": "Previously verification meant re-reading code; now it means diffing the working tree first — a prior pass may have fixed half the claims, and re-fixing wastes motion and risks regressions.",
+    "consistency_with_axioms": "Axiom 1 (runtime reality over assumptions — every claim re-derived with file:line). Axiom 2 (generic parameter-driven systems — whitelist/honeypot/CDP/keywords all config-driven). Axiom 4 (investigator + precision implementer). Axiom 5 (two-repo isolation — separate writes, no cross-imports, no joint commits)."
+  },
+  "long_term_application": {
+    "future_implication": "1) On any supplied audit: git diff first, verify each item, mark rejected claims explicitly. 2) On god-file growth: extract micro-libs under core/utils/* with AI CONTEXT headers, never split engine contracts. 3) On success claims: require DOM evidence constants from apply_status (never drawer-close alone). 4) On privacy tests: scope live-name assertions to Repo_A; Repo_B memory is allowed historic context. 5) On past-entry corrections: redact to placeholders + append evolved-thinking refs, never rewrite history.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Verification-first + micro-lib extraction + append-only evolution is a universal owner trait — apply in any workspace when handed an external audit or a grown codebase.",
+    "linked_insights": [
+      "insight_20260923_multi_key_gemini_rotation_and_agent_integrity",
+      "insight_20260915_rule_5_zero_trust_codebase_purity_remediation",
+      "insight_20260918_fresher_seniority_calibration_and_blue_collar_exclusion",
+      "insight_20260913_ag_brain_talent_strategist_decoupling"
+    ],
+    "evolved_thinking_refs": {
+      "TURN-68": "Minimal-footprint constraint evolved into shared-lib doctrine (this card).",
+      "SCAR_TISSUE C24 entry": "Live profile path redacted to profiles/<profile>/; gating logic untouched.",
+      "insight_20260915_rule_5": "Purity scanner scope widened to CompanySiteApply/tests and now passes green — refinement, not replacement."
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "total_edges": 68,
+  "total_edges": 74,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -341,6 +341,36 @@
       "source": "insight_20260923_multi_key_gemini_rotation_and_agent_integrity",
       "target": "insight_20260913_factual_grounding_over_hallucination",
       "relation": "CO_OCCURS_WITH"
+    },
+    {
+      "source": "node_shared_lib_extraction",
+      "target": "ws_career_agent",
+      "relation": "SCOPED_TO_WORKSPACE"
+    },
+    {
+      "source": "event_turn_69",
+      "target": "node_shared_lib_extraction",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "insight_20260923_enterprise_audit_shared_libs_and_verification_discipline",
+      "target": "insight_20260923_multi_key_gemini_rotation_and_agent_integrity",
+      "relation": "REFINES"
+    },
+    {
+      "source": "node_forensics_first",
+      "target": "node_zero_assumptions",
+      "relation": "REFINES"
+    },
+    {
+      "source": "event_turn_70",
+      "target": "node_forensics_first",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "insight_20260924_live15_funnel_remediation_and_batch_arbitration_truth",
+      "target": "insight_20260923_enterprise_audit_shared_libs_and_verification_discipline",
+      "relation": "REFINES"
     }
   ]
 }

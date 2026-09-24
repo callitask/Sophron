@@ -1,6 +1,6 @@
 {
-  "total_indexed_nodes": 58,
-  "total_indexed_edges": 68,
+  "total_indexed_nodes": 62,
+  "total_indexed_edges": 74,
   "adjacency": {
     "node_zero_assumptions": [
       {
@@ -372,6 +372,30 @@
       {
         "target": "insight_20260913_factual_grounding_over_hallucination",
         "relation": "CO_OCCURS_WITH"
+      }
+    ],
+    "node_shared_lib_extraction": [
+      {
+        "target": "ws_career_agent",
+        "relation": "SCOPED_TO_WORKSPACE"
+      }
+    ],
+    "event_turn_69": [
+      {
+        "target": "node_shared_lib_extraction",
+        "relation": "EVIDENCED_BY"
+      }
+    ],
+    "node_forensics_first": [
+      {
+        "target": "node_zero_assumptions",
+        "relation": "REFINES"
+      }
+    ],
+    "event_turn_70": [
+      {
+        "target": "node_forensics_first",
+        "relation": "EVIDENCED_BY"
       }
     ]
   }
