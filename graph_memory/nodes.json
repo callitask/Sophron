@@ -1,5 +1,5 @@
 {
-  "total_nodes": 62,
+  "total_nodes": 66,
   "nodes": [
     {
       "id": "node_zero_assumptions",
@@ -558,6 +558,49 @@
         "Bare Support removal + full-list exclusion arming",
         "C23 keyword swaps with rotation parked on new terms",
         "Expian 85% applied live; chatbot 0/3 vs 1-click 5/5 diagnosed"
+      ]
+    },
+    {
+      "id": "node_silent_skip_forensics",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Silent-Skip Forensics",
+      "category": "thinking_pattern",
+      "description": "TURN-71: zero output with zero errors means dead selectors, None-fed operators in bare try/except, or inert buttons — one live probe per hypothesis, prove UI actions by resulting state, diff artifacts before theorizing drift."
+    },
+    {
+      "id": "event_turn_71",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-71",
+      "name": "LinkedIn Apply Forensics, Zero-Omission Guardrail",
+      "timestamp": "2026-09-27T12:00:00+05:30",
+      "actions_taken": [
+        "Dead LinkedIn selectors replaced via live DOM probes",
+        "None-href blackout fixed via container job-ID fallback",
+        "Search-pane apply flow proven live with Easy Apply commit",
+        "Bidirectional numeric retry, control coverage, chatbot H1 removal",
+        "Velocity governors, 63/63 resume proof + guardrail"
+      ]
+    },
+    {
+      "id": "node_brain_disposes",
+      "type": "MetaPrinciple",
+      "tier": 1,
+      "name": "Brain Proposes, Python Disposes",
+      "category": "thinking_pattern",
+      "description": "TURN-72: AI rewrites accepted only when machine-checkable invariants hold (count equality, numbers subset, token allowlist, marker normalization); per-unit atomic fallback to originals otherwise."
+    },
+    {
+      "id": "event_turn_72",
+      "type": "CognitiveReflection",
+      "turn_id": "TURN-72",
+      "name": "AI Bullet Reframing With Factual Validation",
+      "timestamp": "2026-09-27T12:30:00+05:30",
+      "actions_taken": [
+        "63/63 forensic proof ending omission debate",
+        "Per-role AI reframe with layered validation",
+        "Marker-stripping defect caught live and normalized",
+        "Docs versioned, gates green"
       ]
     }
   ]

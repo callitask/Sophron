@@ -1,0 +1,25 @@
+{
+  "turn_id": "TURN-71",
+  "timestamp": "2026-09-27T12:00:00+05:30",
+  "schema_version": "2.0",
+  "agent_model": "muse-spark",
+  "software": "opencode",
+  "data_subject": "AGENT_CAREER",
+  "workspace_origin": "career_agent",
+  "rule_tier": "WORKSPACE_RULE",
+  "is_cross_project_applicable": "true",
+  "context": "LinkedIn apply-loop forensic repair under live owner observation plus resume-tailoring omission audit",
+  "context_transition": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "TURN-70 live 15-cycle verification with funnel remediation",
+    "trigger_for_switch": "Owner moved execution to LinkedIn and reported silent zero-card runs, then watched applies fail live and demanded step-level diagnosis",
+    "new_context": "LinkedIn DOM forensics, modal-flow repair, validation handling, resume forensics"
+  },
+  "user_intent": "Owner wants LinkedIn applications to actually complete while they monitor remotely: correct Easy Apply detection, full form filling (all control types, resume upload), numeric validation handling, step-progression diagnosis — plus proof that resume tailoring omits nothing",
+  "why_user_made_such_thinking": "Owner watches the live browser and catches what logs hide: unselected dropdowns, skipped uploads, dead-end Review buttons, silently reordered resume content. Trusts eyes over log claims.",
+  "why_user_performed_this_way": "Rapid terse corrections mid-run (interfering directly, e.g. driving-licence truth override) — treats the agent as a junior to supervise, not an oracle.",
+  "user_reaction_and_satisfaction": "Corrective throughout: challenged wrong-button clicks, demanded error inspection, demanded full form filling. Satisfied only by live proof (watched modal open with pre-filled profile, watched first Easy Apply commit).",
+  "did_ai_actually_understand": "Yes — each correction produced a same-session code fix verified live: DOM re-probe after every failed assumption, unit checks on regex logic, live cycles proving each repair.",
+  "was_work_done_exactly_as_asked": "Yes — LinkedIn applies flowing (including first Easy Apply commit), numeric retry, control coverage, chatbot H1 removal, velocity governors, resume guardrail, docs updated, handover file written.",
+  "evolutionary_takeaways": "1) Silent skips are the worst failure mode — bare except+continue hid two total LinkedIn blackouts; every skip path must log or count. 2) Prove clicks with modal appearance, not click success. 3) Forensic diffs beat impressions: 63/63 bullets ended the omission debate instantly. 4) Owner corrections to learned truths are principal ground truth — apply immediately with backup."
+}

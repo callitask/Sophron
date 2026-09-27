@@ -1,4 +1,4 @@
-# SOPHRON BOOT SUMMARY - Updated: 2026-09-24 14:00 IST
+# SOPHRON BOOT SUMMARY - Updated: 2026-09-27 12:30 IST
 # Purpose: Fast cold-start orientation. Read this FIRST at every session.
 #          This replaces the need to read 5 separate files before starting.
 #          Full files remain as the record - this is the navigation index.
@@ -7,15 +7,18 @@
 ---
 
 ## LAST KNOWN STATE
-**As of 2026-09-24 14:00 IST | Session TURN-70 (muse-spark via opencode)**
+**As of 2026-09-27 12:30 IST | Session TURN-72 (muse-spark via opencode)**
 
-- **Live ops (TURN-70)**: 15 single-cycles run and judged one by one. Tracker: Expian 85% APPLIED_1CLICK live; Nasu 92% + Apptad 85% earlier. Chatbot path 0/3 (2 drawer-drops incl. Tekshapers 95%, 1 C9 platform rejection at Sixt) vs 1-click 5/5 — portal friction is the binding constraint, not scoring.
-- **Forensic fixes**: Gate 2 word-boundary (Nous Infosystems was killed by "infosys" substring); bare `Support` removed (was killing Java backend lead); full 154-term exclusion arming (was silently [:30]-truncated, azure idx 101); lite-first model order; intra-batch URL dedupe; IPC gate aligned to documented 40-65 window then evidence-scoped to LLM-failure fallback (Gemini early-return means Gemini verdicts ARE the borderline arbitration in API mode).
-- **C23 tuning**: dead designations swapped (Microservices→Java Backend Developer, Lead Java Developer→Kafka Developer, Java→Senior Backend Engineer) with backups; rotation parked on new terms to test in budget. New terms delivered: Kafka Developer→Pyramid 90% deep scan, Senior Backend Engineer→Sixt 85% deep scan.
-- **Seniority**: cognitive profile retuned Principal/Staff/Lead Architect → Senior/Lead Engineer (no code depended on the literal).
-- **Ledger**: 972 entries; 13-entry audit reset + Tekshapers retry reset (backups kept); company gates + qualified history preserved.
-- **Quota**: lite-first + dedupe holding; no full Exhausted stalls in the 15-cycle window (only per-cycle 3.8/3.7 instant 503s, lite answering).
-- **Sophron**: TURN-70 | 62 graph nodes | 74 edges | insight card for this session (see below)
+- **Tailoring reframe (TURN-72)**: AI bullet reframing live (`ai_client.reframe_role_bullets`, same-count JSON contract, offline skip) with per-role atomic validation (count/numbers/tech-allowlist) plus marker normalizer; 63/63 proven live; tripwire logs novel Capitalized words; docs v1.2; toggle `target_jobs.resume_bullet_reframing` (default ON).
+
+- **LinkedIn apply loop (TURN-71)**: two stacked silent blackouts fixed with one live probe each — dead title selector replaced by verified link/subtitle/caption map, None-href TypeError blackout fixed via container job-ID fallback. Search-pane apply flow proven live (modal with pre-filled profile in ~2s, first Easy Apply commit observed).
+- **Modal intelligence**: bidirectional numeric validation retry, step-progression tracking with broad error capture, hidden file-input handling, checkbox groups, custom dropdown widgets, per-job modal QA audit on every exit.
+- **Chatbot honesty**: blind first-option fallback removed from radio path (last refuge of the learned-truth poison class); unanswerable questions abort with manual-review logs.
+- **Velocity governors**: daily LinkedIn apply cap from config, in-modal verification-challenge detector (discard + human-gate, never auto-solve).
+- **Resume integrity**: forensic diff proved 63/63 bullets preserved with identical text across generations (2 pages each); tailoring is reorder-only by code inspection; structural zero-omission guardrail added and unit-proven both directions.
+- **Owner corrections applied**: driving-licence learned truth fixed to Yes with backup; poisoned internship-phrasing truths purged earlier.
+- **Session health**: soft-throttle evidence on LinkedIn (detection iframe, armed captcha, swallowed view-page clicks) — cooldown discipline plus governors, never more automation against a flag.
+- **Sophron**: TURN-72 | 66 graph nodes | 80 edges | insight card for this session (see below)
 - **Git**: Repo A changes uncommitted (owner commits); Repo B writes uncommitted (push pending owner approval). No joint commits, no cross-imports.
 
 ## TOP OPEN ISSUES & USER DIRECTIVES
@@ -32,6 +35,8 @@
    - On any supplied audit: `git diff` first, verify each claim with `file:line`, list rejected claims. On god-file growth: extract micro-libs, never split engine contracts. On past-entry corrections: redact + append evolved-thinking refs, never rewrite history.
 6. **Forensics-First Operations (TURN-70 evolution)**:
    - On dry spells: scan the outcome ledger before re-reading logs; audit exclusion lists against the 4-term blueprint; never slice config lists for prompts without stating it; company identity is always word-boundary.
+7. **Silent-Skip Forensics (TURN-71 evolution)**:
+   - Zero output with zero errors means dead selectors, None-fed operators in bare try/except, or inert buttons — one live probe per hypothesis, prove UI actions by resulting state, diff artifacts before theorizing drift.
 
 ---
 
@@ -47,7 +52,7 @@
 
 ## SOPHRON ARCHITECTURE STATE
 - **Schema version**: v2 (with CONTEXT_CLASSIFICATION + CONTEXT_TRANSITION; TURN cards also carry `agent_model` + `software`)
-- **Latest Insight**: insight_20260924_live15_funnel_remediation_and_batch_arbitration_truth
-- **TURN count**: 70
-- **Graph**: 62 nodes, 74 edges
-- **Total reflections**: 63
+- **Latest Insight**: insight_20260927_tailoring_reframe_brain_disposes
+- **TURN count**: 72
+- **Graph**: 66 nodes, 80 edges
+- **Total reflections**: 65

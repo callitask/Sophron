@@ -1,0 +1,25 @@
+{
+  "turn_id": "TURN-72",
+  "timestamp": "2026-09-27T12:30:00+05:30",
+  "schema_version": "2.0",
+  "agent_model": "muse-spark",
+  "software": "opencode",
+  "data_subject": "AGENT_CAREER",
+  "workspace_origin": "career_agent",
+  "rule_tier": "WORKSPACE_RULE",
+  "is_cross_project_applicable": "true",
+  "context": "Resume tailoring upgrade: AI bullet reframing with factual validation, zero-omission forensics",
+  "context_transition": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "TURN-71 LinkedIn apply-loop forensics",
+    "trigger_for_switch": "Owner feared newer tailored resumes were shortened and demanded the mechanism plus a fix honoring brain-thinks/actuator-verifies split",
+    "new_context": "Tailoring forensics, reframe implementation, docs versioning"
+  },
+  "user_intent": "Owner wants AI (not Python) to analyze the JD and diplomatically reframe company bullets with ATS terms after deep thinking — with guarantees that nothing is skipped and no new tech is added that could fail interviews",
+  "why_user_made_such_thinking": "Owner holds the plan as contract: scripts must not think, brains must. Reorder-only tailoring felt thin for ATS pickup, but any AI rewriting without guardrails risks hallucinated stacks.",
+  "why_user_performed_this_way": "Presents the design as recalled agreement plus hard constraints (nothing skipped, interview-safe), delegating mechanism design while holding veto on results.",
+  "user_reaction_and_satisfaction": "Demanded forensic proof of omission first, then the ordered feature with validation, docs, and verification — accepted staged delivery with live proof at each gate.",
+  "did_ai_actually_understand": "Yes — diffed artifacts before theorizing (63/63 ended the debate), implemented brain-proposes/Python-disposes with per-role atomic fallback, and caught a real marker-stripping defect live via the new guardrail.",
+  "was_work_done_exactly_as_asked": "Yes — reframe pass ordered ON by default, validation enforces count/numbers/tech-allowlist, offline mode skips silently, docs versioned, gates green.",
+  "evolutionary_takeaways": "1) Diff before diagnosing quality drift — impressions of shortening were reorder perception, proven in one script. 2) New AI output channels need same-output-shape validators (count, markers) or formatting silently degrades. 3) Residual gaps (common-shaped tech words) get tripwire logging, not false-reject rules."
+}

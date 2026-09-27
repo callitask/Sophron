@@ -1,5 +1,5 @@
 {
-  "total_edges": 74,
+  "total_edges": 80,
   "edges": [
     {
       "source": "node_zero_assumptions",
@@ -370,6 +370,36 @@
     {
       "source": "insight_20260924_live15_funnel_remediation_and_batch_arbitration_truth",
       "target": "insight_20260923_enterprise_audit_shared_libs_and_verification_discipline",
+      "relation": "REFINES"
+    },
+    {
+      "source": "node_silent_skip_forensics",
+      "target": "node_zero_assumptions",
+      "relation": "REFINES"
+    },
+    {
+      "source": "event_turn_71",
+      "target": "node_silent_skip_forensics",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "insight_20260927_linkedin_apply_forensics_and_zero_omission",
+      "target": "insight_20260924_live15_funnel_remediation_and_batch_arbitration_truth",
+      "relation": "REFINES"
+    },
+    {
+      "source": "node_brain_disposes",
+      "target": "node_zero_assumptions",
+      "relation": "REFINES"
+    },
+    {
+      "source": "event_turn_72",
+      "target": "node_brain_disposes",
+      "relation": "EVIDENCED_BY"
+    },
+    {
+      "source": "insight_20260927_tailoring_reframe_brain_disposes",
+      "target": "insight_20260927_linkedin_apply_forensics_and_zero_omission",
       "relation": "REFINES"
     }
   ]

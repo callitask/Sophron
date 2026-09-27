@@ -1,6 +1,6 @@
 {
-  "total_indexed_nodes": 62,
-  "total_indexed_edges": 74,
+  "total_indexed_nodes": 66,
+  "total_indexed_edges": 80,
   "adjacency": {
     "node_zero_assumptions": [
       {
@@ -395,6 +395,30 @@
     "event_turn_70": [
       {
         "target": "node_forensics_first",
+        "relation": "EVIDENCED_BY"
+      }
+    ],
+    "node_silent_skip_forensics": [
+      {
+        "target": "node_zero_assumptions",
+        "relation": "REFINES"
+      }
+    ],
+    "event_turn_71": [
+      {
+        "target": "node_silent_skip_forensics",
+        "relation": "EVIDENCED_BY"
+      }
+    ],
+    "node_brain_disposes": [
+      {
+        "target": "node_zero_assumptions",
+        "relation": "REFINES"
+      }
+    ],
+    "event_turn_72": [
+      {
+        "target": "node_brain_disposes",
         "relation": "EVIDENCED_BY"
       }
     ]

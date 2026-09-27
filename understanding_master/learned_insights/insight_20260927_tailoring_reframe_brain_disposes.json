@@ -1,0 +1,50 @@
+{
+  "insight_id": "insight_20260927_tailoring_reframe_brain_disposes",
+  "temporal_anchor": "2026-09-27T12:30:00+05:30",
+  "schema_version": "2.0",
+  "agent_model": "muse-spark",
+  "software": "opencode",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "Owner feared tailored resumes were being shortened and ordered AI bullet reframing under brain-thinks/actuator-verifies split."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "TURN-71 apply-loop forensics",
+    "trigger_for_switch": "Omission scare plus explicit order for JD-term weaving with skip-free and interview-safe guarantees",
+    "new_context": "Reframe implementation with layered validation",
+    "cognitive_load_at_switch": "high"
+  },
+  "psychological_state": {
+    "mood": "authoritative",
+    "cognitive_load": "high",
+    "decision_style": "Owner states design intent as recalled contract plus inviolable constraints, then judges by live proof at each gate."
+  },
+  "interaction_pairing": {
+    "user_action": "Demanded omission forensics across latest resumes, then ordered AI reframing (JD terms, nothing skipped, no new tech) and docs updates.",
+    "ai_response_quality": "Forensic diff proved 63/63 preservation (reorder perception, not omission); implemented per-role AI reframe with count/numbers/tech-allowlist validation and offline skip; live run caught marker-stripping via the new guardrail and the normalizer fixed it to 63/63; docs versioned; gates green.",
+    "friction_points": "1) Early diff scripts miscounted (heading-level bug) — corrected with explicit scripts, not one-liners. 2) Single-word tech detection is shape-impossible — resolved as hard gates plus audit tripwire, stated openly. 3) Live reframe exposed marker stripping — guardrail plus normalizer the same session.",
+    "resolution": "Reframe live with 63/63 preserved; tripwire logs novel Capitalized words; offline mode keeps originals silently."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Brain-proposes/Python-disposes with per-unit atomic fallback: AI output is accepted only when machine-checkable invariants hold (count, numbers subset, token allowlist); otherwise originals stand. Generalizes beyond resumes to any AI rewrite task.",
+    "changed_from_prior_belief": "Previously assumed reorder-only tailoring was sufficient and omission was the only risk. Now: formatting channels (markers) degrade silently too, and single-word tech needs tripwires not rules.",
+    "consistency_with_axioms": "Axiom 1 (diffs and live runs over impressions). Axiom 2 (config flag, zero new literals). Axiom 4 (residual openly documented instead of hidden)."
+  },
+  "long_term_application": {
+    "future_implication": "1) Every AI rewrite feature ships with same-shape validators plus formatting normalization. 2) Audit-word tripwires cover what hard rules cannot without false rejects. 3) Offline/no-brain paths must degrade to originals with zero stalls. 4) Diff artifacts first on any quality-drift report.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Propose-validate-fallback pattern transfers to any generative rewrite pipeline.",
+    "linked_insights": [
+      "insight_20260927_linkedin_apply_forensics_and_zero_omission",
+      "insight_20260924_live15_funnel_remediation_and_batch_arbitration_truth"
+    ],
+    "evolved_thinking_refs": {
+      "TURN-71": "Silent-skip forensics extended to generative formatting drift.",
+      "ENTRY #003 lineage": "Zero-omission guarantee upgraded from tripwire to count-mode plus reframe validation."
+    }
+  }
+}

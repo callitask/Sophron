@@ -1,6 +1,6 @@
 {
   "workspace_id": "callitask/Universal-Autonomous-Career-Agent",
-  "last_updated": "2026-09-24T14:00:00+05:30",
+  "last_updated": "2026-09-27T12:30:00+05:30",
   "completed_milestones": [
     {
       "milestone": "Dynamic Startup & Guardrail P1 Codebase Purity Enforcer",
@@ -50,6 +50,16 @@
       "milestone": "Live 15-Cycle Verification + Funnel Remediation (TURN-70)",
       "status": "VERIFIED",
       "notes": "Word-boundary company gate; Support removal; full-list arming; lite-first; intra-batch dedupe; C23 keyword swaps; Expian 85% applied live; chatbot vs 1-click funnels separated; Gemini verdicts confirmed as borderline arbitration in API mode."
+    },
+    {
+      "milestone": "LinkedIn Apply Forensics + Zero-Omission Guardrail (TURN-71)",
+      "status": "VERIFIED",
+      "notes": "Silent blackouts fixed with live probes; search-pane flow committed first Easy Apply; numeric retry bidirectional; control coverage; chatbot H1 removal; velocity governors; 63/63 resume proof + guardrail; docs versioned; handover file delivered."
+    },
+    {
+      "milestone": "AI Bullet Reframing With Validation (TURN-72)",
+      "status": "VERIFIED",
+      "notes": "Brain-proposes/Python-disposes reframe pass; 63/63 live proof; marker normalizer; tripwire logging; docs versioned."
     }
   ],
   "active_candidate_sessions": [

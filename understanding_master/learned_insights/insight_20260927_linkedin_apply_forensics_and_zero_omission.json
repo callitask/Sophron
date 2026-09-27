@@ -1,0 +1,51 @@
+{
+  "insight_id": "insight_20260927_linkedin_apply_forensics_and_zero_omission",
+  "temporal_anchor": "2026-09-27T12:00:00+05:30",
+  "schema_version": "2.0",
+  "agent_model": "muse-spark",
+  "software": "opencode",
+  "CONTEXT_CLASSIFICATION": {
+    "data_subject": "AGENT_CAREER",
+    "workspace_origin": "career_agent",
+    "rule_tier": "WORKSPACE_RULE",
+    "is_cross_project_applicable": "true",
+    "context_at_time_of_insight": "LinkedIn execution under live owner supervision: silent zero-card blackouts, swallowed Easy Apply clicks, unfilled controls, numeric validation dead-ends, plus a resume-omission scare."
+  },
+  "CONTEXT_TRANSITION": {
+    "was_there_a_context_switch": "true",
+    "previous_context": "TURN-70 funnel remediation doctrine",
+    "trigger_for_switch": "Owner moved to LinkedIn and supervised live, exposing silent-failure classes logs never show",
+    "new_context": "DOM-forensic repair with live proof per fix",
+    "cognitive_load_at_switch": "high"
+  },
+  "psychological_state": {
+    "mood": "authoritative",
+    "cognitive_load": "high",
+    "decision_style": "Owner supervises like a senior over a junior: interrupts mid-run, corrects facts directly (driving licence), demands to SEE progression and errors, accepts only live proof."
+  },
+  "interaction_pairing": {
+    "user_action": "Reported silent LinkedIn zeros; challenged wrong-button clicks while watching; demanded full control coverage, resume upload, numeric validation handling, step/error inspection; corrected a poisoned learned truth; ordered resume omission forensics and a clean handover file.",
+    "ai_response_quality": "Each failure re-probed live before fixing: dead title selector replaced with verified link/subtitle/caption map; None-href TypeError blackout fixed via data-job-id fallback; swallowed clicks traced to inert view-page button, replaced with proven search-pane flow (modal in ~2s); numeric retry made bidirectional; hidden inputs/checkboxes/custom dropdowns covered; chatbot blind options[0] removed; velocity governors added; resume diff proved 63/63 preservation plus a structural guardrail.",
+    "friction_points": "1) Two stacked silent blackouts looked like one bug — fixed sequentially with a probe between each. 2) Session-flag evidence (bot-detection iframe, armed captcha) vs dead-button evidence conflicted until the pane flow proved clicks can work. 3) Owner impatience with verification gaps — answered with live proof, not claims.",
+    "resolution": "LinkedIn applies flowing (first Easy Apply commit observed); compile/purity/tests/index all green; docs versioned; handover file delivered."
+  },
+  "cognitive_evolution": {
+    "new_pattern_detected": "Silent-skip forensics: when output is zero with zero errors, suspect (a) dead selectors behind `if not count: continue`, (b) None values fed to `in` inside bare try/except, (c) inert buttons proven only by timed modal-appearance probes. Fix in that order, one probe per hypothesis.",
+    "changed_from_prior_belief": "Previously treated empty QA + DRAWER_CLOSED as portal-side drops. Now: distinguish modal-never-rendered (flow bug, fixable) from modal-rendered-but-unanswered (solver gap) from action-throttled (cooldown) using QA emptiness + URL + probe clicks before prescribing.",
+    "consistency_with_axioms": "Axiom 1 (four escalating live probes per hypothesis, DOM dumps over assumptions). Axiom 2 (config-driven caps/timeouts/keys; zero new literals). Axiom 4 (forensic separation of stacked failures before each fix)."
+  },
+  "long_term_application": {
+    "future_implication": "1) Every card/control skip path must log or count — silence is a bug. 2) Prove UI actions by resulting state (modal text), never by click success. 3) Diff artifacts (resumes, trackers, ledgers) before theorizing about quality drift. 4) Owner factual corrections apply immediately with backup. 5) Soft-throttle evidence (detection iframes, armed captchas, swallowed actions with clean reads) means cooldown + governors, never more automation.",
+    "workspace_scope": "career_agent",
+    "cross_project_note": "Silent-skip forensics and prove-by-resulting-state transfer to any browser-automation workspace.",
+    "linked_insights": [
+      "insight_20260924_live15_funnel_remediation_and_batch_arbitration_truth",
+      "insight_20260923_enterprise_audit_shared_libs_and_verification_discipline"
+    ],
+    "evolved_thinking_refs": {
+      "TURN-70": "Funnel remediation extended to apply-loop forensics (this card).",
+      "Fix #9 lineage": "Blind-option poison eliminated from its last refuge (chatbot radio path).",
+      "C34 lineage": "Tier mapping now spans LinkedIn radio, dropdown, and custom widgets behind one config gate."
+    }
+  }
+}
